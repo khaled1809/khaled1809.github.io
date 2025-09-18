@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <title>Portfolio — Khaled DJELLALI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="progress" aria-hidden="true"></div>
+  <nav class="nav" aria-label="Navigation principale">
+    <div class="brand">Khaled</div>
+    <button class="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <div class="links" role="menu">
+      <a href="#about" role="menuitem">À propos</a>
+      <a href="#skills" role="menuitem">Compétences</a>
+      <a href="#experience" role="menuitem">Expériences</a>
+      <a href="#projects" role="menuitem">Projets</a>
+      <a href="#contact" role="menuitem">Contact</a>
+    </div>
+    <div class="right">
+      <button id="themeToggle" class="toggle" aria-label="Changer de thème">🌙</button>
+    </div>
+  </nav>
+  <header class="hero" id="top">
+    <canvas id="particles" class="particles" aria-hidden="true"></canvas>
+    <div class="heroContent">
+      <h1 class="title rainbow" id="name">Khaled DJELLALI</h1>
+      <p class="subtitle type" id="subtitle">Développeur — Master 1 Architecte de Systèmes d’Information (ETNA)</p>
+      <div class="cta">
+        <a href="#projects" class="btn primary">Voir mes projets</a>
+        <a href="#contact" class="btn">Me contacter</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="about" class="section reveal">
+  <div class="profile-layout">
+    <div class="profile-left">
+      <img class="avatar big" id="avatar" src="assets/images/khaled1809.jpg" alt="Photo de Khaled" onerror="this.style.display='none'">
+      <h1 class="name">Khaled Djellali</h1>
+      <ul class="meta">
+        <li id="loc">📍 Paris</li>
+        <li id="mail">✉️ <a href="mailto:khaleddjellali189@gmail.com">khaleddjellali189@gmail.com</a></li>
+        <li id="phone">📞 07 44 40 46 29</li>
+      </ul>
+    </div>
+    <div class="profile-right">
+      <div class="subtitle">
+        Développeur – Master 1 Architecte de Systèmes d’Information (ETNA)
+      </div>
+      <p class="lead" id="aboutText">
+        Actuellement en Master 1 – spécialisation Développement (Architecte de Systèmes d’Information) à l’ETNA, en alternance. 
+        Sérieux et motivé, je suis à la recherche d’une entreprise pour développer mes compétences techniques et professionnelles.
+      </p>
+      <a id="cvLink" class="btn primary" href="assets/cv/CvP_Khaled.pdf" download>
+        📄 Télécharger mon CV
+      </a>
+    </div>
+  </div>
+</section>
+    <section id="skills" class="section reveal">
+      <h2>Compétences</h2>
+      <div id="skillsGrid" class="grid skills"></div>
+    </section>
+    <section id="experience" class="section reveal">
+      <h2>Formations</h2>
+      <ul id="timeline" class="timeline"></ul>
+    </section>
+    <section id="projects" class="section">
+  <div class="container">
+    <h2>Projets</h2>
+    <div id="projectsList" class="projects-list"></div>
+  </div>
+</section>
+    <section id="contact" class="section reveal">
+  <h2>Contact</h2>
+  <p>Tu as une opportunité ou un projet ?</p>
+  <div class="contactRow">
+    <a class="btn primary" id="mailCta" href="mailto:khaleddjellali189@gmail.com">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24" style="vertical-align:middle; margin-right:8px;">
+        <path d="M12 12.713l11.985-9.713h-23.97l11.985 9.713zm0 
+        2.574l-12-9.713v15.426h24v-15.426l-12 
+        9.713z"/>
+      </svg>
+      Écrire à Khaled
+    </a>
+
+    <a class="btn" href="assets/cv/CvP_Khaled.pdf" download>
+      📄 Télécharger mon CV
+    </a>
+
+    <a class="btn" href="tel:+33744404629">
+      📞 07 44 40 46 29
+    </a>
+
+    <a href="https://www.linkedin.com/in/khaled-djellali-4a16282a8/" target="_blank" class="btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24" style="vertical-align:middle; margin-right:8px;">
+        <path d="M19 0h-14c-2.761 0-5 2.239-5 
+        5v14c0 2.761 2.239 5 5 
+        5h14c2.762 0 5-2.239 
+        5-5v-14c0-2.761-2.238-5-5-5zm-11 
+        19h-3v-10h3v10zm-1.5-11.268c-.966 
+        0-1.75-.79-1.75-1.764s.784-1.764 
+        1.75-1.764 1.75.79 
+        1.75 1.764-.784 1.764-1.75 
+        1.764zm13.5 11.268h-3v-5.604c0-1.337-.025-3.059-1.863-3.059-1.863 
+        0-2.147 1.453-2.147 2.957v5.706h-3v-10h2.879v1.367h.041c.401-.76 
+        1.379-1.562 2.84-1.562 3.039 
+        0 3.6 2.001 3.6 4.604v5.591z"/>
+      </svg>
+      LinkedIn
+    </a>
+    <a href="https://github.com/" target="_blank" class="btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24" style="vertical-align:middle; margin-right:8px;">
+        <path d="M12 .5c-6.627 0-12 5.373-12 
+        12 0 5.302 3.438 9.8 8.207 
+        11.387.6.113.793-.26.793-.577 
+        0-.285-.01-1.04-.016-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.083-.73.083-.73 
+        1.205.085 1.84 1.236 1.84 1.236 
+        1.07 1.835 2.809 1.305 3.495.997.108-.775.418-1.305.762-1.605-2.665-.304-5.466-1.332-5.466-5.931 
+        0-1.31.469-2.381 1.236-3.221-.124-.303-.536-1.524.117-3.176 
+        0 0 1.008-.322 3.301 1.23a11.51 
+        11.51 0 013.003-.404c1.018.005 
+        2.045.138 3.003.404 2.291-1.552 
+        3.297-1.23 3.297-1.23.655 1.652.243 
+        2.873.12 3.176.77.84 1.236 1.911 
+        1.236 3.221 0 4.609-2.804 5.625-5.476 
+        5.921.43.371.823 1.103.823 2.222 
+        0 1.606-.015 2.896-.015 3.289 
+        0 .32.192.694.801.576 4.765-1.589 
+        8.199-6.086 8.199-11.386 
+        0-6.627-5.373-12-12-12z"/>
+      </svg>
+      GitHub
+    </a>
+  </div>
+</section>
+  </main>
+  <footer class="footer">
+    <span id="year"></span> © <span id="footName">Khaled DJELLALI</span> — Tous droits réservés
+  </footer>
+  <button class="toTop" aria-label="Remonter en haut" title="Haut">⬆</button>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/particles.js"></script>
+  <script src="assets/js/carousel.js"></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
