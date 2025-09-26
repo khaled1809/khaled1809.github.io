@@ -56,10 +56,10 @@ DATA.projects.forEach((p,i)=>{
     }
     <div class="actions">
       ${p.code && p.code !== '#' 
-        ? `<a class="btn" href="${p.code}" target="_blank" rel="noopener noreferrer">Code</a>` 
+        ? `<a class="btn" href="${p.code}" target="_blank" rel="noopener noreferrer">Voir le Code</a>` 
         : ''
       }
-      <button class="btn demoBtn" data-index="${i}">Démo</button>
+      <button class="btn demoBtn" data-index="${i}">Détails du Projet</button>
     </div>
   `;
 
@@ -143,3 +143,4 @@ projectsList.querySelectorAll('.demoBtn').forEach(btn=>{
     document.addEventListener('keydown', (ev)=>{ if(ev.key === 'Escape'){ modal.remove(); } });
   };
 })();
+

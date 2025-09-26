@@ -6,22 +6,52 @@ window.KHALED_DATA = {
     location: "Paris",
     email: "khaleddjellali189@gmail.com",
     phone: "07 44 40 46 29",
-    about: `Actuellement en Master 1 – spécialisation Développement (Architecte de Systèmes d’Information) à l’ETNA, en alternance.
-Sérieux et motivé, je suis à la recherche d’une entreprise pour développer mes compétences techniques et professionnelles.`,
+    about: `Actuellement en Master 1 – spécialisation Développement (Architecte de
+Systèmes d’Information) à l’ETNA (École des Technologies Numériques
+Avancées), en alternance (3 semaines en entreprise / 1 semaine à l’école).
+Sérieux et motivé, je suis à la recherche d’une entreprise pour effectuer mon
+alternance tout en développant mes compétences techniques et professionnelles`,
     photo: "assets/images/khaled1809.jpg",
     cv: "assets/cv/CvP_Khaled.pdf" 
   },
   skills: [
+    {name:"Python", level: 95},
+    {name:"Java", level: 95},
+    {name:"C", level: 90},
+    {name:"C++", level: 80},
+    {name:"HTML", level: 95},
+    {name:"CSS", level: 95},
+    {name:"PHP", level: 90},
+
     {name:"JavaScript", level: 90},
     {name:"React", level: 85},
     {name:"Node.js", level: 80},
-    {name:"Python", level: 80},
-    {name:"Java", level: 70},
-    {name:"C/C++", level: 65},
-    {name:"SQL (MySQL/Postgres)", level: 80},
-    {name:"MongoDB", level: 70},
-    {name:"Docker", level: 75},
-    {name:"Git", level: 85}
+    {name:"Vue.js", level: 60},
+
+    {name:"MySQL", level: 90},
+    {name:"PostgreSQL", level: 85},
+    {name:"MongoDB.js", level: 80},
+
+    {name:"Git", level: 95},
+    {name:"Docker", level: 85},
+    {name:"Postman", level: 85},
+
+    {name:"NumPy", level: 85},
+    {name:"MatPlotlib", level: 85},
+    {name:"Pandas", level: 85},
+    {name:"Haskell", level: 70},
+    {name:"Pascal", level: 60},
+
+    {name:"Power BI", level: 60},
+    {name:"Scala", level: 60},
+    {name:"XGBoost.js", level: 60},
+    {name:"R", level: 60},
+
+    {name:"Linux", level: 85},
+    {name:"Bash", level: 85}
+    
+
+
   ],
   experiences: [
     { date: "à partir de Octobre 2025", title: "Master 1 Architecte de systèmes d’information - Développement application logicielle -", 
@@ -86,7 +116,7 @@ Sérieux et motivé, je suis à la recherche d’une entreprise pour développer
     {
     name: "Jeu de Stratégie Java",
     desc: "Jeu de stratégie au tour par tour en Java avec IA, génération de labyrinthe et multiples design patterns.",
-    code: "https://github.com/TON-PSEUDO/JeuStrategie", 
+    code: "https://github.com/khaled1809/JeuStrategie", 
     longDesc: "🎮 Jeu de Stratégie \n\nCe projet est un jeu de stratégie au tour par tour développé entièrement en Java, combinant réflexion, tactique et programmation orientée objet. Le joueur évolue sur une grille dynamique générée aléatoirement sous forme de labyrinthe grâce à un algorithme de backtracking, garantissant une carte unique à chaque partie. \n\n  Principe du jeu\nChaque joueur (humain ou contrôlé par une IA) dispose d’un personnage capable de se déplacer, d’attaquer, de se défendre et de collecter des ressources (munitions, soins, bonus). Le but est de rester le dernier en vie ou d’atteindre des objectifs définis selon le mode de jeu. La partie se déroule en tours successifs, où chaque joueur effectue ses actions avant de laisser la main à l’adversaire.\n\n  Mécaniques de jeu\n- Déplacements : chaque tour, un joueur peut se déplacer dans les directions autorisées par la grille (en évitant les murs, pièges ou zones interdites).\n- Attaques : les armes disponibles (pistolets, bombes, etc.) possèdent des comportements spécifiques (tir directionnel, explosion en zone) et nécessitent des munitions.\n- Défense et stratégie : il est possible de lever un bouclier ou de se positionner derrière des obstacles pour éviter les dégâts.\n- Objets et bonus : des cases spéciales distribuent des bonus de santé, des munitions ou des améliorations temporaires.\n- Pièges : des mines et pièges cachés peuvent surprendre l’adversaire et renverser la situation.\n\n 🧠 Système de Stratégies\nLes joueurs, qu’ils soient humains ou IA, peuvent adopter différentes stratégies implémentées via le design pattern Strategy :\n- Aggressive : recherche l’attaque frontale et la confrontation directe.\n- Defensive : privilégie la survie, en évitant les affrontements et en collectant des ressources.\n- Random : agit de manière imprévisible pour déstabiliser l’adversaire.\n- Offensive ciblée : combine collecte de ressources et attaques précises pour éliminer rapidement les menaces prioritaires.\n\n 🏗️ Architecture logicielle\nLe projet illustre une conception logicielle avancée avec une architecture MVC (Model-View-Controller) et l’intégration de nombreux design patterns :\n- Singleton : assure une instance unique du jeu et de la grille.\n- Observer : synchronise en temps réel le modèle (logique de jeu) et la vue (interface graphique).\n- Strategy : gère les comportements dynamiques des joueurs et des armes.\n- Command : encapsule chaque action (tir, déplacement, défense) sous forme d’objet exécutable.\n- State : permet aux cases de la grille de changer de comportement en fonction de leur contenu (joueur, bombe, bonus, etc.).\n- Composite : déléguant l’interaction d’un joueur à l’objet contenu dans chaque case.\n- Template Method : définit un squelette d’action pour les armes, laissant les sous-classes personnaliser l’exécution (ex : Bomb vs Gun).\n- Facade : centralise la gestion des entités du jeu (joueurs, armes) via des gestionnaires dédiés.\n\n 💻 Interface et gameplay\nLe jeu peut être lancé en mode terminal pour une version texte ou en interface graphique (Java Swing/JavaFX) offrant une vue complète du plateau :\n- Grille dynamique : représentation visuelle des murs, bonus, pièges et positions des joueurs.\n- Panneau de contrôle : permet de lancer les actions (tir, mouvement, défense) ou de passer le tour.\n- Journal des actions : affiche en temps réel les mouvements, attaques et événements clés.\n\n ⚡ Points forts\n- Labyrinthe unique à chaque partie grâce à l’algorithme de génération procédurale.\n- IA adaptable avec plusieurs styles de jeu, offrant une rejouabilité élevée.\n- Architecture robuste et modulaire, facilitant l’ajout de nouvelles armes, stratégies ou types de cases.\n- Mode multijoueur local (selon configuration) permettant des parties contre d’autres joueurs humains ou des IA.\n\nCe projet illustre l’application concrète de concepts avancés de programmation orientée objet, la conception modulaire et la maîtrise de multiples design patterns. Il constitue une base solide pour développer des jeux plus complexes.",
     images: [
       "assets/images/projects/strat4.png",
