@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Une implémentation interactive du Jeu de la Vie de Conway permettant d’observer l’évolution d’une population de cellules génération après génération.">
+  <meta name="theme-color" content="#07111f">
+  <meta name="color-scheme" content="dark light">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Simulation du Jeu de la Vie — Étude de cas | Khaled DJELLALI">
+  <meta property="og:description" content="Une implémentation interactive du Jeu de la Vie de Conway permettant d’observer l’évolution d’une population de cellules génération après génération.">
+  <meta property="og:image" content="../assets/images/projects/life1.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Simulation du Jeu de la Vie — Étude de cas | Khaled DJELLALI</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <script>
+    (() => {
+      document.documentElement.classList.add('js');
+      try {
+        const stored = localStorage.getItem('portfolio-theme');
+        document.documentElement.dataset.theme = stored || 'dark';
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark';
+      }
+    })();
+  </script>
+  <script src="../assets/js/site.js" defer></script>
+</head>
+<body class="project-page" id="top">
+
+<a class="skip-link" href="#main-content">Aller au contenu</a>
+<header class="site-header" data-site-header>
+  <div class="container header-inner">
+    <a class="brand" href="../index.html" aria-label="Retour à l’accueil de Khaled Djellali">
+      <span class="brand-mark" aria-hidden="true">KD</span>
+      <span class="brand-copy"><strong>Khaled Djellali</strong><small>Développeur</small></span>
+    </a>
+    <nav class="primary-nav" id="primary-navigation" aria-label="Navigation principale" data-mobile-nav>
+      <a href="../index.html#about" class="nav-link">Profil</a>
+<a href="../index.html#skills" class="nav-link">Compétences</a>
+<a href="../index.html#journey" class="nav-link">Parcours</a>
+<a href="../index.html#projects" class="nav-link is-active">Projets</a>
+      <a class="button button-small button-primary nav-contact" href="../index.html#contact">Me contacter <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button theme-toggle" type="button" data-theme-toggle aria-label="Activer le thème clair" title="Changer de thème">
+        <span class="theme-icon theme-icon-sun"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></svg></span>
+        <span class="theme-icon theme-icon-moon"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>
+      </button>
+      <button class="icon-button menu-toggle" type="button" data-menu-toggle aria-controls="primary-navigation" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="menu-icon-open"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></span>
+        <span class="menu-icon-close"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 6 12 12M18 6 6 18"/></svg></span>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main-content">
+  <section class="project-hero">
+    <div class="project-hero-grid" aria-hidden="true"></div>
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Fil d’Ariane">
+        <a href="../index.html">Accueil</a><span aria-hidden="true">/</span><a href="../index.html#projects">Projets</a><span aria-hidden="true">/</span><span aria-current="page">Simulation du Jeu de la Vie</span>
+      </nav>
+      <div class="project-hero-layout">
+        <div class="project-hero-copy" data-reveal>
+          <p class="project-category">Simulation Java</p>
+          <h1>Simulation du Jeu de la Vie</h1>
+          <p class="project-summary">Une implémentation interactive du Jeu de la Vie de Conway permettant d’observer l’évolution d’une population de cellules génération après génération.</p>
+          <div class="tag-group tag-group-large"><span class="tech-tag">Java</span><span class="tech-tag">Java Swing</span><span class="tech-tag">MVC</span><span class="tech-tag">Observer</span><span class="tech-tag">Simulation</span><span class="tech-tag">Algorithmique</span></div>
+          <div class="project-hero-actions">
+            <a class="button button-primary" href="https://github.com/khaled1809/GameOfLife" target="_blank" rel="noopener noreferrer">Voir le code source <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5h5v5"/><path d="M10 14 19 5"/><path d="M19 13v6H5V5h6"/></svg></a>
+            <a class="button button-secondary" href="../index.html#projects">Retour aux projets <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></a>
+          </div>
+        </div>
+        <figure class="project-cover" data-reveal>
+          <img src="../assets/images/projects/life1.png" alt="Aperçu principal du projet Simulation du Jeu de la Vie" width="1400" height="850">
+        </figure>
+      </div>
+      <dl class="project-facts" data-reveal><div class="project-fact"><dt>Rôle</dt><dd>Implémentation de l’algorithme, boucle de simulation et interface</dd></div><div class="project-fact"><dt>Type</dt><dd>Simulation graphique</dd></div><div class="project-fact"><dt>Architecture</dt><dd>MVC + Observer + moteur de générations</dd></div><div class="project-fact"><dt>Technologies</dt><dd>Java · Java Swing · MVC · Observer · Simulation · Algorithmique</dd></div></dl>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container case-layout">
+      <article class="case-main">
+        <div class="case-block" data-reveal>
+          <p class="case-kicker">Contexte</p>
+          <h2>Le besoin à résoudre</h2>
+          <p>Les règles du Jeu de la Vie sont simples, mais leur application naïve produit facilement des résultats incorrects : toutes les cellules d’une génération doivent évoluer à partir du même état initial. Il fallait aussi maintenir une animation fluide sans bloquer les commandes de l’interface.</p>
+        </div>
+        <div class="case-block" data-reveal>
+          <p class="case-kicker">Approche</p>
+          <h2>La solution mise en place</h2>
+          <p>J’ai séparé l’état courant de l’état suivant afin de calculer chaque génération sans modifier la grille en cours de parcours. Le modèle notifie la vue après validation d’une génération, tandis qu’un contrôleur gère le démarrage, la pause, la réinitialisation et la création d’une configuration.</p>
+        </div>
+      </article>
+      <aside class="case-sidebar" data-reveal>
+        <div class="sidebar-card">
+          <span class="sidebar-icon"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V4h8v3M3 12h18M10 12v2h4v-2"/></svg></span>
+          <h2>Ce que ce projet démontre</h2>
+          <p>Ma capacité à analyser un problème, organiser les responsabilités et expliquer les compromis techniques au-delà du simple résultat visuel.</p>
+          <a class="text-link" href="mailto:khaleddjellali189@gmail.com?subject=Échange à propos du projet Simulation du Jeu de la Vie">Échanger sur ce projet <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="case-section section-soft">
+    <div class="container">
+      <div class="case-heading" data-reveal><p class="case-kicker">Architecture</p><h2>Comment le projet est structuré</h2></div>
+      <div class="architecture-grid"><article class="architecture-item" data-reveal>
+          <span class="architecture-number">01</span>
+          <h3>Double état de grille</h3>
+          <p>Une grille source est lue intégralement et une grille destination reçoit les nouveaux états avant l’échange des références.</p>
+        </article><article class="architecture-item" data-reveal>
+          <span class="architecture-number">02</span>
+          <h3>Moteur indépendant</h3>
+          <p>Le calcul des voisins et des règles reste indépendant de Swing, ce qui permet de le tester ou de l’utiliser dans une autre vue.</p>
+        </article><article class="architecture-item" data-reveal>
+          <span class="architecture-number">03</span>
+          <h3>Notification de la vue</h3>
+          <p>Observer déclenche un rafraîchissement uniquement lorsqu’une nouvelle génération cohérente est disponible.</p>
+        </article></div>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container">
+      <div class="case-heading" data-reveal><p class="case-kicker">Résolution de problèmes</p><h2>Difficultés rencontrées et décisions prises</h2><p>Les points ci-dessous donnent de la visibilité sur le raisonnement technique, pas seulement sur les fonctionnalités finales.</p></div>
+      <div class="challenges-grid"><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 1</span>
+          <h3>Éviter les mises à jour en place</h3>
+          <p>Modifier une cellule avant d’avoir calculé ses voisines aurait changé le résultat de la même génération.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>J’ai utilisé deux représentations distinctes et appliqué l’échange seulement après le calcul complet.</p></div>
+        </article><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 2</span>
+          <h3>Traiter les bords de la grille</h3>
+          <p>Les cellules situées sur les limites n’ont pas huit voisins valides.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>J’ai isolé le comptage des voisins et appliqué une règle de frontière explicite plutôt que de disperser les contrôles dans l’algorithme.</p></div>
+        </article><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 3</span>
+          <h3>Synchroniser animation et interface</h3>
+          <p>Une boucle trop rapide ou exécutée au mauvais endroit pouvait bloquer les boutons et produire des rafraîchissements inutiles.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>J’ai contrôlé la cadence de génération et limité la vue à l’affichage de l’état validé par le modèle.</p></div>
+        </article></div>
+    </div>
+  </section>
+
+  <section class="case-section learnings-section">
+    <div class="container learnings-layout">
+      <div class="case-heading" data-reveal><p class="case-kicker">Progression</p><h2>Ce que j’ai appris</h2><p>Des acquis réutilisables dans d’autres projets et dans un contexte professionnel.</p></div>
+      <ul class="learnings-list"><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Raisonner en états immuables à l’échelle d’une étape de simulation.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Distinguer le temps du moteur de simulation du temps de rendu de l’interface.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Isoler les règles dans une partie testable sans dépendance graphique.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Comprendre comment des règles locales simples produisent un comportement global complexe.</p></li></ul>
+    </div>
+  </section>
+
+  <section class="case-section section-soft">
+    <div class="container">
+      <div class="case-heading" data-reveal><p class="case-kicker">Galerie</p><h2>Le projet en images</h2><p>Cliquez sur un visuel pour l’agrandir.</p></div>
+      <div class="project-gallery"><button class="gallery-item gallery-item-1" type="button" data-gallery-item data-src="../assets/images/projects/life1.png" data-alt="Visuel 1 du projet Simulation du Jeu de la Vie">
+          <img src="../assets/images/projects/life1.png" alt="Visuel 1 du projet Simulation du Jeu de la Vie" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-2" type="button" data-gallery-item data-src="../assets/images/projects/life2.png" data-alt="Visuel 2 du projet Simulation du Jeu de la Vie">
+          <img src="../assets/images/projects/life2.png" alt="Visuel 2 du projet Simulation du Jeu de la Vie" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-3" type="button" data-gallery-item data-src="../assets/images/projects/life3.png" data-alt="Visuel 3 du projet Simulation du Jeu de la Vie">
+          <img src="../assets/images/projects/life3.png" alt="Visuel 3 du projet Simulation du Jeu de la Vie" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-4" type="button" data-gallery-item data-src="../assets/images/projects/life4.png" data-alt="Visuel 4 du projet Simulation du Jeu de la Vie">
+          <img src="../assets/images/projects/life4.png" alt="Visuel 4 du projet Simulation du Jeu de la Vie" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-5" type="button" data-gallery-item data-src="../assets/images/projects/life5.png" data-alt="Visuel 5 du projet Simulation du Jeu de la Vie">
+          <img src="../assets/images/projects/life5.png" alt="Visuel 5 du projet Simulation du Jeu de la Vie" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-6" type="button" data-gallery-item data-src="../assets/images/projects/life6.png" data-alt="Visuel 6 du projet Simulation du Jeu de la Vie">
+          <img src="../assets/images/projects/life6.png" alt="Visuel 6 du projet Simulation du Jeu de la Vie" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-7" type="button" data-gallery-item data-src="../assets/images/projects/life7.png" data-alt="Visuel 7 du projet Simulation du Jeu de la Vie">
+          <img src="../assets/images/projects/life7.png" alt="Visuel 7 du projet Simulation du Jeu de la Vie" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button></div>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container improvement-panel" data-reveal>
+      <div><p class="case-kicker">Prise de recul</p><h2>Ce que j’améliorerais dans une prochaine version</h2></div>
+      <ol><li>Ajouter des configurations prédéfinies comme les gliders et oscillateurs.</li><li>Proposer plusieurs politiques de bord, notamment une grille torique.</li><li>Optimiser les grandes grilles en suivant uniquement les cellules actives et leur voisinage.</li></ol>
+    </div>
+  </section>
+
+  <nav class="project-pagination container" aria-label="Navigation entre les projets">
+    <a href="site-animaux-mvc.html" class="pagination-link pagination-previous">
+      <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg><span><small>Projet précédent</small><strong>Gestion d’animaux avec architecture MVC</strong></span>
+    </a>
+    <a href="puzzle-coulissant-java.html" class="pagination-link pagination-next">
+      <span><small>Projet suivant</small><strong>Puzzle coulissant en Java</strong></span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+    </a>
+  </nav>
+</main>
+
+<dialog class="lightbox" data-lightbox aria-label="Aperçu agrandi du visuel">
+  <button class="icon-button lightbox-close" type="button" data-lightbox-close aria-label="Fermer l’aperçu"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+  <figure><img src="" alt="" data-lightbox-image><figcaption data-lightbox-caption></figcaption></figure>
+</dialog>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand footer-brand" href="../index.html">
+        <span class="brand-mark" aria-hidden="true">KD</span>
+        <span class="brand-copy"><strong>Khaled DJELLALI</strong><small>Développeur logiciel, web, data &amp; IA</small></span>
+      </a>
+      <p class="footer-note">Portfolio statique conçu pour être rapide, accessible et directement publiable sur GitHub Pages.</p>
+    </div>
+    <div class="footer-links" aria-label="Liens de pied de page">
+      <a href="https://github.com/khaled1809" target="_blank" rel="noopener noreferrer">GitHub <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5h5v5"/><path d="M10 14 19 5"/><path d="M19 13v6H5V5h6"/></svg></a>
+      <a href="https://www.linkedin.com/in/khaled-djellali-4a16282a8/" target="_blank" rel="noopener noreferrer">LinkedIn <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5h5v5"/><path d="M10 14 19 5"/><path d="M19 13v6H5V5h6"/></svg></a>
+      <a href="mailto:khaleddjellali189@gmail.com">E-mail</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span data-current-year></span> Khaled DJELLALI. Tous droits réservés.</p>
+    <a href="#top">Retour en haut <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a>
+  </div>
+</footer>
+</body>
+</html>

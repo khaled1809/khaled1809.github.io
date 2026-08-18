@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Un moteur d’aide à la décision pour un jeu à dix joueurs : domaines, contraintes binaires, propagation AC-3, simulation de réponses et recherche MRV/backtracking.">
+  <meta name="theme-color" content="#07111f">
+  <meta name="color-scheme" content="dark light">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Moteur de déduction par contraintes — Étude de cas | Khaled DJELLALI">
+  <meta property="og:description" content="Un moteur d’aide à la décision pour un jeu à dix joueurs : domaines, contraintes binaires, propagation AC-3, simulation de réponses et recherche MRV/backtracking.">
+  <meta property="og:image" content="../assets/images/projects/csp-overview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Moteur de déduction par contraintes — Étude de cas | Khaled DJELLALI</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <script>
+    (() => {
+      document.documentElement.classList.add('js');
+      try {
+        const stored = localStorage.getItem('portfolio-theme');
+        document.documentElement.dataset.theme = stored || 'dark';
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark';
+      }
+    })();
+  </script>
+  <script src="../assets/js/site.js" defer></script>
+</head>
+<body class="project-page" id="top">
+
+<a class="skip-link" href="#main-content">Aller au contenu</a>
+<header class="site-header" data-site-header>
+  <div class="container header-inner">
+    <a class="brand" href="../index.html" aria-label="Retour à l’accueil de Khaled Djellali">
+      <span class="brand-mark" aria-hidden="true">KD</span>
+      <span class="brand-copy"><strong>Khaled Djellali</strong><small>Développeur</small></span>
+    </a>
+    <nav class="primary-nav" id="primary-navigation" aria-label="Navigation principale" data-mobile-nav>
+      <a href="../index.html#about" class="nav-link">Profil</a>
+<a href="../index.html#skills" class="nav-link">Compétences</a>
+<a href="../index.html#journey" class="nav-link">Parcours</a>
+<a href="../index.html#projects" class="nav-link is-active">Projets</a>
+      <a class="button button-small button-primary nav-contact" href="../index.html#contact">Me contacter <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button theme-toggle" type="button" data-theme-toggle aria-label="Activer le thème clair" title="Changer de thème">
+        <span class="theme-icon theme-icon-sun"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></svg></span>
+        <span class="theme-icon theme-icon-moon"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>
+      </button>
+      <button class="icon-button menu-toggle" type="button" data-menu-toggle aria-controls="primary-navigation" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="menu-icon-open"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></span>
+        <span class="menu-icon-close"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 6 12 12M18 6 6 18"/></svg></span>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main-content">
+  <section class="project-hero">
+    <div class="project-hero-grid" aria-hidden="true"></div>
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Fil d’Ariane">
+        <a href="../index.html">Accueil</a><span aria-hidden="true">/</span><a href="../index.html#projects">Projets</a><span aria-hidden="true">/</span><span aria-current="page">Moteur de déduction par contraintes</span>
+      </nav>
+      <div class="project-hero-layout">
+        <div class="project-hero-copy" data-reveal>
+          <p class="project-category">IA &amp; algorithmique</p>
+          <h1>Moteur de déduction par contraintes</h1>
+          <p class="project-summary">Un moteur d’aide à la décision pour un jeu à dix joueurs : domaines, contraintes binaires, propagation AC-3, simulation de réponses et recherche MRV/backtracking.</p>
+          <div class="tag-group tag-group-large"><span class="tech-tag">Python</span><span class="tech-tag">CSP</span><span class="tech-tag">AC-3</span><span class="tech-tag">Backtracking</span><span class="tech-tag">MRV</span><span class="tech-tag">Heuristiques</span></div>
+          <div class="project-hero-actions">
+            <a class="button button-primary" href="https://github.com/khaled1809" target="_blank" rel="noopener noreferrer">Voir mon GitHub <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5h5v5"/><path d="M10 14 19 5"/><path d="M19 13v6H5V5h6"/></svg></a>
+            <a class="button button-secondary" href="../index.html#projects">Retour aux projets <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></a>
+          </div>
+        </div>
+        <figure class="project-cover" data-reveal>
+          <img src="../assets/images/projects/csp-overview.png" alt="Aperçu principal du projet Moteur de déduction par contraintes" width="1400" height="850">
+        </figure>
+      </div>
+      <dl class="project-facts" data-reveal><div class="project-fact"><dt>Rôle</dt><dd>Conception et implémentation individuelle du moteur de contraintes, du scoring et de l’interface console</dd></div><div class="project-fact"><dt>Type</dt><dd>Moteur de raisonnement et d’aide à la décision</dd></div><div class="project-fact"><dt>Architecture</dt><dd>CSP dynamique + AC-3 + score de risque</dd></div><div class="project-fact"><dt>Technologies</dt><dd>Python · CSP · AC-3 · Backtracking · MRV · Heuristiques</dd></div></dl>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container case-layout">
+      <article class="case-main">
+        <div class="case-block" data-reveal>
+          <p class="case-kicker">Contexte</p>
+          <h2>Le besoin à résoudre</h2>
+          <p>Dans ce jeu, dix joueurs possèdent chacun un nombre distinct compris entre 1 et 100. Les questions combinent deux nombres par addition, multiplication modulo 10, division entière ou comptage de zéros. Le moteur doit réduire l’incertitude sur le nombre du joueur principal et sur les autres participants, tout en évitant de révéler trop vite une information exploitable par un partenaire. Explorer naïvement les 100¹⁰ configurations est impossible.</p>
+        </div>
+        <div class="case-block" data-reveal>
+          <p class="case-kicker">Approche</p>
+          <h2>La solution mise en place</h2>
+          <p>J’ai représenté chaque joueur par une variable dotée d’un domaine, puis chaque réponse par une contrainte binaire vérifiée sur les couples de valeurs possibles. Après chaque observation, AC-3 supprime les valeurs sans support et la contrainte all-different propage l’unicité des nombres. Pour recommander une question, le moteur copie la base de connaissances, simule chaque réponse possible, relance la propagation et mesure la réduction attendue du domaine personnel, le gain collectif et le risque que le partenaire déduise le nombre du joueur principal. Un score pondéré classe les opérations. MRV et le backtracking n’explorent l’espace résiduel que lorsque la propagation ne suffit plus.</p>
+        </div>
+      </article>
+      <aside class="case-sidebar" data-reveal>
+        <div class="sidebar-card">
+          <span class="sidebar-icon"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V4h8v3M3 12h18M10 12v2h4v-2"/></svg></span>
+          <h2>Ce que ce projet démontre</h2>
+          <p>Ma capacité à analyser un problème, organiser les responsabilités et expliquer les compromis techniques au-delà du simple résultat visuel.</p>
+          <a class="text-link" href="mailto:khaleddjellali189@gmail.com?subject=Échange à propos du projet Moteur de déduction par contraintes">Échanger sur ce projet <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="case-section section-soft">
+    <div class="container">
+      <div class="case-heading" data-reveal><p class="case-kicker">Architecture</p><h2>Comment le projet est structuré</h2></div>
+      <div class="architecture-grid"><article class="architecture-item" data-reveal>
+          <span class="architecture-number">01</span>
+          <h3>Base de connaissances dynamique</h3>
+          <p>La KB conserve les domaines des dix variables, les contraintes ajoutées pendant la partie et les liens nécessaires pour revisiter les arcs concernés.</p>
+        </article><article class="architecture-item" data-reveal>
+          <span class="architecture-number">02</span>
+          <h3>Propagation AC-3</h3>
+          <p>La procédure revise un arc en supprimant toute valeur qui ne possède aucun support dans le domaine voisin, puis remet en file les dépendances impactées jusqu’au point fixe.</p>
+        </article><article class="architecture-item" data-reveal>
+          <span class="architecture-number">03</span>
+          <h3>Simulation et scoring</h3>
+          <p>Chaque question candidate est évaluée sur des copies indépendantes de la KB. Les gains sont moyennés selon les réponses possibles et pénalisés par une estimation du risque de révélation.</p>
+        </article><article class="architecture-item" data-reveal>
+          <span class="architecture-number">04</span>
+          <h3>Recherche et interface console</h3>
+          <p>MRV choisit la variable restante la plus contrainte avant le backtracking. Une interface interactive permet d’inspecter les domaines, tester une opération et appliquer une réponse réelle.</p>
+        </article></div>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container">
+      <div class="case-heading" data-reveal><p class="case-kicker">Résolution de problèmes</p><h2>Difficultés rencontrées et décisions prises</h2><p>Les points ci-dessous donnent de la visibilité sur le raisonnement technique, pas seulement sur les fonctionnalités finales.</p></div>
+      <div class="challenges-grid"><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 1</span>
+          <h3>Traduire chaque opération en filtre binaire</h3>
+          <p>Les réponses n’ont pas toutes la même forme : somme exacte ou intervalle, produit modulo 10, division entière et nombre de zéros dans les valeurs manipulées.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>J’ai centralisé l’évaluation des couples dans des contraintes spécialisées. AC-3 utilise ensuite la même notion de support, quelle que soit l’opération, ce qui évite de disperser les règles dans le moteur de propagation.</p></div>
+        </article><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 2</span>
+          <h3>Simuler sans corrompre la partie</h3>
+          <p>Tester toutes les réponses possibles d’une question modifie les domaines ; une simulation faite sur l’état réel aurait rendu les recommandations suivantes incohérentes.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>Chaque branche travaille sur une copie isolée de la base de connaissances. Seule la réponse effectivement donnée par un joueur est appliquée à l’état persistant.</p></div>
+        </article><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 3</span>
+          <h3>Équilibrer information et risque de révélation</h3>
+          <p>La question qui réduit le plus le domaine personnel peut aussi permettre au partenaire d’identifier immédiatement le nombre du joueur principal.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>Le score combine gain personnel, réduction globale et probabilité qu’un domaine sensible devienne singleton. Les poids rendent le compromis explicite et permettent de modifier la stratégie sans changer le solveur.</p></div>
+        </article><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 4</span>
+          <h3>Limiter l’explosion de la recherche</h3>
+          <p>Même après quelques questions, énumérer toutes les affectations compatibles peut devenir très coûteux.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>La propagation est toujours exécutée avant la recherche. MRV choisit ensuite le domaine le plus petit et le backtracking s’arrête dès qu’une contradiction est détectée ou que la limite de solutions demandée est atteinte.</p></div>
+        </article></div>
+    </div>
+  </section>
+
+  <section class="case-section learnings-section">
+    <div class="container learnings-layout">
+      <div class="case-heading" data-reveal><p class="case-kicker">Progression</p><h2>Ce que j’ai appris</h2><p>Des acquis réutilisables dans d’autres projets et dans un contexte professionnel.</p></div>
+      <ul class="learnings-list"><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Formaliser un problème interactif comme un CSP dynamique avec variables, domaines et contraintes ajoutées au fil des observations.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Comprendre la notion de support dans AC-3 et l’importance de remettre en file les arcs affectés après chaque réduction.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Simuler une décision sur un état copié pour comparer des scénarios sans introduire d’effet de bord.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Utiliser l’espérance de réduction et un coût de risque pour transformer une heuristique intuitive en critère mesurable.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Privilégier la propagation avant une recherche combinatoire guidée par MRV et le backtracking.</p></li></ul>
+    </div>
+  </section>
+
+  <section class="case-section section-soft">
+    <div class="container">
+      <div class="case-heading" data-reveal><p class="case-kicker">Galerie</p><h2>Le projet en images</h2><p>Cliquez sur un visuel pour l’agrandir.</p></div>
+      <div class="project-gallery"><button class="gallery-item gallery-item-1" type="button" data-gallery-item data-src="../assets/images/projects/csp-overview.png" data-alt="Visuel 1 du projet Moteur de déduction par contraintes">
+          <img src="../assets/images/projects/csp-overview.png" alt="Visuel 1 du projet Moteur de déduction par contraintes" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-2" type="button" data-gallery-item data-src="../assets/images/projects/csp-propagation.png" data-alt="Visuel 2 du projet Moteur de déduction par contraintes">
+          <img src="../assets/images/projects/csp-propagation.png" alt="Visuel 2 du projet Moteur de déduction par contraintes" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-3" type="button" data-gallery-item data-src="../assets/images/projects/csp-scoring.png" data-alt="Visuel 3 du projet Moteur de déduction par contraintes">
+          <img src="../assets/images/projects/csp-scoring.png" alt="Visuel 3 du projet Moteur de déduction par contraintes" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-4" type="button" data-gallery-item data-src="../assets/images/projects/csp-console.png" data-alt="Visuel 4 du projet Moteur de déduction par contraintes">
+          <img src="../assets/images/projects/csp-console.png" alt="Visuel 4 du projet Moteur de déduction par contraintes" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-5" type="button" data-gallery-item data-src="../assets/images/projects/csp-search.png" data-alt="Visuel 5 du projet Moteur de déduction par contraintes">
+          <img src="../assets/images/projects/csp-search.png" alt="Visuel 5 du projet Moteur de déduction par contraintes" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button></div>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container improvement-panel" data-reveal>
+      <div><p class="case-kicker">Prise de recul</p><h2>Ce que j’améliorerais dans une prochaine version</h2></div>
+      <ol><li>Ajouter des tests unitaires et des tests par propriétés pour chaque opération, la révision des arcs et la contrainte all-different.</li><li>Remplacer la liste utilisée comme file par deque et mesurer le coût de la propagation sur des parties complètes.</li><li>Réorganiser les modules pour supprimer les imports circulaires et définir des interfaces plus nettes entre KB, scoring et console.</li><li>Calibrer les poids du score sur des simulations de tournois plutôt que sur des valeurs choisies manuellement.</li><li>Ajouter une interface graphique montrant les domaines, le graphe de contraintes et l’effet prévisionnel d’une question.</li></ol>
+    </div>
+  </section>
+
+  <nav class="project-pagination container" aria-label="Navigation entre les projets">
+    <a href="reecriture-oulipo-nlp.html" class="pagination-link pagination-previous">
+      <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg><span><small>Projet précédent</small><strong>Réécriture créative sous contraintes OULIPO</strong></span>
+    </a>
+    <a href="application-mobile-taches.html" class="pagination-link pagination-next">
+      <span><small>Projet suivant</small><strong>Application mobile de gestion des tâches</strong></span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+    </a>
+  </nav>
+</main>
+
+<dialog class="lightbox" data-lightbox aria-label="Aperçu agrandi du visuel">
+  <button class="icon-button lightbox-close" type="button" data-lightbox-close aria-label="Fermer l’aperçu"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+  <figure><img src="" alt="" data-lightbox-image><figcaption data-lightbox-caption></figcaption></figure>
+</dialog>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand footer-brand" href="../index.html">
+        <span class="brand-mark" aria-hidden="true">KD</span>
+        <span class="brand-copy"><strong>Khaled DJELLALI</strong><small>Développeur logiciel, web, data &amp; IA</small></span>
+      </a>
+      <p class="footer-note">Portfolio statique conçu pour être rapide, accessible et directement publiable sur GitHub Pages.</p>
+    </div>
+    <div class="footer-links" aria-label="Liens de pied de page">
+      <a href="https://github.com/khaled1809" target="_blank" rel="noopener noreferrer">GitHub <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5h5v5"/><path d="M10 14 19 5"/><path d="M19 13v6H5V5h6"/></svg></a>
+      <a href="https://www.linkedin.com/in/khaled-djellali-4a16282a8/" target="_blank" rel="noopener noreferrer">LinkedIn <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5h5v5"/><path d="M10 14 19 5"/><path d="M19 13v6H5V5h6"/></svg></a>
+      <a href="mailto:khaleddjellali189@gmail.com">E-mail</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span data-current-year></span> Khaled DJELLALI. Tous droits réservés.</p>
+    <a href="#top">Retour en haut <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a>
+  </div>
+</footer>
+</body>
+</html>

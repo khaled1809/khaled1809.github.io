@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Un parcours pratique de vision classique qui part du filtrage de pixels pour aboutir à la détection et à la caractérisation d’objets dans des images.">
+  <meta name="theme-color" content="#07111f">
+  <meta name="color-scheme" content="dark light">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Vision par ordinateur — filtrage, segmentation &amp; formes — Étude de cas | Khaled DJELLALI">
+  <meta property="og:description" content="Un parcours pratique de vision classique qui part du filtrage de pixels pour aboutir à la détection et à la caractérisation d’objets dans des images.">
+  <meta property="og:image" content="../assets/images/projects/computer-vision-overview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Vision par ordinateur — filtrage, segmentation &amp; formes — Étude de cas | Khaled DJELLALI</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <script>
+    (() => {
+      document.documentElement.classList.add('js');
+      try {
+        const stored = localStorage.getItem('portfolio-theme');
+        document.documentElement.dataset.theme = stored || 'dark';
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark';
+      }
+    })();
+  </script>
+  <script src="../assets/js/site.js" defer></script>
+</head>
+<body class="project-page" id="top">
+
+<a class="skip-link" href="#main-content">Aller au contenu</a>
+<header class="site-header" data-site-header>
+  <div class="container header-inner">
+    <a class="brand" href="../index.html" aria-label="Retour à l’accueil de Khaled Djellali">
+      <span class="brand-mark" aria-hidden="true">KD</span>
+      <span class="brand-copy"><strong>Khaled Djellali</strong><small>Développeur</small></span>
+    </a>
+    <nav class="primary-nav" id="primary-navigation" aria-label="Navigation principale" data-mobile-nav>
+      <a href="../index.html#about" class="nav-link">Profil</a>
+<a href="../index.html#skills" class="nav-link">Compétences</a>
+<a href="../index.html#journey" class="nav-link">Parcours</a>
+<a href="../index.html#projects" class="nav-link is-active">Projets</a>
+      <a class="button button-small button-primary nav-contact" href="../index.html#contact">Me contacter <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button theme-toggle" type="button" data-theme-toggle aria-label="Activer le thème clair" title="Changer de thème">
+        <span class="theme-icon theme-icon-sun"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></svg></span>
+        <span class="theme-icon theme-icon-moon"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>
+      </button>
+      <button class="icon-button menu-toggle" type="button" data-menu-toggle aria-controls="primary-navigation" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="menu-icon-open"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></span>
+        <span class="menu-icon-close"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 6 12 12M18 6 6 18"/></svg></span>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main-content">
+  <section class="project-hero">
+    <div class="project-hero-grid" aria-hidden="true"></div>
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Fil d’Ariane">
+        <a href="../index.html">Accueil</a><span aria-hidden="true">/</span><a href="../index.html#projects">Projets</a><span aria-hidden="true">/</span><span aria-current="page">Vision par ordinateur — filtrage, segmentation &amp; formes</span>
+      </nav>
+      <div class="project-hero-layout">
+        <div class="project-hero-copy" data-reveal>
+          <p class="project-category">Vision par ordinateur</p>
+          <h1>Vision par ordinateur — filtrage, segmentation &amp; formes</h1>
+          <p class="project-summary">Un parcours pratique de vision classique qui part du filtrage de pixels pour aboutir à la détection et à la caractérisation d’objets dans des images.</p>
+          <div class="tag-group tag-group-large"><span class="tech-tag">Python</span><span class="tech-tag">OpenCV</span><span class="tech-tag">NumPy</span><span class="tech-tag">SciPy</span><span class="tech-tag">scikit-image</span><span class="tech-tag">Matplotlib</span><span class="tech-tag">ipywidgets</span><span class="tech-tag">Convolution</span><span class="tech-tag">Sobel</span><span class="tech-tag">Prewitt</span><span class="tech-tag">Canny</span><span class="tech-tag">Hough</span><span class="tech-tag">Harris</span><span class="tech-tag">Morphologie mathématique</span><span class="tech-tag">regionprops</span></div>
+          <div class="project-hero-actions">
+            <a class="button button-primary" href="https://github.com/khaled1809" target="_blank" rel="noopener noreferrer">Voir mon GitHub <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5h5v5"/><path d="M10 14 19 5"/><path d="M19 13v6H5V5h6"/></svg></a>
+            <a class="button button-secondary" href="../index.html#projects">Retour aux projets <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></a>
+          </div>
+        </div>
+        <figure class="project-cover" data-reveal>
+          <img src="../assets/images/projects/computer-vision-overview.png" alt="Aperçu principal du projet Vision par ordinateur — filtrage, segmentation &amp; formes" width="1400" height="850">
+        </figure>
+      </div>
+      <dl class="project-facts" data-reveal><div class="project-fact"><dt>Rôle</dt><dd>Implémentation et expérimentation dans les notebooks TP 3.1, TP 3.2 et TP 4, avec explorations complémentaires sur histogrammes, couleurs et formes</dd></div><div class="project-fact"><dt>Type</dt><dd>Portfolio de travaux pratiques — vision par ordinateur</dd></div><div class="project-fact"><dt>Architecture</dt><dd>Prétraitement → segmentation → régions → détection géométrique</dd></div><div class="project-fact"><dt>Technologies</dt><dd>Python · OpenCV · NumPy · SciPy · scikit-image · Matplotlib · ipywidgets · Convolution · Sobel · Prewitt · Canny · Hough · Harris · Morphologie mathématique · regionprops</dd></div></dl>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container case-layout">
+      <article class="case-main">
+        <div class="case-block" data-reveal>
+          <p class="case-kicker">Contexte</p>
+          <h2>Le besoin à résoudre</h2>
+          <p>Les travaux pratiques demandaient de comprendre les opérations fondamentales de la vision par ordinateur sans dépendre d’un modèle appris. Il fallait passer d’images bruitées ou peu contrastées à des contours, masques et objets mesurables, tout en observant l’effet des paramètres : taille d’un noyau, écart-type gaussien, seuil, élément structurant ou résolution de l’espace de Hough.</p>
+        </div>
+        <div class="case-block" data-reveal>
+          <p class="case-kicker">Approche</p>
+          <h2>La solution mise en place</h2>
+          <p>J’ai développé des fonctions de lissage moyenneur et gaussien, puis comparé Sobel, Prewitt, Laplacien, LoG et Canny pour faire ressortir les transitions. Le second notebook met en œuvre le seuillage fixe, adaptatif et Otsu, puis l’érosion, la dilatation, l’ouverture, la fermeture, les top-hat/black-hat, le contour morphologique, la transformée de distance et la squelettisation. Le TP 4 enchaîne Harris, segmentation de pièces, contours et regionprops pour calculer aire, boîte englobante, orientation et excentricité, avant la détection de lignes et cercles par Hough avec OpenCV et scikit-image. Des widgets interactifs m’ont permis de relier visuellement chaque réglage au résultat obtenu.</p>
+        </div>
+      </article>
+      <aside class="case-sidebar" data-reveal>
+        <div class="sidebar-card">
+          <span class="sidebar-icon"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V4h8v3M3 12h18M10 12v2h4v-2"/></svg></span>
+          <h2>Ce que ce projet démontre</h2>
+          <p>Ma capacité à analyser un problème, organiser les responsabilités et expliquer les compromis techniques au-delà du simple résultat visuel.</p>
+          <a class="text-link" href="mailto:khaleddjellali189@gmail.com?subject=Échange à propos du projet Vision par ordinateur — filtrage, segmentation &amp; formes">Échanger sur ce projet <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="case-section section-soft">
+    <div class="container">
+      <div class="case-heading" data-reveal><p class="case-kicker">Architecture</p><h2>Comment le projet est structuré</h2></div>
+      <div class="architecture-grid"><article class="architecture-item" data-reveal>
+          <span class="architecture-number">01</span>
+          <h3>Prétraitement et convolution</h3>
+          <p>Les images sont converties dans le canal adapté puis convoluées avec des noyaux moyenneurs, gaussiens ou dérivatifs. SciPy et OpenCV servent à comparer plusieurs implémentations et comportements aux bordures.</p>
+        </article><article class="architecture-item" data-reveal>
+          <span class="architecture-number">02</span>
+          <h3>Binarisation et morphologie</h3>
+          <p>Les méthodes fixe, Otsu et adaptatives produisent des masques. Érosion, dilatation, ouverture et fermeture corrigent ensuite le bruit, les trous et les connexions indésirables selon la forme de l’élément structurant.</p>
+        </article><article class="architecture-item" data-reveal>
+          <span class="architecture-number">03</span>
+          <h3>Segmentation et description de régions</h3>
+          <p>Les contours et l’étiquetage transforment le masque en objets distincts. regionprops fournit des mesures géométriques exploitables pour comparer, filtrer ou encadrer ces objets.</p>
+        </article><article class="architecture-item" data-reveal>
+          <span class="architecture-number">04</span>
+          <h3>Points, lignes et cercles</h3>
+          <p>Harris localise les coins ; Canny, Sobel et Prewitt fournissent les contours ; HoughLines, HoughLinesP et hough_circle recherchent ensuite des primitives géométriques dans un espace de paramètres.</p>
+        </article><article class="architecture-item" data-reveal>
+          <span class="architecture-number">05</span>
+          <h3>Exploration interactive</h3>
+          <p>Les contrôles ipywidgets permettent de modifier noyau, sigma, seuil ou nombre d’itérations sans réécrire le notebook, ce qui transforme les exercices en laboratoire comparatif.</p>
+        </article></div>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container">
+      <div class="case-heading" data-reveal><p class="case-kicker">Résolution de problèmes</p><h2>Difficultés rencontrées et décisions prises</h2><p>Les points ci-dessous donnent de la visibilité sur le raisonnement technique, pas seulement sur les fonctionnalités finales.</p></div>
+      <div class="challenges-grid"><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 1</span>
+          <h3>Choisir un filtre sans effacer l’information utile</h3>
+          <p>Un noyau trop petit conserve le bruit ; un noyau trop large lisse les détails et déplace parfois les contours recherchés.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>J’ai comparé plusieurs tailles et valeurs de sigma, observé les résultats côte à côte et séparé l’objectif de débruitage de celui de détection. Le choix du filtre devient ainsi une décision liée au signal utile plutôt qu’un réglage arbitraire.</p></div>
+        </article><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 2</span>
+          <h3>Binariser malgré un éclairage non uniforme</h3>
+          <p>Un seuil global fonctionne mal lorsque certaines zones sont sombres et d’autres surexposées.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>J’ai confronté le seuil manuel à Otsu et aux seuils adaptatifs moyen ou gaussien. La comparaison m’a appris à choisir la statistique locale, la taille de fenêtre et la constante en fonction de la variation d’éclairage.</p></div>
+        </article><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 3</span>
+          <h3>Séparer des objets qui se touchent</h3>
+          <p>Après binarisation, deux pièces ou symboles voisins peuvent former une seule composante, ce qui fausse le comptage et les mesures.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>J’ai combiné fermeture ou ouverture selon le défaut observé, transformée de distance et opérations morphologiques. La squelettisation et le contour morphologique ont aussi servi à contrôler la structure avant étiquetage.</p></div>
+        </article><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 4</span>
+          <h3>Régler une transformée de Hough sensible</h3>
+          <p>Le nombre de lignes ou de cercles détectés varie fortement avec les seuils, rayons, résolution et qualité du contour initial.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>J’ai traité Hough comme la fin d’un pipeline : lissage, contour propre, plage de rayons cohérente et seuil de vote contrôlé. La comparaison OpenCV/scikit-image permet de comprendre les paramètres plutôt que de chercher un unique appel magique.</p></div>
+        </article><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 5</span>
+          <h3>Passer d’une image à des mesures fiables</h3>
+          <p>Afficher un contour ne suffit pas pour exploiter une détection dans une application.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>J’ai utilisé l’étiquetage et regionprops pour produire aires, orientations, excentricités et boîtes englobantes, puis superposé ces informations à l’image afin de vérifier visuellement la cohérence des calculs.</p></div>
+        </article></div>
+    </div>
+  </section>
+
+  <section class="case-section learnings-section">
+    <div class="container learnings-layout">
+      <div class="case-heading" data-reveal><p class="case-kicker">Progression</p><h2>Ce que j’ai appris</h2><p>Des acquis réutilisables dans d’autres projets et dans un contexte professionnel.</p></div>
+      <ul class="learnings-list"><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Comprendre la convolution, les fréquences spatiales et le rôle des noyaux passe-bas ou passe-haut.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Comparer Sobel, Prewitt, Laplacien, LoG et Canny selon le bruit, l’épaisseur et la continuité des contours.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Choisir entre seuil global, Otsu et seuillage adaptatif en fonction de l’histogramme et de l’éclairage.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Construire une chaîne morphologique avec érosion, dilatation, ouverture, fermeture, top-hat et squelettisation.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Transformer des pixels segmentés en objets mesurables avec contours, étiquetage et regionprops.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Régler Harris et les transformées de Hough en reliant leurs paramètres aux propriétés géométriques recherchées.</p></li></ul>
+    </div>
+  </section>
+
+  <section class="case-section section-soft">
+    <div class="container">
+      <div class="case-heading" data-reveal><p class="case-kicker">Galerie</p><h2>Le projet en images</h2><p>Cliquez sur un visuel pour l’agrandir.</p></div>
+      <div class="project-gallery"><button class="gallery-item gallery-item-1" type="button" data-gallery-item data-src="../assets/images/projects/computer-vision-overview.png" data-alt="Visuel 1 du projet Vision par ordinateur — filtrage, segmentation &amp; formes">
+          <img src="../assets/images/projects/computer-vision-overview.png" alt="Visuel 1 du projet Vision par ordinateur — filtrage, segmentation &amp; formes" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-2" type="button" data-gallery-item data-src="../assets/images/projects/computer-vision-filtering.png" data-alt="Visuel 2 du projet Vision par ordinateur — filtrage, segmentation &amp; formes">
+          <img src="../assets/images/projects/computer-vision-filtering.png" alt="Visuel 2 du projet Vision par ordinateur — filtrage, segmentation &amp; formes" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-3" type="button" data-gallery-item data-src="../assets/images/projects/computer-vision-thresholding.png" data-alt="Visuel 3 du projet Vision par ordinateur — filtrage, segmentation &amp; formes">
+          <img src="../assets/images/projects/computer-vision-thresholding.png" alt="Visuel 3 du projet Vision par ordinateur — filtrage, segmentation &amp; formes" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-4" type="button" data-gallery-item data-src="../assets/images/projects/computer-vision-morphology.png" data-alt="Visuel 4 du projet Vision par ordinateur — filtrage, segmentation &amp; formes">
+          <img src="../assets/images/projects/computer-vision-morphology.png" alt="Visuel 4 du projet Vision par ordinateur — filtrage, segmentation &amp; formes" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-5" type="button" data-gallery-item data-src="../assets/images/projects/computer-vision-regions.png" data-alt="Visuel 5 du projet Vision par ordinateur — filtrage, segmentation &amp; formes">
+          <img src="../assets/images/projects/computer-vision-regions.png" alt="Visuel 5 du projet Vision par ordinateur — filtrage, segmentation &amp; formes" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-6" type="button" data-gallery-item data-src="../assets/images/projects/computer-vision-hough.png" data-alt="Visuel 6 du projet Vision par ordinateur — filtrage, segmentation &amp; formes">
+          <img src="../assets/images/projects/computer-vision-hough.png" alt="Visuel 6 du projet Vision par ordinateur — filtrage, segmentation &amp; formes" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button></div>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container improvement-panel" data-reveal>
+      <div><p class="case-kicker">Prise de recul</p><h2>Ce que j’améliorerais dans une prochaine version</h2></div>
+      <ol><li>Regrouper les fonctions répétées dans un petit package testé, avec validation des types, dimensions et canaux d’entrée.</li><li>Ajouter des jeux d’images annotés et mesurer précision, rappel et intersection-over-union au lieu de s’appuyer uniquement sur l’inspection visuelle.</li><li>Compléter et corriger les explorations du notebook d’évaluation sur l’égalisation HSV, le zero-crossing, Frangi et le comptage d’objets.</li><li>Étudier watershed et les contours actifs pour mieux séparer les objets fortement collés.</li><li>Comparer ces méthodes explicables à un détecteur ou segmentateur profond sur le même protocole.</li></ol>
+    </div>
+  </section>
+
+  <nav class="project-pagination container" aria-label="Navigation entre les projets">
+    <a href="visualisation-ventes-docker-graphql.html" class="pagination-link pagination-previous">
+      <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg><span><small>Projet précédent</small><strong>Visualisation de ventes — Docker, GraphQL &amp; D3.js</strong></span>
+    </a>
+    <a href="apprentissage-profond.html" class="pagination-link pagination-next">
+      <span><small>Projet suivant</small><strong>Apprentissage profond — vision, signaux &amp; PyTorch</strong></span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+    </a>
+  </nav>
+</main>
+
+<dialog class="lightbox" data-lightbox aria-label="Aperçu agrandi du visuel">
+  <button class="icon-button lightbox-close" type="button" data-lightbox-close aria-label="Fermer l’aperçu"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+  <figure><img src="" alt="" data-lightbox-image><figcaption data-lightbox-caption></figcaption></figure>
+</dialog>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand footer-brand" href="../index.html">
+        <span class="brand-mark" aria-hidden="true">KD</span>
+        <span class="brand-copy"><strong>Khaled DJELLALI</strong><small>Développeur logiciel, web, data &amp; IA</small></span>
+      </a>
+      <p class="footer-note">Portfolio statique conçu pour être rapide, accessible et directement publiable sur GitHub Pages.</p>
+    </div>
+    <div class="footer-links" aria-label="Liens de pied de page">
+      <a href="https://github.com/khaled1809" target="_blank" rel="noopener noreferrer">GitHub <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5h5v5"/><path d="M10 14 19 5"/><path d="M19 13v6H5V5h6"/></svg></a>
+      <a href="https://www.linkedin.com/in/khaled-djellali-4a16282a8/" target="_blank" rel="noopener noreferrer">LinkedIn <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5h5v5"/><path d="M10 14 19 5"/><path d="M19 13v6H5V5h6"/></svg></a>
+      <a href="mailto:khaleddjellali189@gmail.com">E-mail</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span data-current-year></span> Khaled DJELLALI. Tous droits réservés.</p>
+    <a href="#top">Retour en haut <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a>
+  </div>
+</footer>
+</body>
+</html>

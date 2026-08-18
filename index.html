@@ -1,168 +1,541 @@
-<!DOCTYPE html>
-<html lang="fr">
-
+<!doctype html>
+<html lang="fr" data-theme="dark">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Portfolio de Khaled DJELLALI, Développeur et Architecte de Systèmes d’Information. Découvrez mes projets, compétences et parcours." />
-  <meta name="theme-color" content="#0f172a" />
-  <title>Khaled DJELLALI — Portfolio Développeur</title>
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio de Khaled Djellali : projets logiciel, web, mobile, data, visualisation, machine learning, vision par ordinateur et IA.">
+  <meta name="theme-color" content="#07111f">
+  <meta name="color-scheme" content="dark light">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Khaled DJELLALI — Développeur logiciel, web, data &amp; IA">
+  <meta property="og:description" content="Portfolio de Khaled Djellali : projets logiciel, web, mobile, data, visualisation, machine learning, vision par ordinateur et IA.">
+  <meta property="og:image" content="assets/images/khaled1809.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Khaled DJELLALI — Développeur logiciel, web, data &amp; IA</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>
+    (() => {
+      document.documentElement.classList.add('js');
+      try {
+        const stored = localStorage.getItem('portfolio-theme');
+        document.documentElement.dataset.theme = stored || 'dark';
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark';
+      }
+    })();
+  </script>
+  <script src="assets/js/site.js" defer></script>
 </head>
+<body class="home-page" id="top">
 
-<body>
-
-  <!-- Scroll Progress -->
-  <div class="progress" aria-hidden="true"></div>
-
-  <!-- Navigation -->
-  <nav class="nav" aria-label="Navigation principale">
-    <div class="brand">Khaled</div>
-    <button class="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
-
-    <div class="links" role="menu">
-      <a href="#about" role="menuitem">À propos</a>
-      <a href="#skills" role="menuitem">Compétences</a>
-      <a href="#experience" role="menuitem">Formations</a>
-      <a href="#projects" role="menuitem">Projets</a>
-      <a href="#contact" role="menuitem">Contact</a>
+<a class="skip-link" href="#main-content">Aller au contenu</a>
+<header class="site-header" data-site-header>
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Retour à l’accueil de Khaled Djellali">
+      <span class="brand-mark" aria-hidden="true">KD</span>
+      <span class="brand-copy"><strong>Khaled Djellali</strong><small>Développeur</small></span>
+    </a>
+    <nav class="primary-nav" id="primary-navigation" aria-label="Navigation principale" data-mobile-nav>
+      <a href="index.html#about" class="nav-link">Profil</a>
+<a href="index.html#skills" class="nav-link">Compétences</a>
+<a href="index.html#journey" class="nav-link">Parcours</a>
+<a href="index.html#projects" class="nav-link">Projets</a>
+      <a class="button button-small button-primary nav-contact" href="index.html#contact">Me contacter <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button theme-toggle" type="button" data-theme-toggle aria-label="Activer le thème clair" title="Changer de thème">
+        <span class="theme-icon theme-icon-sun"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></svg></span>
+        <span class="theme-icon theme-icon-moon"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>
+      </button>
+      <button class="icon-button menu-toggle" type="button" data-menu-toggle aria-controls="primary-navigation" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="menu-icon-open"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></span>
+        <span class="menu-icon-close"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 6 12 12M18 6 6 18"/></svg></span>
+      </button>
     </div>
-
-    <button id="themeToggle" class="toggle" aria-label="Changer de thème" title="Thème sombre/clair">🌙</button>
-  </nav>
-
-  <!-- Hero Section -->
-  <header class="hero" id="top">
-    <canvas id="particles" class="particles" aria-hidden="true"></canvas>
-    <div class="heroContent">
-      <h1 class="title" id="name">Khaled DJELLALI</h1>
-      <p class="subtitle" id="subtitle">Développeur — Master 1 Architecte de Systèmes d’Information</p>
-      <div class="cta">
-        <a href="#projects" class="btn primary">Voir mes projets</a>
-        <a href="#contact" class="btn">Me contacter</a>
+  </div>
+</header>
+<main id="main-content">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-grid-overlay" aria-hidden="true"></div>
+    <div class="container hero-layout">
+      <div class="hero-copy" data-reveal>
+        <h1 id="hero-title"><span>Khaled DJELLALI</span>Développeur logiciel, web, data &amp; IA</h1>
+        <p class="hero-headline">Je transforme des besoins concrets en applications claires, robustes et explicables.</p>
+        <p class="hero-intro">Développeur orienté logiciel, web, données et intelligence artificielle, je construis des projets complets allant de la modélisation et des pipelines de traitement jusqu’aux API, visualisations interactives, modèles d’apprentissage et interfaces utilisateurs.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Découvrir mes projets <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="button button-secondary" href="assets/cv/CvP_Khaled.pdf" download>Télécharger mon CV <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg></a>
+        </div>
+        <div class="availability-block">
+          <span class="availability-dot" aria-hidden="true"></span>
+          <div><strong>Recherche d’une alternance en développement</strong><span>Rythme : 3 semaines en entreprise / 1 semaine à l’école</span></div>
+        </div>
+        <div class="hero-socials" aria-label="Réseaux professionnels">
+          <a href="https://github.com/khaled1809" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.4 4 5 5 0 0 0 19.3.5S18.2.1 15 1.8a13.4 13.4 0 0 0-7 0C4.8.1 3.7.5 3.7.5A5 5 0 0 0 3.6 4a5.4 5.4 0 0 0-1.4 3.7c0 5.4 3.5 6.6 6.8 7A4.8 4.8 0 0 0 8 18v4"/><path d="M8 19c-3 .9-3-1.5-4-2"/></svg> GitHub</a>
+          <a href="https://www.linkedin.com/in/khaled-djellali-4a16282a8/" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="9" width="4" height="12"/><path d="M5 3.5a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/><path d="M11 21v-7a4 4 0 0 1 8 0v7"/><path d="M11 9v12"/></svg> LinkedIn</a>
+          <span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="2.5"/></svg> Paris, France</span>
+        </div>
+      </div>
+      <div class="hero-visual" data-reveal>
+        <div class="portrait-shell">
+          <div class="portrait-backdrop" aria-hidden="true"></div>
+          <img src="assets/images/khaled1809.jpg" alt="Portrait professionnel de Khaled DJELLALI" width="374" height="412" fetchpriority="high">
+        </div>
       </div>
     </div>
-  </header>
+    <div class="container hero-metrics" data-reveal><div class="metric"><strong>17</strong><span>projets documentés</span></div><div class="metric"><strong>7</strong><span>univers techniques</span></div><div class="metric"><strong>40+</strong><span>technologies pratiquées</span></div></div>
+  </section>
 
-  <!-- Stats Section -->
-  <section class="stats-section">
-    <div class="stat-item">
-      <span class="stat-number" data-target="5">0</span>
-      <span class="stat-label">Projets Majeurs</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-number" data-target="3">0</span>
-      <span class="stat-label">Années d'Expérience</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-number" data-target="15">0</span>
-      <span class="stat-label">Technologies</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-number" data-target="100">0</span>
-      <span class="stat-label">% Passion</span>
+  <section class="section about-section" id="about">
+    <div class="container">
+      
+<div class="section-heading" data-reveal>
+  <p class="section-number">01</p>
+  <div>
+    <h2>Profil</h2>
+    <p>Un parcours construit autour de la programmation, de la conception et de projets concrets.</p>
+  </div>
+</div>
+      <div class="about-layout">
+        <div class="about-copy prose" data-reveal><p>Actuellement en Master 1 Architecte de Systèmes d’Information, spécialisation développement, à l’ETNA, je consolide mes compétences en conception logicielle, développement full-stack, data et qualité de code.</p><p>Mon parcours m’a amené à développer des applications web en PHP/MySQL, des logiciels Java structurés autour de MVC et de design patterns, une application React Native connectée à une API REST sécurisée, des projets décisionnels avec Apache Hop et Power BI, ainsi qu’une chaîne Docker MongoDB–GraphQL–D3.js. J’ai également travaillé sur la vision par ordinateur, l’apprentissage profond avec PyTorch, l’apprentissage par renforcement, l’explicabilité de modèles et l’analyse statistique avancée.</p><p>Je recherche une alternance où je pourrai contribuer à des produits utiles, progresser au contact d’une équipe expérimentée et prendre progressivement davantage de responsabilités techniques.</p></div>
+        <ol class="strength-list"><li data-reveal>
+          <span class="strength-index">01</span>
+          <div><h3>Conception avant implémentation</h3><p>Je commence par clarifier les responsabilités, les données et les flux avant d’écrire l’interface.</p></div>
+        </li><li data-reveal>
+          <span class="strength-index">02</span>
+          <div><h3>Code structuré et évolutif</h3><p>J’utilise MVC, la programmation orientée objet et des composants réutilisables pour limiter le couplage.</p></div>
+        </li><li data-reveal>
+          <span class="strength-index">03</span>
+          <div><h3>Apprentissage par l’expérimentation</h3><p>J’analyse les difficultés rencontrées, mesure les compromis et documente les améliorations possibles.</p></div>
+        </li></ol>
+      </div>
     </div>
   </section>
 
-  <main>
-    <!-- About Section -->
-    <section id="about" class="section">
-      <div class="profile-card">
-        <div class="profile-sidebar">
-          <div class="profile-image-container">
-            <img class="avatar" id="avatar" src="assets/images/khaled1809.jpg" alt="Photo de Khaled"
-              onerror="this.style.display='none'">
+  <section class="section section-soft" id="skills">
+    <div class="container">
+      
+<div class="section-heading" data-reveal>
+  <p class="section-number">02</p>
+  <div>
+    <h2>Compétences</h2>
+    <p>Une présentation par domaines d’usage plutôt que des pourcentages difficiles à justifier.</p>
+  </div>
+</div>
+      <div class="skills-list"><article class="skill-row" data-reveal>
+          <div class="skill-row-copy">
+            <h3>Logiciel &amp; programmation orientée objet</h3>
+            <p>Conception de logiciels modulaires, simulations, moteurs algorithmiques et jeux avec séparation des responsabilités.</p>
           </div>
-          <div class="profile-identity">
-            <ul class="meta">
-              <li id="age">23 ans</li>
-              <li id="loc">📍 Paris</li>
-              <li id="mail"><a href="mailto:khaleddjellali189@gmail.com">khaleddjellali189@gmail.com</a></li>
-              <li id="phone">📞 07 44 40 46 29</li>
-            </ul>
+          <div class="skill-row-tags">
+            <div class="tag-group tag-group-primary"><span class="tech-tag">Java</span><span class="tech-tag">Python</span><span class="tech-tag">C</span><span class="tech-tag">C++</span><span class="tech-tag">MVC</span><span class="tech-tag">Design patterns</span></div>
+            <div class="tag-group tag-group-secondary"><span class="tech-tag">Haskell</span><span class="tech-tag">Pascal</span><span class="tech-tag">Scala</span><span class="tech-tag">CSP</span><span class="tech-tag">AC-3</span><span class="tech-tag">Backtracking</span></div>
           </div>
-        </div>
-        <div class="profile-main-content">
-          <h3 class="subtitle">À propos de moi</h3>
-          <p class="profile-bio" id="aboutText">
-            <!-- Content will be injected by JS -->
-          </p>
-          <div class="profile-actions">
-            <a id="cvLink" class="btn primary" href="assets/cv/CvP_Khaled.pdf" download>
-              📄 Télécharger mon CV
-            </a>
+        </article><article class="skill-row" data-reveal>
+          <div class="skill-row-copy">
+            <h3>Développement web &amp; visualisation</h3>
+            <p>Interfaces responsive, API typées, applications dynamiques et visualisations interactives pilotées par les données.</p>
           </div>
-        </div>
+          <div class="skill-row-tags">
+            <div class="tag-group tag-group-primary"><span class="tech-tag">HTML5</span><span class="tech-tag">CSS3</span><span class="tech-tag">JavaScript</span><span class="tech-tag">PHP</span><span class="tech-tag">React</span><span class="tech-tag">Node.js</span><span class="tech-tag">GraphQL</span><span class="tech-tag">D3.js</span></div>
+            <div class="tag-group tag-group-secondary"><span class="tech-tag">Apollo Server</span><span class="tech-tag">TopoJSON</span><span class="tech-tag">Vue.js</span><span class="tech-tag">API REST</span><span class="tech-tag">Apache</span><span class="tech-tag">Responsive design</span></div>
+          </div>
+        </article><article class="skill-row" data-reveal>
+          <div class="skill-row-copy">
+            <h3>Data engineering &amp; business intelligence</h3>
+            <p>Modélisation relationnelle et dimensionnelle, agrégations NoSQL, pipelines ETL et rapports décisionnels.</p>
+          </div>
+          <div class="skill-row-tags">
+            <div class="tag-group tag-group-primary"><span class="tech-tag">SQL</span><span class="tech-tag">MongoDB</span><span class="tech-tag">MySQL</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">Power BI</span><span class="tech-tag">Power Query</span><span class="tech-tag">DAX</span><span class="tech-tag">Apache Hop</span></div>
+            <div class="tag-group tag-group-secondary"><span class="tech-tag">SQLite</span><span class="tech-tag">OLAP / MDX</span><span class="tech-tag">ETL</span><span class="tech-tag">Modèle en étoile</span><span class="tech-tag">RLS</span><span class="tech-tag">Performance Analyzer</span></div>
+          </div>
+        </article><article class="skill-row" data-reveal>
+          <div class="skill-row-copy">
+            <h3>Machine learning, NLP &amp; apprentissage avancé</h3>
+            <p>Extraction d’information, modèles supervisés, ensembles, renforcement et expérimentation explicable.</p>
+          </div>
+          <div class="skill-row-tags">
+            <div class="tag-group tag-group-primary"><span class="tech-tag">scikit-learn</span><span class="tech-tag">spaCy</span><span class="tech-tag">Sentence-BERT</span><span class="tech-tag">LightGBM</span><span class="tech-tag">SVM</span><span class="tech-tag">AdaBoost</span><span class="tech-tag">Gymnasium</span></div>
+            <div class="tag-group tag-group-secondary"><span class="tech-tag">Transformers</span><span class="tech-tag">WordNet</span><span class="tech-tag">TextBlob</span><span class="tech-tag">Clustering</span><span class="tech-tag">SARSA</span><span class="tech-tag">Q-learning</span><span class="tech-tag">XAI</span></div>
+          </div>
+        </article><article class="skill-row" data-reveal>
+          <div class="skill-row-copy">
+            <h3>Vision par ordinateur &amp; deep learning</h3>
+            <p>Traitement d’images classique et entraînement de réseaux avec pipelines de données reproductibles.</p>
+          </div>
+          <div class="skill-row-tags">
+            <div class="tag-group tag-group-primary"><span class="tech-tag">PyTorch</span><span class="tech-tag">PyTorch Lightning</span><span class="tech-tag">OpenCV</span><span class="tech-tag">Torchvision</span><span class="tech-tag">scikit-image</span><span class="tech-tag">ResNet18</span></div>
+            <div class="tag-group tag-group-secondary"><span class="tech-tag">CNN</span><span class="tech-tag">timm</span><span class="tech-tag">Torchmetrics</span><span class="tech-tag">TensorBoard</span><span class="tech-tag">Hough</span><span class="tech-tag">Harris</span><span class="tech-tag">Morphologie</span></div>
+          </div>
+        </article><article class="skill-row" data-reveal>
+          <div class="skill-row-copy">
+            <h3>Statistiques &amp; analyse de données</h3>
+            <p>Exploration quantitative, réduction de dimension, diagnostic de modèles et clustering implémenté et comparé.</p>
+          </div>
+          <div class="skill-row-tags">
+            <div class="tag-group tag-group-primary"><span class="tech-tag">Pandas</span><span class="tech-tag">NumPy</span><span class="tech-tag">SciPy</span><span class="tech-tag">Matplotlib</span><span class="tech-tag">ACP / PCA</span><span class="tech-tag">Régression</span></div>
+            <div class="tag-group tag-group-secondary"><span class="tech-tag">K-means</span><span class="tech-tag">EM / GMM</span><span class="tech-tag">Test du χ²</span><span class="tech-tag">KDE</span><span class="tech-tag">Mallows Cp</span><span class="tech-tag">Analyse d’influence</span></div>
+          </div>
+        </article><article class="skill-row" data-reveal>
+          <div class="skill-row-copy">
+            <h3>Outils &amp; environnement</h3>
+            <p>Travail sous Linux, versionnement, conteneurisation multi-services et validation d’API.</p>
+          </div>
+          <div class="skill-row-tags">
+            <div class="tag-group tag-group-primary"><span class="tech-tag">Git</span><span class="tech-tag">GitHub</span><span class="tech-tag">Docker</span><span class="tech-tag">Docker Compose</span><span class="tech-tag">Linux</span><span class="tech-tag">Bash</span><span class="tech-tag">Postman</span></div>
+            <div class="tag-group tag-group-secondary"><span class="tech-tag">Mongo Express</span><span class="tech-tag">Expo</span><span class="tech-tag">Java Swing</span><span class="tech-tag">Jupyter</span><span class="tech-tag">CSV</span></div>
+          </div>
+        </article></div>
+    </div>
+  </section>
+
+  <section class="section" id="journey">
+    <div class="container">
+      
+<div class="section-heading" data-reveal>
+  <p class="section-number">03</p>
+  <div>
+    <h2>Parcours</h2>
+    <p>Une progression universitaire entre fondamentaux, génie logiciel et architecture applicative.</p>
+  </div>
+</div>
+      <ol class="timeline"><li class="timeline-entry" data-reveal>
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-date">Depuis octobre 2025</div>
+          <article class="timeline-card">
+            <h3>Master Architecte de Systèmes d’Information — Développement applicatif</h3>
+            <p class="timeline-place">ETNA — École des Technologies Numériques Avancées</p>
+            <ul><li>Architecture logicielle et développement d’applications</li><li>Formation en alternance</li><li>Approfondissement des pratiques de conception et de qualité</li></ul>
+          </article>
+        </li><li class="timeline-entry" data-reveal>
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-date">2023 — 2025</div>
+          <article class="timeline-card">
+            <h3>Licence Informatique Générale</h3>
+            <p class="timeline-place">Université de Caen Normandie</p>
+            <ul><li>Algorithmique et programmation</li><li>Bases de données</li><li>Génie logiciel et systèmes</li></ul>
+          </article>
+        </li><li class="timeline-entry" data-reveal>
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-date">2020 — 2023</div>
+          <article class="timeline-card">
+            <h3>Licence Informatique</h3>
+            <p class="timeline-place">Université de Béjaia</p>
+            <ul><li>Fondamentaux de l’informatique</li><li>Structures de données</li><li>Programmation impérative et orientée objet</li></ul>
+          </article>
+        </li></ol>
+    </div>
+  </section>
+
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="projects-heading-row">
+        
+<div class="section-heading" data-reveal>
+  <p class="section-number">04</p>
+  <div>
+    <h2>Projets sélectionnés</h2>
+    <p>Chaque projet est présenté comme une étude de cas : objectif, architecture, difficultés et apprentissages.</p>
+  </div>
+</div>
+        <div class="project-filters" aria-label="Filtrer les projets"><button type="button" class="filter-button is-active" data-project-filter="all" aria-pressed="true">Tous</button><button type="button" class="filter-button" data-project-filter="ai" aria-pressed="false">IA &amp; ML</button><button type="button" class="filter-button" data-project-filter="web" aria-pressed="false">Web</button><button type="button" class="filter-button" data-project-filter="software" aria-pressed="false">Logiciel</button><button type="button" class="filter-button" data-project-filter="data" aria-pressed="false">Data</button><button type="button" class="filter-button" data-project-filter="mobile" aria-pressed="false">Mobile</button></div>
       </div>
+      <p class="filter-status" data-filter-status aria-live="polite">17 projets affichés</p>
+      <div class="projects-grid" data-project-grid><article class="project-card" data-project-card data-category="data" data-reveal>
+          <a class="project-media" href="projects/visualisation-ventes-docker-graphql.html" aria-label="Voir l’étude de cas : Visualisation de ventes — Docker, GraphQL &amp; D3.js">
+            <img src="assets/images/projects/sales-dataviz-overview.png" alt="Aperçu du projet Visualisation de ventes — Docker, GraphQL &amp; D3.js" loading="lazy" width="1200" height="720">
+            <span class="project-media-action" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <div class="project-card-body">
+            <div class="project-card-meta"><span>Data visualisation &amp; architecture web</span><span>MongoDB → Apollo GraphQL → D3.js / TopoJSON</span></div>
+            <h3><a href="projects/visualisation-ventes-docker-graphql.html">Visualisation de ventes — Docker, GraphQL &amp; D3.js</a></h3>
+            <p>Application multi-conteneurs qui agrège des ventes dans MongoDB, les expose avec Apollo GraphQL et les transforme en KPI, graphiques et carte de France interactive avec D3.js.</p>
+            <div class="tag-group"><span class="tech-tag">Docker</span><span class="tech-tag">Docker Compose</span><span class="tech-tag">MongoDB</span><span class="tech-tag">Mongo Express</span></div>
+            <div class="project-card-actions">
+              <a class="text-link" href="projects/visualisation-ventes-docker-graphql.html">Étude de cas <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a class="icon-text-link" href="https://github.com/khaled1809" target="_blank" rel="noopener noreferrer" aria-label="Ressource GitHub associée à Visualisation de ventes — Docker, GraphQL &amp; D3.js"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.4 4 5 5 0 0 0 19.3.5S18.2.1 15 1.8a13.4 13.4 0 0 0-7 0C4.8.1 3.7.5 3.7.5A5 5 0 0 0 3.6 4a5.4 5.4 0 0 0-1.4 3.7c0 5.4 3.5 6.6 6.8 7A4.8 4.8 0 0 0 8 18v4"/><path d="M8 19c-3 .9-3-1.5-4-2"/></svg> GitHub</a>
+            </div>
+          </div>
+        </article><article class="project-card" data-project-card data-category="ai" data-reveal>
+          <a class="project-media" href="projects/vision-par-ordinateur.html" aria-label="Voir l’étude de cas : Vision par ordinateur — filtrage, segmentation &amp; formes">
+            <img src="assets/images/projects/computer-vision-overview.png" alt="Aperçu du projet Vision par ordinateur — filtrage, segmentation &amp; formes" loading="lazy" width="1200" height="720">
+            <span class="project-media-action" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <div class="project-card-body">
+            <div class="project-card-meta"><span>Vision par ordinateur</span><span>Prétraitement → segmentation → régions → détection géométrique</span></div>
+            <h3><a href="projects/vision-par-ordinateur.html">Vision par ordinateur — filtrage, segmentation &amp; formes</a></h3>
+            <p>Série de notebooks OpenCV consacrés aux convolutions, seuillages, morphologie, segmentation, mesures de régions et transformées de Hough.</p>
+            <div class="tag-group"><span class="tech-tag">Python</span><span class="tech-tag">OpenCV</span><span class="tech-tag">NumPy</span><span class="tech-tag">SciPy</span></div>
+            <div class="project-card-actions">
+              <a class="text-link" href="projects/vision-par-ordinateur.html">Étude de cas <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a class="icon-text-link" href="https://github.com/khaled1809" target="_blank" rel="noopener noreferrer" aria-label="Ressource GitHub associée à Vision par ordinateur — filtrage, segmentation &amp; formes"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.4 4 5 5 0 0 0 19.3.5S18.2.1 15 1.8a13.4 13.4 0 0 0-7 0C4.8.1 3.7.5 3.7.5A5 5 0 0 0 3.6 4a5.4 5.4 0 0 0-1.4 3.7c0 5.4 3.5 6.6 6.8 7A4.8 4.8 0 0 0 8 18v4"/><path d="M8 19c-3 .9-3-1.5-4-2"/></svg> GitHub</a>
+            </div>
+          </div>
+        </article><article class="project-card" data-project-card data-category="ai" data-reveal>
+          <a class="project-media" href="projects/apprentissage-profond.html" aria-label="Voir l’étude de cas : Apprentissage profond — vision, signaux &amp; PyTorch">
+            <img src="assets/images/projects/deep-learning-overview.png" alt="Aperçu du projet Apprentissage profond — vision, signaux &amp; PyTorch" loading="lazy" width="1200" height="720">
+            <span class="project-media-action" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <div class="project-card-body">
+            <div class="project-card-meta"><span>Deep learning</span><span>DataModule → modèle → entraînement → métriques / checkpoint</span></div>
+            <h3><a href="projects/apprentissage-profond.html">Apprentissage profond — vision, signaux &amp; PyTorch</a></h3>
+            <p>Parcours PyTorch allant des tenseurs et ondelettes de Haar à la classification GTSRB/CIFAR-10, avec Lightning, ResNet18, métriques et pipelines de séries temporelles.</p>
+            <div class="tag-group"><span class="tech-tag">Python</span><span class="tech-tag">PyTorch</span><span class="tech-tag">PyTorch Lightning</span><span class="tech-tag">Torchvision</span></div>
+            <div class="project-card-actions">
+              <a class="text-link" href="projects/apprentissage-profond.html">Étude de cas <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a class="icon-text-link" href="https://github.com/khaled1809" target="_blank" rel="noopener noreferrer" aria-label="Ressource GitHub associée à Apprentissage profond — vision, signaux &amp; PyTorch"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.4 4 5 5 0 0 0 19.3.5S18.2.1 15 1.8a13.4 13.4 0 0 0-7 0C4.8.1 3.7.5 3.7.5A5 5 0 0 0 3.6 4a5.4 5.4 0 0 0-1.4 3.7c0 5.4 3.5 6.6 6.8 7A4.8 4.8 0 0 0 8 18v4"/><path d="M8 19c-3 .9-3-1.5-4-2"/></svg> GitHub</a>
+            </div>
+          </div>
+        </article><article class="project-card" data-project-card data-category="ai" data-reveal>
+          <a class="project-media" href="projects/apprentissage-avance.html" aria-label="Voir l’étude de cas : Apprentissage avancé — ensembles, RL &amp; XAI">
+            <img src="assets/images/projects/advanced-learning-overview.png" alt="Aperçu du projet Apprentissage avancé — ensembles, RL &amp; XAI" loading="lazy" width="1200" height="720">
+            <span class="project-media-action" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <div class="project-card-body">
+            <div class="project-card-meta"><span>Machine learning avancé</span><span>Supervisé + ensembles + renforcement + explicabilité</span></div>
+            <h3><a href="projects/apprentissage-avance.html">Apprentissage avancé — ensembles, RL &amp; XAI</a></h3>
+            <p>Travaux pratiques sur AdaBoost, SVM/PCA, SARSA, Q-learning, approximation PyTorch et méthodes d’explicabilité d’images.</p>
+            <div class="tag-group"><span class="tech-tag">Python</span><span class="tech-tag">NumPy</span><span class="tech-tag">SciPy</span><span class="tech-tag">scikit-learn</span></div>
+            <div class="project-card-actions">
+              <a class="text-link" href="projects/apprentissage-avance.html">Étude de cas <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a class="icon-text-link" href="https://github.com/khaled1809" target="_blank" rel="noopener noreferrer" aria-label="Ressource GitHub associée à Apprentissage avancé — ensembles, RL &amp; XAI"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.4 4 5 5 0 0 0 19.3.5S18.2.1 15 1.8a13.4 13.4 0 0 0-7 0C4.8.1 3.7.5 3.7.5A5 5 0 0 0 3.6 4a5.4 5.4 0 0 0-1.4 3.7c0 5.4 3.5 6.6 6.8 7A4.8 4.8 0 0 0 8 18v4"/><path d="M8 19c-3 .9-3-1.5-4-2"/></svg> GitHub</a>
+            </div>
+          </div>
+        </article><article class="project-card" data-project-card data-category="data" data-reveal>
+          <a class="project-media" href="projects/analyse-donnees-statistiques.html" aria-label="Voir l’étude de cas : Analyse de données — statistiques, ACP &amp; clustering">
+            <img src="assets/images/projects/data-analysis-overview.png" alt="Aperçu du projet Analyse de données — statistiques, ACP &amp; clustering" loading="lazy" width="1200" height="720">
+            <span class="project-media-action" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <div class="project-card-body">
+            <div class="project-card-meta"><span>Data science &amp; statistiques</span><span>Décrire → tester → réduire → modéliser → regrouper</span></div>
+            <h3><a href="projects/analyse-donnees-statistiques.html">Analyse de données — statistiques, ACP &amp; clustering</a></h3>
+            <p>Huit notebooks couvrant statistiques descriptives, χ², ACP, régression et influence, sélection Mallows Cp, K-means et EM/GMM implémentés manuellement.</p>
+            <div class="tag-group"><span class="tech-tag">Python</span><span class="tech-tag">Pandas</span><span class="tech-tag">NumPy</span><span class="tech-tag">SciPy</span></div>
+            <div class="project-card-actions">
+              <a class="text-link" href="projects/analyse-donnees-statistiques.html">Étude de cas <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a class="icon-text-link" href="https://github.com/khaled1809" target="_blank" rel="noopener noreferrer" aria-label="Ressource GitHub associée à Analyse de données — statistiques, ACP &amp; clustering"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.4 4 5 5 0 0 0 19.3.5S18.2.1 15 1.8a13.4 13.4 0 0 0-7 0C4.8.1 3.7.5 3.7.5A5 5 0 0 0 3.6 4a5.4 5.4 0 0 0-1.4 3.7c0 5.4 3.5 6.6 6.8 7A4.8 4.8 0 0 0 8 18v4"/><path d="M8 19c-3 .9-3-1.5-4-2"/></svg> GitHub</a>
+            </div>
+          </div>
+        </article><article class="project-card" data-project-card data-category="ai" data-reveal>
+          <a class="project-media" href="projects/semantic-dna-provenance.html" aria-label="Voir l’étude de cas : Semantic DNA — Analyse de provenance documentaire">
+            <img src="assets/images/projects/semantic-dna-overview.png" alt="Aperçu du projet Semantic DNA — Analyse de provenance documentaire" loading="lazy" width="1200" height="720">
+            <span class="project-media-action" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <div class="project-card-body">
+            <div class="project-card-meta"><span>IA &amp; NLP</span><span>NLP enrichi + similarité + clustering + ranking</span></div>
+            <h3><a href="projects/semantic-dna-provenance.html">Semantic DNA — Analyse de provenance documentaire</a></h3>
+            <p>Pipeline NLP et machine learning capable de comparer des documents, regrouper les versions liées, classer la source probable et expliquer les transformations détectées.</p>
+            <div class="tag-group"><span class="tech-tag">Python</span><span class="tech-tag">spaCy</span><span class="tech-tag">Sentence-BERT</span><span class="tech-tag">scikit-learn</span></div>
+            <div class="project-card-actions">
+              <a class="text-link" href="projects/semantic-dna-provenance.html">Étude de cas <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a class="icon-text-link" href="https://github.com/khaled1809" target="_blank" rel="noopener noreferrer" aria-label="Ressource GitHub associée à Semantic DNA — Analyse de provenance documentaire"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.4 4 5 5 0 0 0 19.3.5S18.2.1 15 1.8a13.4 13.4 0 0 0-7 0C4.8.1 3.7.5 3.7.5A5 5 0 0 0 3.6 4a5.4 5.4 0 0 0-1.4 3.7c0 5.4 3.5 6.6 6.8 7A4.8 4.8 0 0 0 8 18v4"/><path d="M8 19c-3 .9-3-1.5-4-2"/></svg> GitHub</a>
+            </div>
+          </div>
+        </article><article class="project-card" data-project-card data-category="ai" data-reveal>
+          <a class="project-media" href="projects/reecriture-oulipo-nlp.html" aria-label="Voir l’étude de cas : Réécriture créative sous contraintes OULIPO">
+            <img src="assets/images/projects/oulipo-overview.png" alt="Aperçu du projet Réécriture créative sous contraintes OULIPO" loading="lazy" width="1200" height="720">
+            <span class="project-media-action" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <div class="project-card-body">
+            <div class="project-card-meta"><span>IA &amp; NLP</span><span>spaCy → WordNet → embeddings → contraintes</span></div>
+            <h3><a href="projects/reecriture-oulipo-nlp.html">Réécriture créative sous contraintes OULIPO</a></h3>
+            <p>Application de TAL français combinant spaCy, WordNet et embeddings pour transformer un texte selon des contraintes littéraires tout en préservant sa structure.</p>
+            <div class="tag-group"><span class="tech-tag">Python</span><span class="tech-tag">spaCy</span><span class="tech-tag">WordNet</span><span class="tech-tag">NLTK</span></div>
+            <div class="project-card-actions">
+              <a class="text-link" href="projects/reecriture-oulipo-nlp.html">Étude de cas <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a class="icon-text-link" href="https://github.com/khaled1809" target="_blank" rel="noopener noreferrer" aria-label="Ressource GitHub associée à Réécriture créative sous contraintes OULIPO"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.4 4 5 5 0 0 0 19.3.5S18.2.1 15 1.8a13.4 13.4 0 0 0-7 0C4.8.1 3.7.5 3.7.5A5 5 0 0 0 3.6 4a5.4 5.4 0 0 0-1.4 3.7c0 5.4 3.5 6.6 6.8 7A4.8 4.8 0 0 0 8 18v4"/><path d="M8 19c-3 .9-3-1.5-4-2"/></svg> GitHub</a>
+            </div>
+          </div>
+        </article><article class="project-card" data-project-card data-category="ai" data-reveal>
+          <a class="project-media" href="projects/moteur-deduction-csp.html" aria-label="Voir l’étude de cas : Moteur de déduction par contraintes">
+            <img src="assets/images/projects/csp-overview.png" alt="Aperçu du projet Moteur de déduction par contraintes" loading="lazy" width="1200" height="720">
+            <span class="project-media-action" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <div class="project-card-body">
+            <div class="project-card-meta"><span>IA &amp; algorithmique</span><span>CSP dynamique + AC-3 + score de risque</span></div>
+            <h3><a href="projects/moteur-deduction-csp.html">Moteur de déduction par contraintes</a></h3>
+            <p>Moteur Python qui formalise un jeu de nombres secrets comme un CSP dynamique, propage les contraintes et recommande les questions les plus informatives avec un score de risque.</p>
+            <div class="tag-group"><span class="tech-tag">Python</span><span class="tech-tag">CSP</span><span class="tech-tag">AC-3</span><span class="tech-tag">Backtracking</span></div>
+            <div class="project-card-actions">
+              <a class="text-link" href="projects/moteur-deduction-csp.html">Étude de cas <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a class="icon-text-link" href="https://github.com/khaled1809" target="_blank" rel="noopener noreferrer" aria-label="Ressource GitHub associée à Moteur de déduction par contraintes"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.4 4 5 5 0 0 0 19.3.5S18.2.1 15 1.8a13.4 13.4 0 0 0-7 0C4.8.1 3.7.5 3.7.5A5 5 0 0 0 3.6 4a5.4 5.4 0 0 0-1.4 3.7c0 5.4 3.5 6.6 6.8 7A4.8 4.8 0 0 0 8 18v4"/><path d="M8 19c-3 .9-3-1.5-4-2"/></svg> GitHub</a>
+            </div>
+          </div>
+        </article><article class="project-card" data-project-card data-category="mobile" data-reveal>
+          <a class="project-media" href="projects/application-mobile-taches.html" aria-label="Voir l’étude de cas : Application mobile de gestion des tâches">
+            <img src="assets/images/projects/mobile10.png" alt="Aperçu du projet Application mobile de gestion des tâches" loading="lazy" width="1200" height="720">
+            <span class="project-media-action" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <div class="project-card-body">
+            <div class="project-card-meta"><span>Mobile</span><span>Composants + Context API + couche API</span></div>
+            <h3><a href="projects/application-mobile-taches.html">Application mobile de gestion des tâches</a></h3>
+            <p>Application React Native connectée à une API REST sécurisée pour organiser des listes, suivre l’avancement et gérer une session utilisateur.</p>
+            <div class="tag-group"><span class="tech-tag">React Native</span><span class="tech-tag">Expo</span><span class="tech-tag">API REST</span><span class="tech-tag">JWT</span></div>
+            <div class="project-card-actions">
+              <a class="text-link" href="projects/application-mobile-taches.html">Étude de cas <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a class="icon-text-link" href="https://github.com/khaled1809/MobileAppli" target="_blank" rel="noopener noreferrer" aria-label="Ressource GitHub associée à Application mobile de gestion des tâches"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.4 4 5 5 0 0 0 19.3.5S18.2.1 15 1.8a13.4 13.4 0 0 0-7 0C4.8.1 3.7.5 3.7.5A5 5 0 0 0 3.6 4a5.4 5.4 0 0 0-1.4 3.7c0 5.4 3.5 6.6 6.8 7A4.8 4.8 0 0 0 8 18v4"/><path d="M8 19c-3 .9-3-1.5-4-2"/></svg> Code</a>
+            </div>
+          </div>
+        </article><article class="project-card" data-project-card data-category="software" data-reveal>
+          <a class="project-media" href="projects/jeu-strategie-java.html" aria-label="Voir l’étude de cas : Jeu de stratégie au tour par tour">
+            <img src="assets/images/projects/strat4.png" alt="Aperçu du projet Jeu de stratégie au tour par tour" loading="lazy" width="1200" height="720">
+            <span class="project-media-action" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <div class="project-card-body">
+            <div class="project-card-meta"><span>Logiciel Java</span><span>MVC + Strategy + Command + State</span></div>
+            <h3><a href="projects/jeu-strategie-java.html">Jeu de stratégie au tour par tour</a></h3>
+            <p>Jeu Java avec génération procédurale de labyrinthe, comportements d’IA et architecture fondée sur plusieurs design patterns.</p>
+            <div class="tag-group"><span class="tech-tag">Java</span><span class="tech-tag">Java Swing</span><span class="tech-tag">POO</span><span class="tech-tag">MVC</span></div>
+            <div class="project-card-actions">
+              <a class="text-link" href="projects/jeu-strategie-java.html">Étude de cas <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a class="icon-text-link" href="https://github.com/khaled1809/JeuStrategie" target="_blank" rel="noopener noreferrer" aria-label="Ressource GitHub associée à Jeu de stratégie au tour par tour"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.4 4 5 5 0 0 0 19.3.5S18.2.1 15 1.8a13.4 13.4 0 0 0-7 0C4.8.1 3.7.5 3.7.5A5 5 0 0 0 3.6 4a5.4 5.4 0 0 0-1.4 3.7c0 5.4 3.5 6.6 6.8 7A4.8 4.8 0 0 0 8 18v4"/><path d="M8 19c-3 .9-3-1.5-4-2"/></svg> Code</a>
+            </div>
+          </div>
+        </article><article class="project-card" data-project-card data-category="data" data-reveal>
+          <a class="project-media" href="projects/analyse-algorithmes-tri.html" aria-label="Voir l’étude de cas : Analyse et visualisation d’algorithmes de tri">
+            <img src="assets/images/projects/visu2.png" alt="Aperçu du projet Analyse et visualisation d’algorithmes de tri" loading="lazy" width="1200" height="720">
+            <span class="project-media-action" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <div class="project-card-body">
+            <div class="project-card-meta"><span>Data &amp; algorithmique</span><span>Génération → mesure → export → visualisation</span></div>
+            <h3><a href="projects/analyse-algorithmes-tri.html">Analyse et visualisation d’algorithmes de tri</a></h3>
+            <p>Banc d’essai Python comparant cinq tris selon la taille, le désordre, les comparaisons, les accès mémoire et la distribution des données.</p>
+            <div class="tag-group"><span class="tech-tag">Python</span><span class="tech-tag">NumPy</span><span class="tech-tag">Pandas</span><span class="tech-tag">Matplotlib</span></div>
+            <div class="project-card-actions">
+              <a class="text-link" href="projects/analyse-algorithmes-tri.html">Étude de cas <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a class="icon-text-link" href="https://github.com/khaled1809/AlgoTri" target="_blank" rel="noopener noreferrer" aria-label="Ressource GitHub associée à Analyse et visualisation d’algorithmes de tri"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.4 4 5 5 0 0 0 19.3.5S18.2.1 15 1.8a13.4 13.4 0 0 0-7 0C4.8.1 3.7.5 3.7.5A5 5 0 0 0 3.6 4a5.4 5.4 0 0 0-1.4 3.7c0 5.4 3.5 6.6 6.8 7A4.8 4.8 0 0 0 8 18v4"/><path d="M8 19c-3 .9-3-1.5-4-2"/></svg> Code</a>
+            </div>
+          </div>
+        </article><article class="project-card" data-project-card data-category="data" data-reveal>
+          <a class="project-media" href="projects/entrepot-donnees-apache-hop-olap.html" aria-label="Voir l’étude de cas : Entrepôt de données et analyse OLAP">
+            <img src="assets/images/projects/warehouse-overview.png" alt="Aperçu du projet Entrepôt de données et analyse OLAP" loading="lazy" width="1200" height="720">
+            <span class="project-media-action" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <div class="project-card-body">
+            <div class="project-card-meta"><span>Data engineering &amp; BI</span><span>Schéma en étoile + ETL + OLAP</span></div>
+            <h3><a href="projects/entrepot-donnees-apache-hop-olap.html">Entrepôt de données et analyse OLAP</a></h3>
+            <p>Conception d’un entrepôt en étoile, alimentation avec Apache Hop et requêtes MDX pour analyser les prestations par client, temps, géographie et catégorie.</p>
+            <div class="tag-group"><span class="tech-tag">SQL</span><span class="tech-tag">SQLite</span><span class="tech-tag">Apache Hop</span><span class="tech-tag">ETL</span></div>
+            <div class="project-card-actions">
+              <a class="text-link" href="projects/entrepot-donnees-apache-hop-olap.html">Étude de cas <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a class="icon-text-link" href="https://github.com/khaled1809" target="_blank" rel="noopener noreferrer" aria-label="Ressource GitHub associée à Entrepôt de données et analyse OLAP"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.4 4 5 5 0 0 0 19.3.5S18.2.1 15 1.8a13.4 13.4 0 0 0-7 0C4.8.1 3.7.5 3.7.5A5 5 0 0 0 3.6 4a5.4 5.4 0 0 0-1.4 3.7c0 5.4 3.5 6.6 6.8 7A4.8 4.8 0 0 0 8 18v4"/><path d="M8 19c-3 .9-3-1.5-4-2"/></svg> GitHub</a>
+            </div>
+          </div>
+        </article><article class="project-card" data-project-card data-category="data" data-reveal>
+          <a class="project-media" href="projects/streamscope-power-bi.html" aria-label="Voir l’étude de cas : StreamScope — Analyse d’engagement streaming">
+            <img src="assets/images/projects/streamscope-overview.png" alt="Aperçu du projet StreamScope — Analyse d’engagement streaming" loading="lazy" width="1200" height="720">
+            <span class="project-media-action" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <div class="project-card-body">
+            <div class="project-card-meta"><span>Business intelligence</span><span>Power Query + modèle en étoile + DAX</span></div>
+            <h3><a href="projects/streamscope-power-bi.html">StreamScope — Analyse d’engagement streaming</a></h3>
+            <p>Rapport Power BI interactif pour suivre sessions, utilisateurs actifs, heures visionnées et complétion, avec comparaison 2024–2025 et sécurité RLS par pays.</p>
+            <div class="tag-group"><span class="tech-tag">Power BI</span><span class="tech-tag">Power Query</span><span class="tech-tag">DAX</span><span class="tech-tag">Modèle en étoile</span></div>
+            <div class="project-card-actions">
+              <a class="text-link" href="projects/streamscope-power-bi.html">Étude de cas <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a class="icon-text-link" href="https://github.com/khaled1809" target="_blank" rel="noopener noreferrer" aria-label="Ressource GitHub associée à StreamScope — Analyse d’engagement streaming"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.4 4 5 5 0 0 0 19.3.5S18.2.1 15 1.8a13.4 13.4 0 0 0-7 0C4.8.1 3.7.5 3.7.5A5 5 0 0 0 3.6 4a5.4 5.4 0 0 0-1.4 3.7c0 5.4 3.5 6.6 6.8 7A4.8 4.8 0 0 0 8 18v4"/><path d="M8 19c-3 .9-3-1.5-4-2"/></svg> GitHub</a>
+            </div>
+          </div>
+        </article><article class="project-card" data-project-card data-category="web" data-reveal>
+          <a class="project-media" href="projects/pays-du-monde.html" aria-label="Voir l’étude de cas : Gestion des pays du monde">
+            <img src="assets/images/projects/pays1.png" alt="Aperçu du projet Gestion des pays du monde" loading="lazy" width="1200" height="720">
+            <span class="project-media-action" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <div class="project-card-body">
+            <div class="project-card-meta"><span>Web full-stack</span><span>PHP serveur + MySQL + vues HTML/CSS</span></div>
+            <h3><a href="projects/pays-du-monde.html">Gestion des pays du monde</a></h3>
+            <p>Application PHP/MySQL avec recherche, tri, fiches détaillées et opérations CRUD sur une base de pays.</p>
+            <div class="tag-group"><span class="tech-tag">PHP</span><span class="tech-tag">MySQL</span><span class="tech-tag">SQL</span><span class="tech-tag">HTML5</span></div>
+            <div class="project-card-actions">
+              <a class="text-link" href="projects/pays-du-monde.html">Étude de cas <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a class="icon-text-link" href="https://github.com/khaled1809/PaysDuMonde" target="_blank" rel="noopener noreferrer" aria-label="Ressource GitHub associée à Gestion des pays du monde"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.4 4 5 5 0 0 0 19.3.5S18.2.1 15 1.8a13.4 13.4 0 0 0-7 0C4.8.1 3.7.5 3.7.5A5 5 0 0 0 3.6 4a5.4 5.4 0 0 0-1.4 3.7c0 5.4 3.5 6.6 6.8 7A4.8 4.8 0 0 0 8 18v4"/><path d="M8 19c-3 .9-3-1.5-4-2"/></svg> Code</a>
+            </div>
+          </div>
+        </article><article class="project-card" data-project-card data-category="web" data-reveal>
+          <a class="project-media" href="projects/site-animaux-mvc.html" aria-label="Voir l’étude de cas : Gestion d’animaux avec architecture MVC">
+            <img src="assets/images/projects/animal4.png" alt="Aperçu du projet Gestion d’animaux avec architecture MVC" loading="lazy" width="1200" height="720">
+            <span class="project-media-action" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <div class="project-card-body">
+            <div class="project-card-meta"><span>Web &amp; architecture</span><span>Model — View — Controller</span></div>
+            <h3><a href="projects/site-animaux-mvc.html">Gestion d’animaux avec architecture MVC</a></h3>
+            <p>Application PHP orientée objet qui sépare modèle, vues et contrôleurs pour gérer des fiches d’animaux et leurs images.</p>
+            <div class="tag-group"><span class="tech-tag">PHP</span><span class="tech-tag">POO</span><span class="tech-tag">MVC</span><span class="tech-tag">MySQL</span></div>
+            <div class="project-card-actions">
+              <a class="text-link" href="projects/site-animaux-mvc.html">Étude de cas <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a class="icon-text-link" href="https://github.com/khaled1809/Animaux" target="_blank" rel="noopener noreferrer" aria-label="Ressource GitHub associée à Gestion d’animaux avec architecture MVC"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.4 4 5 5 0 0 0 19.3.5S18.2.1 15 1.8a13.4 13.4 0 0 0-7 0C4.8.1 3.7.5 3.7.5A5 5 0 0 0 3.6 4a5.4 5.4 0 0 0-1.4 3.7c0 5.4 3.5 6.6 6.8 7A4.8 4.8 0 0 0 8 18v4"/><path d="M8 19c-3 .9-3-1.5-4-2"/></svg> Code</a>
+            </div>
+          </div>
+        </article><article class="project-card" data-project-card data-category="software" data-reveal>
+          <a class="project-media" href="projects/jeu-de-la-vie.html" aria-label="Voir l’étude de cas : Simulation du Jeu de la Vie">
+            <img src="assets/images/projects/life1.png" alt="Aperçu du projet Simulation du Jeu de la Vie" loading="lazy" width="1200" height="720">
+            <span class="project-media-action" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <div class="project-card-body">
+            <div class="project-card-meta"><span>Simulation Java</span><span>MVC + Observer + moteur de générations</span></div>
+            <h3><a href="projects/jeu-de-la-vie.html">Simulation du Jeu de la Vie</a></h3>
+            <p>Automate cellulaire en Java avec grille configurable, contrôle de la simulation et mise à jour graphique en temps réel.</p>
+            <div class="tag-group"><span class="tech-tag">Java</span><span class="tech-tag">Java Swing</span><span class="tech-tag">MVC</span><span class="tech-tag">Observer</span></div>
+            <div class="project-card-actions">
+              <a class="text-link" href="projects/jeu-de-la-vie.html">Étude de cas <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a class="icon-text-link" href="https://github.com/khaled1809/GameOfLife" target="_blank" rel="noopener noreferrer" aria-label="Ressource GitHub associée à Simulation du Jeu de la Vie"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.4 4 5 5 0 0 0 19.3.5S18.2.1 15 1.8a13.4 13.4 0 0 0-7 0C4.8.1 3.7.5 3.7.5A5 5 0 0 0 3.6 4a5.4 5.4 0 0 0-1.4 3.7c0 5.4 3.5 6.6 6.8 7A4.8 4.8 0 0 0 8 18v4"/><path d="M8 19c-3 .9-3-1.5-4-2"/></svg> Code</a>
+            </div>
+          </div>
+        </article><article class="project-card" data-project-card data-category="software" data-reveal>
+          <a class="project-media" href="projects/puzzle-coulissant-java.html" aria-label="Voir l’étude de cas : Puzzle coulissant en Java">
+            <img src="assets/images/projects/puzle2.png" alt="Aperçu du projet Puzzle coulissant en Java" loading="lazy" width="1200" height="720">
+            <span class="project-media-action" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <div class="project-card-body">
+            <div class="project-card-meta"><span>Jeu Java</span><span>MVC + vues Swing et terminal</span></div>
+            <h3><a href="projects/puzzle-coulissant-java.html">Puzzle coulissant en Java</a></h3>
+            <p>Jeu de taquin avec modèle partagé entre interface Swing et terminal, mélange toujours résoluble et compteur de mouvements.</p>
+            <div class="tag-group"><span class="tech-tag">Java</span><span class="tech-tag">Java Swing</span><span class="tech-tag">MVC</span><span class="tech-tag">Événements</span></div>
+            <div class="project-card-actions">
+              <a class="text-link" href="projects/puzzle-coulissant-java.html">Étude de cas <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a class="icon-text-link" href="https://github.com/khaled1809/JeuPuzzle" target="_blank" rel="noopener noreferrer" aria-label="Ressource GitHub associée à Puzzle coulissant en Java"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.4 4 5 5 0 0 0 19.3.5S18.2.1 15 1.8a13.4 13.4 0 0 0-7 0C4.8.1 3.7.5 3.7.5A5 5 0 0 0 3.6 4a5.4 5.4 0 0 0-1.4 3.7c0 5.4 3.5 6.6 6.8 7A4.8 4.8 0 0 0 8 18v4"/><path d="M8 19c-3 .9-3-1.5-4-2"/></svg> Code</a>
+            </div>
+          </div>
+        </article></div>
+    </div>
+  </section>
 
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-      <h2>Compétences</h2>
-      <div id="skillsGrid" class="skills-grid"></div>
-    </section>
-
-    <!-- Experience / Formation Section -->
-    <section id="experience" class="section">
-      <h2>Formations</h2>
-      <ul id="timeline" class="timeline"></ul>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-      <h2>Projets Réalisés</h2>
-
-      <div class="filters-container">
-        <button class="filter-btn active" data-filter="all">Tous</button>
-        <button class="filter-btn" data-filter="web">Web</button>
-        <button class="filter-btn" data-filter="software">Logiciel</button>
-        <button class="filter-btn" data-filter="data">Data & IA</button>
-        <button class="filter-btn" data-filter="mobile">Mobile</button>
+  <section class="section contact-section" id="contact">
+    <div class="container contact-panel" data-reveal>
+      <div class="contact-copy">
+        <p class="section-number">05</p>
+        <h2>Construisons quelque chose d’utile.</h2>
+        <p>Je suis disponible pour échanger à propos d’une alternance, d’une mission de développement ou de mes projets.</p>
       </div>
-
-      <div id="projectsList" class="projects-grid"></div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-      <h2>Me Contacter</h2>
-      <div class="contact-grid">
-        <a class="contact-card" href="mailto:khaleddjellali189@gmail.com">
-          ✉️ <span>khaleddjellali189@gmail.com</span>
-        </a>
-        <a class="contact-card" href="tel:+33744404629">
-          📞 <span>07 44 40 46 29</span>
-        </a>
-        <a class="contact-card" href="https://www.linkedin.com/in/khaled-djellali-4a16282a8/" target="_blank">
-          💼 <span>LinkedIn</span>
-        </a>
-        <a class="contact-card" href="https://github.com/khaled1809" target="_blank">
-          🐙 <span>GitHub</span>
-        </a>
+      <div class="contact-actions">
+        <a class="button button-light" href="mailto:khaleddjellali189@gmail.com"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg> khaleddjellali189@gmail.com</a>
+        <a class="button button-outline-light" href="tel:+33744404629"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.28-1.28a2 2 0 0 1 2.11-.45c.9.33 1.84.56 2.8.69A2 2 0 0 1 22 16.92z"/></svg> 07 44 40 46 29</a>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+</main>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> <span id="footName">Khaled DJELLALI</span> — Tous droits réservés.</p>
-  </footer>
-
-  <button class="toTop" onclick="scrollTo({top:0, behavior:'smooth'})" aria-label="Remonter en haut"
-    title="Haut">⬆</button>
-
-  <!-- Scripts -->
-  <script src="assets/js/data.js"></script>
-  <script src="assets/js/particles.js"></script>
-  <script src="assets/js/main.js" defer></script>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">KD</span>
+        <span class="brand-copy"><strong>Khaled DJELLALI</strong><small>Développeur logiciel, web, data &amp; IA</small></span>
+      </a>
+      <p class="footer-note">Portfolio statique conçu pour être rapide, accessible et directement publiable sur GitHub Pages.</p>
+    </div>
+    <div class="footer-links" aria-label="Liens de pied de page">
+      <a href="https://github.com/khaled1809" target="_blank" rel="noopener noreferrer">GitHub <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5h5v5"/><path d="M10 14 19 5"/><path d="M19 13v6H5V5h6"/></svg></a>
+      <a href="https://www.linkedin.com/in/khaled-djellali-4a16282a8/" target="_blank" rel="noopener noreferrer">LinkedIn <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5h5v5"/><path d="M10 14 19 5"/><path d="M19 13v6H5V5h6"/></svg></a>
+      <a href="mailto:khaleddjellali189@gmail.com">E-mail</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span data-current-year></span> Khaled DJELLALI. Tous droits réservés.</p>
+    <a href="#top">Retour en haut <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a>
+  </div>
+</footer>
 </body>
-
 </html>

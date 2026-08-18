@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Une étude expérimentale en Python pour confronter la complexité théorique de plusieurs algorithmes de tri à leurs performances observées sur des jeux de données variés.">
+  <meta name="theme-color" content="#07111f">
+  <meta name="color-scheme" content="dark light">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Analyse et visualisation d’algorithmes de tri — Étude de cas | Khaled DJELLALI">
+  <meta property="og:description" content="Une étude expérimentale en Python pour confronter la complexité théorique de plusieurs algorithmes de tri à leurs performances observées sur des jeux de données variés.">
+  <meta property="og:image" content="../assets/images/projects/visu2.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Analyse et visualisation d’algorithmes de tri — Étude de cas | Khaled DJELLALI</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <script>
+    (() => {
+      document.documentElement.classList.add('js');
+      try {
+        const stored = localStorage.getItem('portfolio-theme');
+        document.documentElement.dataset.theme = stored || 'dark';
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark';
+      }
+    })();
+  </script>
+  <script src="../assets/js/site.js" defer></script>
+</head>
+<body class="project-page" id="top">
+
+<a class="skip-link" href="#main-content">Aller au contenu</a>
+<header class="site-header" data-site-header>
+  <div class="container header-inner">
+    <a class="brand" href="../index.html" aria-label="Retour à l’accueil de Khaled Djellali">
+      <span class="brand-mark" aria-hidden="true">KD</span>
+      <span class="brand-copy"><strong>Khaled Djellali</strong><small>Développeur</small></span>
+    </a>
+    <nav class="primary-nav" id="primary-navigation" aria-label="Navigation principale" data-mobile-nav>
+      <a href="../index.html#about" class="nav-link">Profil</a>
+<a href="../index.html#skills" class="nav-link">Compétences</a>
+<a href="../index.html#journey" class="nav-link">Parcours</a>
+<a href="../index.html#projects" class="nav-link is-active">Projets</a>
+      <a class="button button-small button-primary nav-contact" href="../index.html#contact">Me contacter <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button theme-toggle" type="button" data-theme-toggle aria-label="Activer le thème clair" title="Changer de thème">
+        <span class="theme-icon theme-icon-sun"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></svg></span>
+        <span class="theme-icon theme-icon-moon"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>
+      </button>
+      <button class="icon-button menu-toggle" type="button" data-menu-toggle aria-controls="primary-navigation" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="menu-icon-open"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></span>
+        <span class="menu-icon-close"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 6 12 12M18 6 6 18"/></svg></span>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main-content">
+  <section class="project-hero">
+    <div class="project-hero-grid" aria-hidden="true"></div>
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Fil d’Ariane">
+        <a href="../index.html">Accueil</a><span aria-hidden="true">/</span><a href="../index.html#projects">Projets</a><span aria-hidden="true">/</span><span aria-current="page">Analyse et visualisation d’algorithmes de tri</span>
+      </nav>
+      <div class="project-hero-layout">
+        <div class="project-hero-copy" data-reveal>
+          <p class="project-category">Data &amp; algorithmique</p>
+          <h1>Analyse et visualisation d’algorithmes de tri</h1>
+          <p class="project-summary">Une étude expérimentale en Python pour confronter la complexité théorique de plusieurs algorithmes de tri à leurs performances observées sur des jeux de données variés.</p>
+          <div class="tag-group tag-group-large"><span class="tech-tag">Python</span><span class="tech-tag">NumPy</span><span class="tech-tag">Pandas</span><span class="tech-tag">Matplotlib</span><span class="tech-tag">CSV</span><span class="tech-tag">Algorithmique</span></div>
+          <div class="project-hero-actions">
+            <a class="button button-primary" href="https://github.com/khaled1809/AlgoTri" target="_blank" rel="noopener noreferrer">Voir le code source <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5h5v5"/><path d="M10 14 19 5"/><path d="M19 13v6H5V5h6"/></svg></a>
+            <a class="button button-secondary" href="../index.html#projects">Retour aux projets <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></a>
+          </div>
+        </div>
+        <figure class="project-cover" data-reveal>
+          <img src="../assets/images/projects/visu2.png" alt="Aperçu principal du projet Analyse et visualisation d’algorithmes de tri" width="1400" height="850">
+        </figure>
+      </div>
+      <dl class="project-facts" data-reveal><div class="project-fact"><dt>Rôle</dt><dd>Implémentation des algorithmes, instrumentation et analyse des résultats</dd></div><div class="project-fact"><dt>Type</dt><dd>Projet d’analyse algorithmique</dd></div><div class="project-fact"><dt>Architecture</dt><dd>Génération → mesure → export → visualisation</dd></div><div class="project-fact"><dt>Technologies</dt><dd>Python · NumPy · Pandas · Matplotlib · CSV · Algorithmique</dd></div></dl>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container case-layout">
+      <article class="case-main">
+        <div class="case-block" data-reveal>
+          <p class="case-kicker">Contexte</p>
+          <h2>Le besoin à résoudre</h2>
+          <p>Comparer des algorithmes uniquement avec leur notation asymptotique ne suffit pas à comprendre leur comportement réel. Le projet devait produire des jeux de données contrôlés, instrumenter chaque tri et rendre les résultats lisibles sans confondre coût algorithmique et coût de mesure.</p>
+        </div>
+        <div class="case-block" data-reveal>
+          <p class="case-kicker">Approche</p>
+          <h2>La solution mise en place</h2>
+          <p>J’ai séparé la génération des données, les transformations de désordre, les implémentations des tris, la collecte des métriques et la visualisation. Les résultats sont exportés sous forme tabulaire puis exploités avec Pandas et Matplotlib pour comparer le temps, les comparaisons et les accès mémoire.</p>
+        </div>
+      </article>
+      <aside class="case-sidebar" data-reveal>
+        <div class="sidebar-card">
+          <span class="sidebar-icon"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V4h8v3M3 12h18M10 12v2h4v-2"/></svg></span>
+          <h2>Ce que ce projet démontre</h2>
+          <p>Ma capacité à analyser un problème, organiser les responsabilités et expliquer les compromis techniques au-delà du simple résultat visuel.</p>
+          <a class="text-link" href="mailto:khaleddjellali189@gmail.com?subject=Échange à propos du projet Analyse et visualisation d’algorithmes de tri">Échanger sur ce projet <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="case-section section-soft">
+    <div class="container">
+      <div class="case-heading" data-reveal><p class="case-kicker">Architecture</p><h2>Comment le projet est structuré</h2></div>
+      <div class="architecture-grid"><article class="architecture-item" data-reveal>
+          <span class="architecture-number">01</span>
+          <h3>Générateur de scénarios</h3>
+          <p>Les entrées varient en taille, distribution et niveau de désordre pour éviter de conclure à partir d’un seul cas favorable.</p>
+        </article><article class="architecture-item" data-reveal>
+          <span class="architecture-number">02</span>
+          <h3>Instrumentation uniforme</h3>
+          <p>Chaque algorithme remonte les mêmes métriques afin que les courbes soient comparables malgré des logiques internes différentes.</p>
+        </article><article class="architecture-item" data-reveal>
+          <span class="architecture-number">03</span>
+          <h3>Pipeline de restitution</h3>
+          <p>Les mesures sont sauvegardées en CSV, agrégées avec Pandas puis transformées en graphiques explicites.</p>
+        </article></div>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container">
+      <div class="case-heading" data-reveal><p class="case-kicker">Résolution de problèmes</p><h2>Difficultés rencontrées et décisions prises</h2><p>Les points ci-dessous donnent de la visibilité sur le raisonnement technique, pas seulement sur les fonctionnalités finales.</p></div>
+      <div class="challenges-grid"><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 1</span>
+          <h3>Mesurer sans trop perturber</h3>
+          <p>Compter chaque comparaison et accès mémoire ajoute lui-même du travail à l’algorithme.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>J’ai distingué les exécutions destinées au chronométrage de celles destinées au comptage détaillé, puis conservé le même protocole pour tous les tris.</p></div>
+        </article><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 2</span>
+          <h3>Créer des expériences reproductibles</h3>
+          <p>Deux jeux de données aléatoires différents peuvent donner des résultats difficiles à comparer.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>J’ai organisé les scénarios et les exports pour réutiliser les mêmes données d’entrée entre plusieurs algorithmes.</p></div>
+        </article><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 3</span>
+          <h3>Interpréter les courbes</h3>
+          <p>Une mesure isolée peut être influencée par la machine, le bruit système ou une petite taille d’échantillon.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>J’ai analysé les tendances relatives et confronté les résultats à la complexité attendue plutôt que d’afficher un classement absolu.</p></div>
+        </article></div>
+    </div>
+  </section>
+
+  <section class="case-section learnings-section">
+    <div class="container learnings-layout">
+      <div class="case-heading" data-reveal><p class="case-kicker">Progression</p><h2>Ce que j’ai appris</h2><p>Des acquis réutilisables dans d’autres projets et dans un contexte professionnel.</p></div>
+      <ul class="learnings-list"><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Différencier complexité théorique, coût constant et comportement observé sur une machine réelle.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Construire un protocole expérimental avant de produire des graphiques.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Utiliser Pandas pour nettoyer, agréger et comparer des séries de résultats homogènes.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Présenter les limites d’une mesure afin d’éviter des conclusions trop affirmatives.</p></li></ul>
+    </div>
+  </section>
+
+  <section class="case-section section-soft">
+    <div class="container">
+      <div class="case-heading" data-reveal><p class="case-kicker">Galerie</p><h2>Le projet en images</h2><p>Cliquez sur un visuel pour l’agrandir.</p></div>
+      <div class="project-gallery"><button class="gallery-item gallery-item-1" type="button" data-gallery-item data-src="../assets/images/projects/visu1.png" data-alt="Visuel 1 du projet Analyse et visualisation d’algorithmes de tri">
+          <img src="../assets/images/projects/visu1.png" alt="Visuel 1 du projet Analyse et visualisation d’algorithmes de tri" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-2" type="button" data-gallery-item data-src="../assets/images/projects/visu2.png" data-alt="Visuel 2 du projet Analyse et visualisation d’algorithmes de tri">
+          <img src="../assets/images/projects/visu2.png" alt="Visuel 2 du projet Analyse et visualisation d’algorithmes de tri" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-3" type="button" data-gallery-item data-src="../assets/images/projects/visu3.png" data-alt="Visuel 3 du projet Analyse et visualisation d’algorithmes de tri">
+          <img src="../assets/images/projects/visu3.png" alt="Visuel 3 du projet Analyse et visualisation d’algorithmes de tri" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-4" type="button" data-gallery-item data-src="../assets/images/projects/visu5.png" data-alt="Visuel 4 du projet Analyse et visualisation d’algorithmes de tri">
+          <img src="../assets/images/projects/visu5.png" alt="Visuel 4 du projet Analyse et visualisation d’algorithmes de tri" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-5" type="button" data-gallery-item data-src="../assets/images/projects/visu7.png" data-alt="Visuel 5 du projet Analyse et visualisation d’algorithmes de tri">
+          <img src="../assets/images/projects/visu7.png" alt="Visuel 5 du projet Analyse et visualisation d’algorithmes de tri" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-6" type="button" data-gallery-item data-src="../assets/images/projects/visu8.png" data-alt="Visuel 6 du projet Analyse et visualisation d’algorithmes de tri">
+          <img src="../assets/images/projects/visu8.png" alt="Visuel 6 du projet Analyse et visualisation d’algorithmes de tri" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-7" type="button" data-gallery-item data-src="../assets/images/projects/visu9.png" data-alt="Visuel 7 du projet Analyse et visualisation d’algorithmes de tri">
+          <img src="../assets/images/projects/visu9.png" alt="Visuel 7 du projet Analyse et visualisation d’algorithmes de tri" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-8" type="button" data-gallery-item data-src="../assets/images/projects/visu11.png" data-alt="Visuel 8 du projet Analyse et visualisation d’algorithmes de tri">
+          <img src="../assets/images/projects/visu11.png" alt="Visuel 8 du projet Analyse et visualisation d’algorithmes de tri" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button></div>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container improvement-panel" data-reveal>
+      <div><p class="case-kicker">Prise de recul</p><h2>Ce que j’améliorerais dans une prochaine version</h2></div>
+      <ol><li>Répéter chaque expérience et afficher médiane, dispersion et intervalle de confiance.</li><li>Ajouter des jeux de données presque triés et fortement dupliqués pour enrichir les scénarios.</li><li>Créer une interface interactive permettant de sélectionner algorithmes, tailles et métriques.</li></ol>
+    </div>
+  </section>
+
+  <nav class="project-pagination container" aria-label="Navigation entre les projets">
+    <a href="jeu-strategie-java.html" class="pagination-link pagination-previous">
+      <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg><span><small>Projet précédent</small><strong>Jeu de stratégie au tour par tour</strong></span>
+    </a>
+    <a href="entrepot-donnees-apache-hop-olap.html" class="pagination-link pagination-next">
+      <span><small>Projet suivant</small><strong>Entrepôt de données et analyse OLAP</strong></span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+    </a>
+  </nav>
+</main>
+
+<dialog class="lightbox" data-lightbox aria-label="Aperçu agrandi du visuel">
+  <button class="icon-button lightbox-close" type="button" data-lightbox-close aria-label="Fermer l’aperçu"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+  <figure><img src="" alt="" data-lightbox-image><figcaption data-lightbox-caption></figcaption></figure>
+</dialog>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand footer-brand" href="../index.html">
+        <span class="brand-mark" aria-hidden="true">KD</span>
+        <span class="brand-copy"><strong>Khaled DJELLALI</strong><small>Développeur logiciel, web, data &amp; IA</small></span>
+      </a>
+      <p class="footer-note">Portfolio statique conçu pour être rapide, accessible et directement publiable sur GitHub Pages.</p>
+    </div>
+    <div class="footer-links" aria-label="Liens de pied de page">
+      <a href="https://github.com/khaled1809" target="_blank" rel="noopener noreferrer">GitHub <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5h5v5"/><path d="M10 14 19 5"/><path d="M19 13v6H5V5h6"/></svg></a>
+      <a href="https://www.linkedin.com/in/khaled-djellali-4a16282a8/" target="_blank" rel="noopener noreferrer">LinkedIn <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5h5v5"/><path d="M10 14 19 5"/><path d="M19 13v6H5V5h6"/></svg></a>
+      <a href="mailto:khaleddjellali189@gmail.com">E-mail</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span data-current-year></span> Khaled DJELLALI. Tous droits réservés.</p>
+    <a href="#top">Retour en haut <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a>
+  </div>
+</footer>
+</body>
+</html>

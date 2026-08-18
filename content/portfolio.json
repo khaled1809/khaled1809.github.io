@@ -1,0 +1,1697 @@
+{
+  "profile": {
+    "name": "Khaled DJELLALI",
+    "short_name": "Khaled",
+    "role": "Développeur logiciel, web, data & IA",
+    "subtitle": "Étudiant en Master 1 Architecte de Systèmes d’Information à l’ETNA",
+    "headline": "Je transforme des besoins concrets en applications claires, robustes et explicables.",
+    "intro": "Développeur orienté logiciel, web, données et intelligence artificielle, je construis des projets complets allant de la modélisation et des pipelines de traitement jusqu’aux API, visualisations interactives, modèles d’apprentissage et interfaces utilisateurs.",
+    "about": [
+      "Actuellement en Master 1 Architecte de Systèmes d’Information, spécialisation développement, à l’ETNA, je consolide mes compétences en conception logicielle, développement full-stack, data et qualité de code.",
+      "Mon parcours m’a amené à développer des applications web en PHP/MySQL, des logiciels Java structurés autour de MVC et de design patterns, une application React Native connectée à une API REST sécurisée, des projets décisionnels avec Apache Hop et Power BI, ainsi qu’une chaîne Docker MongoDB–GraphQL–D3.js. J’ai également travaillé sur la vision par ordinateur, l’apprentissage profond avec PyTorch, l’apprentissage par renforcement, l’explicabilité de modèles et l’analyse statistique avancée.",
+      "Je recherche une alternance où je pourrai contribuer à des produits utiles, progresser au contact d’une équipe expérimentée et prendre progressivement davantage de responsabilités techniques."
+    ],
+    "availability": "Recherche d’une alternance en développement",
+    "schedule": "Rythme : 3 semaines en entreprise / 1 semaine à l’école",
+    "location": "Paris, France",
+    "email": "khaleddjellali189@gmail.com",
+    "phone": "07 44 40 46 29",
+    "phone_href": "+33744404629",
+    "github": "https://github.com/khaled1809",
+    "linkedin": "https://www.linkedin.com/in/khaled-djellali-4a16282a8/",
+    "photo": "assets/images/khaled1809.jpg",
+    "cv": "assets/cv/CvP_Khaled.pdf"
+  },
+  "metrics": [
+    {
+      "value": "17",
+      "label": "projets documentés"
+    },
+    {
+      "value": "7",
+      "label": "univers techniques"
+    },
+    {
+      "value": "40+",
+      "label": "technologies pratiquées"
+    }
+  ],
+  "strengths": [
+    {
+      "title": "Conception avant implémentation",
+      "text": "Je commence par clarifier les responsabilités, les données et les flux avant d’écrire l’interface."
+    },
+    {
+      "title": "Code structuré et évolutif",
+      "text": "J’utilise MVC, la programmation orientée objet et des composants réutilisables pour limiter le couplage."
+    },
+    {
+      "title": "Apprentissage par l’expérimentation",
+      "text": "J’analyse les difficultés rencontrées, mesure les compromis et documente les améliorations possibles."
+    }
+  ],
+  "skills": [
+    {
+      "title": "Logiciel & programmation orientée objet",
+      "description": "Conception de logiciels modulaires, simulations, moteurs algorithmiques et jeux avec séparation des responsabilités.",
+      "primary": [
+        "Java",
+        "Python",
+        "C",
+        "C++",
+        "MVC",
+        "Design patterns"
+      ],
+      "secondary": [
+        "Haskell",
+        "Pascal",
+        "Scala",
+        "CSP",
+        "AC-3",
+        "Backtracking"
+      ]
+    },
+    {
+      "title": "Développement web & visualisation",
+      "description": "Interfaces responsive, API typées, applications dynamiques et visualisations interactives pilotées par les données.",
+      "primary": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "PHP",
+        "React",
+        "Node.js",
+        "GraphQL",
+        "D3.js"
+      ],
+      "secondary": [
+        "Apollo Server",
+        "TopoJSON",
+        "Vue.js",
+        "API REST",
+        "Apache",
+        "Responsive design"
+      ]
+    },
+    {
+      "title": "Data engineering & business intelligence",
+      "description": "Modélisation relationnelle et dimensionnelle, agrégations NoSQL, pipelines ETL et rapports décisionnels.",
+      "primary": [
+        "SQL",
+        "MongoDB",
+        "MySQL",
+        "PostgreSQL",
+        "Power BI",
+        "Power Query",
+        "DAX",
+        "Apache Hop"
+      ],
+      "secondary": [
+        "SQLite",
+        "OLAP / MDX",
+        "ETL",
+        "Modèle en étoile",
+        "RLS",
+        "Performance Analyzer"
+      ]
+    },
+    {
+      "title": "Machine learning, NLP & apprentissage avancé",
+      "description": "Extraction d’information, modèles supervisés, ensembles, renforcement et expérimentation explicable.",
+      "primary": [
+        "scikit-learn",
+        "spaCy",
+        "Sentence-BERT",
+        "LightGBM",
+        "SVM",
+        "AdaBoost",
+        "Gymnasium"
+      ],
+      "secondary": [
+        "Transformers",
+        "WordNet",
+        "TextBlob",
+        "Clustering",
+        "SARSA",
+        "Q-learning",
+        "XAI"
+      ]
+    },
+    {
+      "title": "Vision par ordinateur & deep learning",
+      "description": "Traitement d’images classique et entraînement de réseaux avec pipelines de données reproductibles.",
+      "primary": [
+        "PyTorch",
+        "PyTorch Lightning",
+        "OpenCV",
+        "Torchvision",
+        "scikit-image",
+        "ResNet18"
+      ],
+      "secondary": [
+        "CNN",
+        "timm",
+        "Torchmetrics",
+        "TensorBoard",
+        "Hough",
+        "Harris",
+        "Morphologie"
+      ]
+    },
+    {
+      "title": "Statistiques & analyse de données",
+      "description": "Exploration quantitative, réduction de dimension, diagnostic de modèles et clustering implémenté et comparé.",
+      "primary": [
+        "Pandas",
+        "NumPy",
+        "SciPy",
+        "Matplotlib",
+        "ACP / PCA",
+        "Régression"
+      ],
+      "secondary": [
+        "K-means",
+        "EM / GMM",
+        "Test du χ²",
+        "KDE",
+        "Mallows Cp",
+        "Analyse d’influence"
+      ]
+    },
+    {
+      "title": "Outils & environnement",
+      "description": "Travail sous Linux, versionnement, conteneurisation multi-services et validation d’API.",
+      "primary": [
+        "Git",
+        "GitHub",
+        "Docker",
+        "Docker Compose",
+        "Linux",
+        "Bash",
+        "Postman"
+      ],
+      "secondary": [
+        "Mongo Express",
+        "Expo",
+        "Java Swing",
+        "Jupyter",
+        "CSV"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "date": "Depuis octobre 2025",
+      "title": "Master Architecte de Systèmes d’Information — Développement applicatif",
+      "place": "ETNA — École des Technologies Numériques Avancées",
+      "details": [
+        "Architecture logicielle et développement d’applications",
+        "Formation en alternance",
+        "Approfondissement des pratiques de conception et de qualité"
+      ]
+    },
+    {
+      "date": "2023 — 2025",
+      "title": "Licence Informatique Générale",
+      "place": "Université de Caen Normandie",
+      "details": [
+        "Algorithmique et programmation",
+        "Bases de données",
+        "Génie logiciel et systèmes"
+      ]
+    },
+    {
+      "date": "2020 — 2023",
+      "title": "Licence Informatique",
+      "place": "Université de Béjaia",
+      "details": [
+        "Fondamentaux de l’informatique",
+        "Structures de données",
+        "Programmation impérative et orientée objet"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "slug": "visualisation-ventes-docker-graphql",
+      "title": "Visualisation de ventes — Docker, GraphQL & D3.js",
+      "category": "data",
+      "category_label": "Data visualisation & architecture web",
+      "card_summary": "Application multi-conteneurs qui agrège des ventes dans MongoDB, les expose avec Apollo GraphQL et les transforme en KPI, graphiques et carte de France interactive avec D3.js.",
+      "summary": "Une chaîne complète de visualisation de données : quatre services Docker, agrégations MongoDB, API GraphQL typée et tableau de bord D3.js avec exploration par département.",
+      "role": "Conception de la pile Docker, développement des résolveurs GraphQL et des pipelines MongoDB, puis réalisation des pages D3.js et des interactions cartographiques",
+      "type": "Projet de développement web et visualisation de données — application multi-services",
+      "architecture_label": "MongoDB → Apollo GraphQL → D3.js / TopoJSON",
+      "github": "https://github.com/khaled1809",
+      "source_label": "Voir mon GitHub",
+      "source_short_label": "GitHub",
+      "stack": [
+        "Docker",
+        "Docker Compose",
+        "MongoDB",
+        "Mongo Express",
+        "Node.js",
+        "Apollo Server",
+        "GraphQL",
+        "D3.js",
+        "TopoJSON",
+        "Apache",
+        "HTML5",
+        "CSS3",
+        "JavaScript"
+      ],
+      "cover": "assets/images/projects/sales-dataviz-overview.png",
+      "images": [
+        "assets/images/projects/sales-dataviz-overview.png",
+        "assets/images/projects/sales-dataviz-docker.png",
+        "assets/images/projects/sales-dataviz-aggregations.png",
+        "assets/images/projects/sales-dataviz-graphql.png",
+        "assets/images/projects/sales-dataviz-dashboard.png"
+      ],
+      "problem": "Le projet devait transformer une collection BSON de ventes en une application web réellement explorable. Il fallait isoler le stockage, l’API et l’interface, calculer les statistiques sans transférer toutes les lignes vers le navigateur, puis relier les résultats agrégés à des départements français. Le tableau de bord devait afficher des indicateurs globaux, comparer les prestations, colorer une carte et ouvrir le détail du département sélectionné tout en restant lançable par une seule commande Docker Compose.",
+      "solution": "J’ai organisé la solution en quatre services : Apache sert les pages HTML, Node.js démarre Apollo Server, MongoDB conserve la collection sales dans un volume persistant et Mongo Express fournit une interface d’administration. Les résolveurs réutilisent des pipelines MongoDB fondés sur $group et $project ; une fonction aggregateWithValue insère dynamiquement un $match pour filtrer un département sans dupliquer la logique. La requête statistics s’appuie sur $facet pour calculer en un passage le nombre de ventes, le montant total, la moyenne et le nombre de départements. Côté client, france.html charge la géométrie, interroge GraphQL avec prestationsByDpt et departmentStats, puis coordonne carte, barres, KPI, légende, survols liés, tri, sélection et états de chargement ou d’erreur.",
+      "architecture": [
+        {
+          "title": "Orchestration Docker Compose",
+          "text": "Le fichier stack.yml décrit les services apache, graphql, mongo et mongo-express, leurs ports, le montage du frontend et le volume mongodata. Le backend résout MongoDB par le nom du service dans le réseau interne plutôt que par une adresse propre à une machine."
+        },
+        {
+          "title": "Agrégations au niveau MongoDB",
+          "text": "Les ventes sont regroupées soit par code et description de prestation, soit par identifiant de département. Les pipelines calculent count, sum et avg, puis $project aligne les champs sur le contrat attendu par GraphQL."
+        },
+        {
+          "title": "API GraphQL avec Apollo Server",
+          "text": "model.graphql expose Prestation, Department et Statistics. Les résolveurs prestations, departments, prestationsByDpt, departmentStats et statistics partagent une connexion MongoClient ouverte à la demande et réutilisée ensuite."
+        },
+        {
+          "title": "Visualisations D3.js coordonnées",
+          "text": "La page principale utilise une projection géographique, des échelles séquentielles, des axes, une légende et des gestionnaires de survol ou de clic. Une sélection sur la carte filtre les données détaillées et met en évidence la barre correspondante."
+        },
+        {
+          "title": "Pages analytiques complémentaires",
+          "text": "prestation.html permet de trier la liste par description, volume ou montant ; prestation_bar.html construit un graphique en barres ; bar.html sert d’exercice isolé pour valider les mécanismes de D3.js avant intégration au tableau de bord."
+        }
+      ],
+      "challenges": [
+        {
+          "title": "Distinguer les adresses réseau selon le contexte d’exécution",
+          "text": "Une API lancée sur la machine hôte et la même API exécutée dans un conteneur ne résolvent pas MongoDB de la même manière. Une URL correcte dans un contexte peut donc échouer dans l’autre.",
+          "resolution": "J’ai séparé mentalement le réseau hôte du réseau Compose et utilisé le nom de service mongodb depuis le conteneur GraphQL. Cette expérience m’a appris à raisonner en DNS interne, ports publiés et ports de service plutôt qu’à modifier des adresses au hasard."
+        },
+        {
+          "title": "Réutiliser les agrégations sans dupliquer chaque requête",
+          "text": "Les indicateurs globaux et départementaux reposaient sur les mêmes regroupements, avec seulement un filtre supplémentaire pour le détail géographique.",
+          "resolution": "La fonction aggregateWithValue préfixe une copie du pipeline avec un $match calculé à partir de la clé et de la valeur reçues. Les agrégations de base restent uniques, ce qui réduit les divergences entre prestations globales et prestationsByDpt."
+        },
+        {
+          "title": "Aligner précisément le schéma et les appels du frontend",
+          "text": "Une différence de nom entre le schéma, un résolveur et la requête JavaScript suffit à retourner une erreur GraphQL même lorsque le calcul MongoDB est correct.",
+          "resolution": "J’ai stabilisé les signatures prestationsByDpt(departement) et departmentStats(departement), vérifié les champs demandés et normalisé les objets retournés, y compris le cas où aucun résultat n’existe pour un département."
+        },
+        {
+          "title": "Faire correspondre géométrie et statistiques départementales",
+          "text": "La carte et la base ne manipulent pas automatiquement le même objet : il faut relier un identifiant géographique à l’agrégat correspondant, puis gérer les départements absents ou sans vente.",
+          "resolution": "J’ai construit une correspondance par code de département, défini des valeurs par défaut et centralisé la sélection. Les gestionnaires de survol synchronisent la carte et les barres, tandis que le clic déclenche les requêtes détaillées et met à jour le panneau latéral."
+        },
+        {
+          "title": "Maintenir une interface utile pendant les appels asynchrones",
+          "text": "Sans retour visuel, l’utilisateur ne sait pas si les données sont en cours de chargement, indisponibles ou simplement vides.",
+          "resolution": "La page possède des états de chargement, d’erreur et de détail, ainsi que des actions de rafraîchissement et de réinitialisation. Cette gestion rend la visualisation compréhensible même lorsque le réseau ou l’API répondent lentement."
+        }
+      ],
+      "learnings": [
+        "Concevoir une architecture multi-conteneurs en donnant une responsabilité claire à chaque service.",
+        "Écrire des pipelines MongoDB avec $match, $group, $project, $facet, $count et $arrayElemAt plutôt que de recalculer les indicateurs dans le navigateur.",
+        "Définir un schéma GraphQL cohérent et maintenir l’alignement entre types, résolveurs, arguments et requêtes clientes.",
+        "Construire des visualisations D3.js avec projections, échelles, axes, légendes, transitions et interactions coordonnées.",
+        "Relier des statistiques métier à des données géographiques TopoJSON en gérant les identifiants et les valeurs manquantes.",
+        "Diagnostiquer une pile distribuée à partir des logs de conteneurs, du réseau interne et des contrats d’API."
+      ],
+      "next_steps": [
+        "Sortir les secrets et les URL de connexion du code source au profit de variables d’environnement et de fichiers de configuration distincts.",
+        "Ajouter des healthchecks et une attente explicite de disponibilité de MongoDB avant le démarrage effectif des résolveurs.",
+        "Tester automatiquement les pipelines et les requêtes GraphQL avec une base de données de test conteneurisée.",
+        "Remplacer le découpage JavaScript monolithique de france.html par des modules dédiés aux données, à la carte, aux graphiques et à l’état de sélection.",
+        "Corriger les requêtes topPrestations et topDepartments avec des étapes $sort et $limit côté MongoDB au lieu de découper un résultat non trié.",
+        "Renforcer la configuration CORS/CSRF, ajouter pagination et cache, puis mesurer les performances sur un volume de ventes plus important."
+      ]
+    },
+    {
+      "slug": "vision-par-ordinateur",
+      "title": "Vision par ordinateur — filtrage, segmentation & formes",
+      "category": "ai",
+      "category_label": "Vision par ordinateur",
+      "card_summary": "Série de notebooks OpenCV consacrés aux convolutions, seuillages, morphologie, segmentation, mesures de régions et transformées de Hough.",
+      "summary": "Un parcours pratique de vision classique qui part du filtrage de pixels pour aboutir à la détection et à la caractérisation d’objets dans des images.",
+      "role": "Implémentation et expérimentation dans les notebooks TP 3.1, TP 3.2 et TP 4, avec explorations complémentaires sur histogrammes, couleurs et formes",
+      "type": "Portfolio de travaux pratiques — vision par ordinateur",
+      "architecture_label": "Prétraitement → segmentation → régions → détection géométrique",
+      "github": "https://github.com/khaled1809",
+      "source_label": "Voir mon GitHub",
+      "source_short_label": "GitHub",
+      "stack": [
+        "Python",
+        "OpenCV",
+        "NumPy",
+        "SciPy",
+        "scikit-image",
+        "Matplotlib",
+        "ipywidgets",
+        "Convolution",
+        "Sobel",
+        "Prewitt",
+        "Canny",
+        "Hough",
+        "Harris",
+        "Morphologie mathématique",
+        "regionprops"
+      ],
+      "cover": "assets/images/projects/computer-vision-overview.png",
+      "images": [
+        "assets/images/projects/computer-vision-overview.png",
+        "assets/images/projects/computer-vision-filtering.png",
+        "assets/images/projects/computer-vision-thresholding.png",
+        "assets/images/projects/computer-vision-morphology.png",
+        "assets/images/projects/computer-vision-regions.png",
+        "assets/images/projects/computer-vision-hough.png"
+      ],
+      "problem": "Les travaux pratiques demandaient de comprendre les opérations fondamentales de la vision par ordinateur sans dépendre d’un modèle appris. Il fallait passer d’images bruitées ou peu contrastées à des contours, masques et objets mesurables, tout en observant l’effet des paramètres : taille d’un noyau, écart-type gaussien, seuil, élément structurant ou résolution de l’espace de Hough.",
+      "solution": "J’ai développé des fonctions de lissage moyenneur et gaussien, puis comparé Sobel, Prewitt, Laplacien, LoG et Canny pour faire ressortir les transitions. Le second notebook met en œuvre le seuillage fixe, adaptatif et Otsu, puis l’érosion, la dilatation, l’ouverture, la fermeture, les top-hat/black-hat, le contour morphologique, la transformée de distance et la squelettisation. Le TP 4 enchaîne Harris, segmentation de pièces, contours et regionprops pour calculer aire, boîte englobante, orientation et excentricité, avant la détection de lignes et cercles par Hough avec OpenCV et scikit-image. Des widgets interactifs m’ont permis de relier visuellement chaque réglage au résultat obtenu.",
+      "architecture": [
+        {
+          "title": "Prétraitement et convolution",
+          "text": "Les images sont converties dans le canal adapté puis convoluées avec des noyaux moyenneurs, gaussiens ou dérivatifs. SciPy et OpenCV servent à comparer plusieurs implémentations et comportements aux bordures."
+        },
+        {
+          "title": "Binarisation et morphologie",
+          "text": "Les méthodes fixe, Otsu et adaptatives produisent des masques. Érosion, dilatation, ouverture et fermeture corrigent ensuite le bruit, les trous et les connexions indésirables selon la forme de l’élément structurant."
+        },
+        {
+          "title": "Segmentation et description de régions",
+          "text": "Les contours et l’étiquetage transforment le masque en objets distincts. regionprops fournit des mesures géométriques exploitables pour comparer, filtrer ou encadrer ces objets."
+        },
+        {
+          "title": "Points, lignes et cercles",
+          "text": "Harris localise les coins ; Canny, Sobel et Prewitt fournissent les contours ; HoughLines, HoughLinesP et hough_circle recherchent ensuite des primitives géométriques dans un espace de paramètres."
+        },
+        {
+          "title": "Exploration interactive",
+          "text": "Les contrôles ipywidgets permettent de modifier noyau, sigma, seuil ou nombre d’itérations sans réécrire le notebook, ce qui transforme les exercices en laboratoire comparatif."
+        }
+      ],
+      "challenges": [
+        {
+          "title": "Choisir un filtre sans effacer l’information utile",
+          "text": "Un noyau trop petit conserve le bruit ; un noyau trop large lisse les détails et déplace parfois les contours recherchés.",
+          "resolution": "J’ai comparé plusieurs tailles et valeurs de sigma, observé les résultats côte à côte et séparé l’objectif de débruitage de celui de détection. Le choix du filtre devient ainsi une décision liée au signal utile plutôt qu’un réglage arbitraire."
+        },
+        {
+          "title": "Binariser malgré un éclairage non uniforme",
+          "text": "Un seuil global fonctionne mal lorsque certaines zones sont sombres et d’autres surexposées.",
+          "resolution": "J’ai confronté le seuil manuel à Otsu et aux seuils adaptatifs moyen ou gaussien. La comparaison m’a appris à choisir la statistique locale, la taille de fenêtre et la constante en fonction de la variation d’éclairage."
+        },
+        {
+          "title": "Séparer des objets qui se touchent",
+          "text": "Après binarisation, deux pièces ou symboles voisins peuvent former une seule composante, ce qui fausse le comptage et les mesures.",
+          "resolution": "J’ai combiné fermeture ou ouverture selon le défaut observé, transformée de distance et opérations morphologiques. La squelettisation et le contour morphologique ont aussi servi à contrôler la structure avant étiquetage."
+        },
+        {
+          "title": "Régler une transformée de Hough sensible",
+          "text": "Le nombre de lignes ou de cercles détectés varie fortement avec les seuils, rayons, résolution et qualité du contour initial.",
+          "resolution": "J’ai traité Hough comme la fin d’un pipeline : lissage, contour propre, plage de rayons cohérente et seuil de vote contrôlé. La comparaison OpenCV/scikit-image permet de comprendre les paramètres plutôt que de chercher un unique appel magique."
+        },
+        {
+          "title": "Passer d’une image à des mesures fiables",
+          "text": "Afficher un contour ne suffit pas pour exploiter une détection dans une application.",
+          "resolution": "J’ai utilisé l’étiquetage et regionprops pour produire aires, orientations, excentricités et boîtes englobantes, puis superposé ces informations à l’image afin de vérifier visuellement la cohérence des calculs."
+        }
+      ],
+      "learnings": [
+        "Comprendre la convolution, les fréquences spatiales et le rôle des noyaux passe-bas ou passe-haut.",
+        "Comparer Sobel, Prewitt, Laplacien, LoG et Canny selon le bruit, l’épaisseur et la continuité des contours.",
+        "Choisir entre seuil global, Otsu et seuillage adaptatif en fonction de l’histogramme et de l’éclairage.",
+        "Construire une chaîne morphologique avec érosion, dilatation, ouverture, fermeture, top-hat et squelettisation.",
+        "Transformer des pixels segmentés en objets mesurables avec contours, étiquetage et regionprops.",
+        "Régler Harris et les transformées de Hough en reliant leurs paramètres aux propriétés géométriques recherchées."
+      ],
+      "next_steps": [
+        "Regrouper les fonctions répétées dans un petit package testé, avec validation des types, dimensions et canaux d’entrée.",
+        "Ajouter des jeux d’images annotés et mesurer précision, rappel et intersection-over-union au lieu de s’appuyer uniquement sur l’inspection visuelle.",
+        "Compléter et corriger les explorations du notebook d’évaluation sur l’égalisation HSV, le zero-crossing, Frangi et le comptage d’objets.",
+        "Étudier watershed et les contours actifs pour mieux séparer les objets fortement collés.",
+        "Comparer ces méthodes explicables à un détecteur ou segmentateur profond sur le même protocole."
+      ]
+    },
+    {
+      "slug": "apprentissage-profond",
+      "title": "Apprentissage profond — vision, signaux & PyTorch",
+      "category": "ai",
+      "category_label": "Deep learning",
+      "card_summary": "Parcours PyTorch allant des tenseurs et ondelettes de Haar à la classification GTSRB/CIFAR-10, avec Lightning, ResNet18, métriques et pipelines de séries temporelles.",
+      "summary": "Une progression en cinq travaux pratiques pour apprendre les opérateurs PyTorch, entraîner des réseaux et structurer des expériences reproductibles sur images et signaux.",
+      "role": "Réalisation des notebooks de manipulation de tenseurs, classification Iris, transfert d’apprentissage GTSRB, pipeline FordA et expérimentation CIFAR-10",
+      "type": "Portfolio de travaux pratiques — apprentissage profond",
+      "architecture_label": "DataModule → modèle → entraînement → métriques / checkpoint",
+      "github": "https://github.com/khaled1809",
+      "source_label": "Voir mon GitHub",
+      "source_short_label": "GitHub",
+      "stack": [
+        "Python",
+        "PyTorch",
+        "PyTorch Lightning",
+        "Torchvision",
+        "Torchmetrics",
+        "timm",
+        "TensorBoard",
+        "NumPy",
+        "scikit-learn",
+        "CNN",
+        "ResNet18",
+        "DataLoader",
+        "Transfer learning",
+        "FordA",
+        "CIFAR-10",
+        "GTSRB"
+      ],
+      "cover": "assets/images/projects/deep-learning-overview.png",
+      "images": [
+        "assets/images/projects/deep-learning-overview.png",
+        "assets/images/projects/deep-learning-pipeline.png",
+        "assets/images/projects/deep-learning-haar.png",
+        "assets/images/projects/deep-learning-gtsrb.png",
+        "assets/images/projects/deep-learning-forda.png"
+      ],
+      "problem": "L’objectif du parcours était de comprendre le deep learning à plusieurs niveaux : mécanique des tenseurs et convolutions, boucle d’apprentissage, séparation des données, transfert d’apprentissage et gestion d’expériences. Les jeux Iris, GTSRB, FordA et CIFAR-10 imposaient des formes d’entrée et des protocoles différents ; il fallait donc éviter une solution monolithique et raisonner sur les dimensions, les transformations, la fonction de perte et la métrique adaptées à chaque cas.",
+      "solution": "Le TP 1 utilise PyTorch pour manipuler canaux et batches, appliquer pooling et conv2d, construire une décomposition de Haar à quatre composantes, apprendre un noyau par descente de gradient et reconstruire l’image avec une convolution transposée. Le TP 2 met en place un premier réseau entièrement connecté sur Iris avec DataLoader, cross-entropy, SGD/AdaGrad, sauvegarde et comparaison à un SVM. Le TP GTSRB structure les données dans un LightningDataModule, ajoute resize et rotation, remplace la tête d’un ResNet18 pré-entraîné, suit Accuracy avec Torchmetrics et utilise Trainer/checkpoints. FordA construit le pipeline de séries de 500 valeurs et une baseline avant modélisation, tandis que CIFAR-10 explore un MLP, un CNN avec batch normalization et un resnet18d de timm. Les journaux GTSRB fournis montrent une validation proche de 0,93 ; un score de test à 1,00 apparaît sur un sous-ensemble de 84 images et doit donc être interprété avec prudence, d’autant qu’un autre checkpoint produit une évaluation différente.",
+      "architecture": [
+        {
+          "title": "Opérateurs de base et ondelettes",
+          "text": "Le premier notebook rend explicites les dimensions NCHW, les transpositions, le pooling, les filtres séparables et la reconstruction. Il relie ainsi les primitives PyTorch aux opérations mathématiques sur une image."
+        },
+        {
+          "title": "Boucle supervisée complète",
+          "text": "TensorDataset et DataLoader alimentent le réseau ; la passe forward produit les logits ; la cross-entropy, backward et l’optimiseur mettent à jour les poids ; une phase de test séparée mesure la généralisation."
+        },
+        {
+          "title": "Pipeline Lightning modulaire",
+          "text": "Le DataModule gère extraction, split et transformations GTSRB. Le LightningModule regroupe forward, étapes train/validation/test, métriques et optimiseur, tandis que Trainer orchestre accélérateur, logs et checkpoints."
+        },
+        {
+          "title": "Progression des architectures",
+          "text": "Les notebooks passent d’un réseau entièrement connecté à un CNN puis à ResNet18. La tête de classification est adaptée au nombre de classes et les transformations sont ajustées au backbone."
+        },
+        {
+          "title": "Images et séries temporelles",
+          "text": "CIFAR-10 utilise des images couleur ; FordA charge des signaux unidimensionnels de longueur 500. La structure commune — split, Dataset, DataLoader, baseline et export — permet de changer de modalité sans perdre le protocole."
+        }
+      ],
+      "challenges": [
+        {
+          "title": "Maîtriser les dimensions des tenseurs",
+          "text": "Une convolution ou un pooling échoue rapidement lorsque batch, canaux, hauteur et largeur ne sont pas dans l’ordre attendu.",
+          "resolution": "J’ai vérifié les shapes à chaque étape, utilisé reshape/transpose de façon explicite et relié le nombre de canaux de sortie aux quatre filtres de Haar. Cette discipline est devenue un réflexe avant de déboguer le modèle lui-même."
+        },
+        {
+          "title": "Éviter les fuites entre entraînement, validation et test",
+          "text": "Une séparation mal conçue ou des transformations aléatoires appliquées au test peuvent produire une métrique flatteuse mais peu fiable.",
+          "resolution": "J’ai isolé les datasets, réservé l’augmentation au train et centralisé les loaders dans un DataModule. Les résultats très élevés sur le petit sous-ensemble GTSRB sont documentés comme un signal à confirmer, pas comme une performance générale."
+        },
+        {
+          "title": "Adapter un réseau pré-entraîné au problème",
+          "text": "ResNet18 est conçu pour ImageNet et ne correspond pas directement aux quatre classes ni aux dimensions initiales des images de panneaux.",
+          "resolution": "J’ai redimensionné les images, remplacé la couche finale, choisi une cross-entropy multiclasse et suivi une Accuracy Torchmetrics indépendante de la loss. Le backbone et la tête peuvent ensuite être gelés ou affinés séparément."
+        },
+        {
+          "title": "Rendre les exécutions comparables",
+          "text": "Des splits, checkpoints ou paramètres différents expliquent que deux évaluations du même notebook ne donnent pas exactement le même score.",
+          "resolution": "L’utilisation de LightningCLI/YAML, ModelCheckpoint, logs et seeds constitue la base d’un protocole reproductible. J’ai aussi appris à conserver la taille du jeu de test et le checkpoint utilisé avec chaque résultat."
+        },
+        {
+          "title": "Changer de modalité sans perdre la qualité du pipeline",
+          "text": "Une série FordA ne se traite pas comme une image GTSRB, mais les mêmes risques de labels incohérents, mauvais split et batch incorrect existent.",
+          "resolution": "J’ai séparé la lecture des CSV, l’encodage des classes, les tenseurs, les loaders et la baseline. Cette structure permet d’introduire ensuite un Conv1d ou un autre modèle sans réécrire la gestion des données."
+        }
+      ],
+      "learnings": [
+        "Manipuler précisément tenseurs, canaux, batches et convolutions, notamment à travers la décomposition et la reconstruction de Haar.",
+        "Écrire une boucle d’apprentissage supervisé avec fonction de perte, gradients, optimiseur, évaluation et sauvegarde du modèle.",
+        "Structurer une expérience PyTorch Lightning avec DataModule, LightningModule, Trainer, Torchmetrics et checkpoints.",
+        "Adapter ResNet18 par transfert d’apprentissage et choisir des transformations cohérentes avec le backbone.",
+        "Comparer MLP, CNN et architectures timm sans confondre sophistication du modèle et qualité du protocole.",
+        "Interpréter une métrique en tenant compte du split, de la taille du sous-ensemble, du checkpoint et de la reproductibilité."
+      ],
+      "next_steps": [
+        "Finaliser un protocole commun avec seeds, stratification, version des données et configuration YAML enregistrée pour chaque exécution.",
+        "Ajouter matrice de confusion, précision/rappel par classe et courbes d’apprentissage pour compléter l’Accuracy.",
+        "Comparer gel du backbone, fine-tuning partiel et fine-tuning complet de ResNet18 avec early stopping.",
+        "Terminer l’entraînement CIFAR-10 et FordA avec des baselines solides, notamment CNN 2D et Conv1d, puis documenter leurs résultats.",
+        "Ajouter des tests unitaires sur les shapes, les transformations et une étape d’entraînement sur mini-lot afin de détecter les régressions rapidement."
+      ]
+    },
+    {
+      "slug": "apprentissage-avance",
+      "title": "Apprentissage avancé — ensembles, RL & XAI",
+      "category": "ai",
+      "category_label": "Machine learning avancé",
+      "card_summary": "Travaux pratiques sur AdaBoost, SVM/PCA, SARSA, Q-learning, approximation PyTorch et méthodes d’explicabilité d’images.",
+      "summary": "Un ensemble d’expériences qui approfondit la sélection de modèles, les méthodes d’ensemble, l’apprentissage par renforcement et l’explicabilité.",
+      "role": "Implémentation pédagogique d’AdaBoost, recherche d’hyperparamètres SVM, agents FrozenLake tabulaires et approximés, puis prototypes XAI sur AlexNet",
+      "type": "Portfolio de travaux pratiques — apprentissage automatique avancé",
+      "architecture_label": "Supervisé + ensembles + renforcement + explicabilité",
+      "github": "https://github.com/khaled1809",
+      "source_label": "Voir mon GitHub",
+      "source_short_label": "GitHub",
+      "stack": [
+        "Python",
+        "NumPy",
+        "SciPy",
+        "scikit-learn",
+        "AdaBoost",
+        "SVM",
+        "PCA",
+        "GridSearchCV",
+        "Gymnasium",
+        "SARSA",
+        "Q-learning",
+        "PyTorch",
+        "Replay Memory",
+        "Target Network",
+        "AlexNet",
+        "XAI",
+        "Saliency",
+        "RISE",
+        "ipywidgets"
+      ],
+      "cover": "assets/images/projects/advanced-learning-overview.png",
+      "images": [
+        "assets/images/projects/advanced-learning-overview.png",
+        "assets/images/projects/advanced-learning-adaboost.png",
+        "assets/images/projects/advanced-learning-svm-pca.png",
+        "assets/images/projects/advanced-learning-reinforcement.png",
+        "assets/images/projects/advanced-learning-xai.png"
+      ],
+      "problem": "Ces travaux pratiques visaient à dépasser l’utilisation directe d’un estimateur : comprendre comment AdaBoost redistribue les poids, sélectionner un SVM sans sur-ajuster le test, apprendre une politique dans un environnement séquentiel et expliquer une décision d’un réseau d’images. Chaque volet imposait une méthode d’évaluation différente et mettait en évidence des compromis entre performance, stabilité et interprétabilité.",
+      "solution": "Sur two-moons, j’ai entraîné AdaBoost avec un SVC RBF comme apprenant faible, comparé la frontière aux baselines et réimplémenté la boucle de pondération dans une classe AdaBoost_TP : erreur pondérée, coefficient alpha, normalisation des poids et vote final. L’exécution fournie atteint environ 0,964 sur le test avec le SVM faible, contre une performance nettement inférieure avec une souche de décision. Sur Wine, j’ai standardisé les 13 variables, projeté par PCA et utilisé GridSearchCV ; les traces fournies sélectionnent un noyau RBF avec C=10 et affichent environ 0,98 sur le test. Pour FrozenLake, j’ai implémenté politique ε-greedy, tables Q, mises à jour SARSA et Q-learning, puis un prototype inspiré DQN avec réseau PyTorch, replay memory et réseau cible synchronisé. Enfin, le notebook XAI expérimente inversion de modèle, saliency par gradient et agrégation de masques de type RISE sur AlexNet ; ces dernières parties restent des prototypes à compléter et valider quantitativement.",
+      "architecture": [
+        {
+          "title": "Modèles supervisés et sélection",
+          "text": "Les données sont séparées avant la recherche, standardisées lorsque nécessaire et comparées à des DummyClassifier. PCA sert à visualiser Wine, tandis que GridSearchCV sélectionne noyau et C sans consulter directement le test."
+        },
+        {
+          "title": "AdaBoost réimplémenté",
+          "text": "AdaBoost_TP conserve une copie de chaque estimateur, apprend avec sample_weight, calcule l’erreur pondérée et alpha, met à jour les poids puis agrège les prédictions par vote pondéré."
+        },
+        {
+          "title": "Agents tabulaires FrozenLake",
+          "text": "Une Q-table indexe états et actions. La politique ε-greedy équilibre exploration et exploitation ; SARSA met à jour avec l’action réellement choisie, alors que Q-learning utilise la meilleure action estimée au prochain état."
+        },
+        {
+          "title": "Approximation de la fonction Q",
+          "text": "Le prototype PyTorch encode la carte et la position de l’agent, stocke les transitions dans ReplayMemory, entraîne un réseau de politique sur des mini-lots et utilise un réseau cible périodiquement synchronisé."
+        },
+        {
+          "title": "Explications globales et locales",
+          "text": "L’inversion optimise une entrée synthétique pour maximiser une classe ; la saliency différencie le score par rapport aux pixels ; RISE perturbe l’image avec des masques aléatoires puis agrège leur contribution."
+        }
+      ],
+      "challenges": [
+        {
+          "title": "Évaluer sans favoriser le modèle le plus complexe",
+          "text": "Un score isolé ne permet pas de savoir si AdaBoost ou SVM apporte réellement quelque chose par rapport à une stratégie simple.",
+          "resolution": "J’ai conservé un jeu de test séparé, ajouté des DummyClassifier, étudié rapports de classification et frontières de décision, puis utilisé la validation croisée pour la recherche d’hyperparamètres."
+        },
+        {
+          "title": "Stabiliser les poids d’AdaBoost",
+          "text": "Une erreur pondérée nulle, supérieure à 0,5 ou un alpha extrême peut rendre la mise à jour instable et concentrer tout le poids sur quelques exemples.",
+          "resolution": "La réimplémentation m’a obligé à contrôler l’erreur, normaliser les poids et analyser chaque apprenant faible. J’ai aussi identifié que la convention des labels doit être explicitée, car la formulation canonique est plus naturelle avec des classes −1/+1 que 0/1."
+        },
+        {
+          "title": "Comprendre on-policy et off-policy",
+          "text": "SARSA et Q-learning semblent proches dans le code, mais n’évaluent pas la même action suivante et peuvent apprendre des comportements différents.",
+          "resolution": "J’ai isolé les deux règles de mise à jour, conservé la même politique ε-greedy et observé le rôle de next_action dans SARSA contre max Q dans Q-learning. Cette séparation clarifie l’effet du risque et de l’exploration."
+        },
+        {
+          "title": "Limiter les instabilités de l’approximation",
+          "text": "Avec un réseau, les cibles dépendent d’un modèle qui change lui-même, tandis que les transitions successives sont fortement corrélées.",
+          "resolution": "Le prototype introduit une replay memory pour échantillonner des lots et un réseau cible synchronisé tous les C pas. J’ai appris pourquoi ces deux mécanismes sont structurants dans DQN, même avant d’obtenir un benchmark final robuste."
+        },
+        {
+          "title": "Ne pas confondre une heatmap et une explication certaine",
+          "text": "Les cartes de salience sont sensibles à la normalisation, au bruit et à la méthode choisie ; une zone colorée ne prouve pas une causalité.",
+          "resolution": "J’ai comparé une méthode locale par gradient à RISE, qui repose sur des perturbations, et distingué ces approches de l’inversion globale. Les sorties sont présentées comme des indices expérimentaux à valider, non comme une justification absolue du modèle."
+        }
+      ],
+      "learnings": [
+        "Comparer un modèle à des baselines et choisir des métriques adaptées avant d’interpréter un gain de performance.",
+        "Comprendre AdaBoost de l’intérieur : poids d’exemples, erreur pondérée, alpha et vote des estimateurs.",
+        "Utiliser standardisation, PCA et GridSearchCV sans laisser le jeu de test guider les hyperparamètres.",
+        "Formaliser un problème de renforcement avec état, action, récompense, politique et équation de Bellman.",
+        "Distinguer SARSA on-policy de Q-learning off-policy, puis comprendre le rôle du replay et du réseau cible.",
+        "Évaluer avec prudence les méthodes XAI et confronter plusieurs explications plutôt que de surinterpréter une seule heatmap."
+      ],
+      "next_steps": [
+        "Corriger et tester l’implémentation AdaBoost avec des labels −1/+1, des cas limites et une comparaison systématique à scikit-learn.",
+        "Terminer l’implémentation multiclasse One-vs-One proposée dans le notebook SVM au lieu de la présenter comme achevée.",
+        "Mesurer SARSA, Q-learning et l’approximation PyTorch sur plusieurs seeds avec récompense moyenne, taux de succès et courbes d’apprentissage.",
+        "Ajouter Double DQN, décroissance contrôlée de l’epsilon et suivi des gradients pour réduire le biais de surestimation.",
+        "Compléter les boucles XAI, comparer stabilité des cartes et utiliser des métriques de suppression/insertion sur plusieurs images."
+      ]
+    },
+    {
+      "slug": "analyse-donnees-statistiques",
+      "title": "Analyse de données — statistiques, ACP & clustering",
+      "category": "data",
+      "category_label": "Data science & statistiques",
+      "card_summary": "Huit notebooks couvrant statistiques descriptives, χ², ACP, régression et influence, sélection Mallows Cp, K-means et EM/GMM implémentés manuellement.",
+      "summary": "Un parcours d’analyse quantitative qui combine fondements mathématiques, implémentations NumPy/SciPy et comparaison aux références scikit-learn.",
+      "role": "Implémentation des méthodes statistiques et algorithmiques, visualisation des résultats, diagnostics et comparaison à des bibliothèques de référence",
+      "type": "Portfolio de travaux pratiques — analyse de données",
+      "architecture_label": "Décrire → tester → réduire → modéliser → regrouper",
+      "github": "https://github.com/khaled1809",
+      "source_label": "Voir mon GitHub",
+      "source_short_label": "GitHub",
+      "stack": [
+        "Python",
+        "Pandas",
+        "NumPy",
+        "SciPy",
+        "Matplotlib",
+        "scikit-learn",
+        "Statistiques descriptives",
+        "Test du χ²",
+        "KDE",
+        "ACP / PCA",
+        "Régression linéaire",
+        "Analyse d’influence",
+        "Mallows Cp",
+        "K-means",
+        "EM / GMM",
+        "Enveloppe convexe"
+      ],
+      "cover": "assets/images/projects/data-analysis-overview.png",
+      "images": [
+        "assets/images/projects/data-analysis-overview.png",
+        "assets/images/projects/data-analysis-clustering.png",
+        "assets/images/projects/data-analysis-onion.png",
+        "assets/images/projects/data-analysis-regression.png",
+        "assets/images/projects/data-analysis-pca.png"
+      ],
+      "problem": "Le domaine regroupait huit notebooks conçus pour comprendre les méthodes au-delà d’un appel de bibliothèque. Il fallait calculer et visualiser des résumés robustes, tester une dépendance, réduire la dimension, diagnostiquer une régression, sélectionner des variables et regrouper des observations. Le principal enjeu était de conserver la rigueur mathématique tout en produisant du code réutilisable et des graphiques qui rendent les conclusions vérifiables.",
+      "solution": "J’ai commencé par moyenne, médiane, IQR, moyenne tronquée, CDF/PDF empirique et KDE avec plusieurs bandes passantes. Les notebooks bivariés construisent tableaux de contingence et test du χ² manuellement puis avec SciPy, étudient la corrélation CO₂–anomalie de température et développent une représentation Onion par enveloppes convexes récursives. Pour l’ACP, j’ai standardisé Iris, calculé covariance, valeurs/vecteurs propres et projection, comparé à scikit-learn, puis reconstruit l’image cameraman avec différents nombres de composantes. Le TP 8 implémente la régression par résolution du système normal, résidus, variance, R², matrice chapeau, levier et influence ; dans l’exécution fournie, l’analyse de deux observations influentes fait passer le R² d’environ 0,36 à 0,86 après retrait, ce qui illustre un diagnostic et non une règle de suppression automatique. La sélection exhaustive, avant et arrière utilise Mallows Cp. Enfin, sur Old Faithful, j’ai codé K-means et EM/GMM avec calcul des centroïdes, distances, responsabilités et paramètres, puis confronté les regroupements aux implémentations scikit-learn.",
+      "architecture": [
+        {
+          "title": "Description et estimation",
+          "text": "Les notebooks calculent résumés de position et dispersion, boxplots, fonctions de répartition empiriques, histogrammes et KDE. Plusieurs bandes passantes montrent le compromis entre sur-lissage et variance."
+        },
+        {
+          "title": "Dépendance et robustesse bivariée",
+          "text": "Les tableaux de contingence et le χ² évaluent une association entre variables qualitatives. La classe Onion pèle récursivement les enveloppes convexes pour construire bag médian, inliers, whiskers et outliers en 2D."
+        },
+        {
+          "title": "ACP et reconstruction",
+          "text": "Après centrage-réduction, la covariance est diagonalée, les composantes sont triées par variance expliquée et les données projetées. La reconstruction d’image mesure concrètement la perte d’information liée à la compression."
+        },
+        {
+          "title": "Régression, diagnostic et sélection",
+          "text": "La fonction ma_reg centralise estimation des coefficients, variance résiduelle, R² et diagnostic par observation. Mallows Cp compare les sous-modèles à la variance du modèle complet via recherche exhaustive, forward et backward."
+        },
+        {
+          "title": "Clustering déterministe et probabiliste",
+          "text": "K-means alterne affectation et recalcul des centroïdes. EM estime responsabilités, proportions, moyennes et covariances d’un mélange gaussien, ce qui donne une appartenance souple plutôt qu’une étiquette uniquement dure."
+        }
+      ],
+      "challenges": [
+        {
+          "title": "Passer des formules au code sans perdre la stabilité",
+          "text": "Une traduction directe des équations peut introduire inversions inutiles, divisions fragiles ou formes de matrices incohérentes.",
+          "resolution": "J’ai vérifié dimensions et invariants, préféré np.linalg.solve à l’inversion explicite dans la régression et comparé les sorties aux fonctions SciPy/scikit-learn. L’implémentation manuelle devient ainsi un moyen de compréhension et de validation."
+        },
+        {
+          "title": "Interpréter les observations influentes sans les supprimer aveuglément",
+          "text": "Un point à fort levier ou grand résidu peut être une erreur, un cas rare légitime ou le signe que le modèle linéaire est mal spécifié.",
+          "resolution": "J’ai combiné résidus, diagonale de la matrice chapeau et contribution au modèle, visualisé les effets puis comparé linéaire et quadratique. Le changement de R² est documenté comme une analyse de sensibilité, pas comme une justification automatique du nettoyage."
+        },
+        {
+          "title": "Comprendre l’indétermination du signe en ACP",
+          "text": "Les projections NumPy et scikit-learn peuvent être parfaitement corrélées en valeur absolue mais opposées en signe, donnant l’impression d’un résultat incorrect.",
+          "resolution": "J’ai vérifié la corrélation et reconnu qu’un vecteur propre et son opposé décrivent le même axe. Cette propriété évite de confondre orientation graphique et information réellement conservée."
+        },
+        {
+          "title": "Stabiliser K-means et EM",
+          "text": "Les deux méthodes dépendent de l’initialisation ; EM ajoute le risque de covariances mal conditionnées et de responsabilités proches de zéro.",
+          "resolution": "J’ai centré-réduit Old Faithful, suivi les itérations, recalculé les paramètres à partir des appartenances et comparé plusieurs étapes aux références. Une prochaine version ajouterait régularisation des covariances et redémarrages multiples."
+        },
+        {
+          "title": "Distinguer association statistique et causalité",
+          "text": "Une corrélation élevée entre émissions de CO₂ et anomalie de température, ou un χ² significatif, ne décrit pas à elle seule le mécanisme causal.",
+          "resolution": "J’ai séparé calcul, visualisation et interprétation, vérifié les effectifs attendus et formulé les conclusions en termes d’association. Cette prudence est essentielle pour éviter qu’un résultat numérique dépasse ce que le protocole permet d’affirmer."
+        }
+      ],
+      "learnings": [
+        "Construire des résumés robustes avec IQR, moyenne tronquée, CDF/PDF et KDE, puis expliquer le rôle de la bande passante.",
+        "Mettre en œuvre et interpréter un test du χ² sans confondre association et causalité.",
+        "Développer une représentation Onion à partir d’enveloppes convexes récursives pour analyser des nuages bivariés.",
+        "Calculer une ACP de bout en bout, comprendre variance expliquée, indétermination du signe et reconstruction dans l’espace original.",
+        "Diagnostiquer une régression avec résidus, levier, matrice chapeau et influence avant de modifier les données ou la forme du modèle.",
+        "Comparer sélection exhaustive, forward et backward avec Mallows Cp pour contrôler le compromis biais–variance.",
+        "Implémenter K-means et EM/GMM sur Old Faithful et distinguer affectation dure de responsabilités probabilistes."
+      ],
+      "next_steps": [
+        "Ajouter des tests numériques sur données synthétiques dont les résultats théoriques sont connus.",
+        "Utiliser validation croisée et intervalles de confiance pour compléter R², Cp et estimations ponctuelles.",
+        "Régulariser les covariances EM, multiplier les initialisations et comparer AIC/BIC pour choisir le nombre de composantes.",
+        "Transformer les fonctions des notebooks en modules documentés avec type hints, gestion des valeurs manquantes et API cohérente.",
+        "Créer un rapport reproductible qui relie chaque conclusion au code, au graphique et aux hypothèses statistiques correspondantes."
+      ]
+    },
+    {
+      "slug": "semantic-dna-provenance",
+      "title": "Semantic DNA — Analyse de provenance documentaire",
+      "category": "ai",
+      "category_label": "IA & NLP",
+      "card_summary": "Pipeline NLP et machine learning capable de comparer des documents, regrouper les versions liées, classer la source probable et expliquer les transformations détectées.",
+      "summary": "Un système d’analyse de provenance qui représente chaque document par un Semantic DNA multidimensionnel, apprend une fonction de similarité, regroupe les documents apparentés et classe leur source probable.",
+      "role": "Construction de la première version du Semantic DNA, puis ajout de l’apprentissage supervisé de la similarité et des visualisations d’évaluation",
+      "type": "Pipeline NLP et machine learning — projet annuel en équipe",
+      "architecture_label": "NLP enrichi + similarité + clustering + ranking",
+      "github": "https://github.com/khaled1809",
+      "source_label": "Voir mon GitHub",
+      "source_short_label": "GitHub",
+      "stack": [
+        "Python",
+        "spaCy",
+        "Sentence-BERT",
+        "scikit-learn",
+        "LightGBM",
+        "Transformers",
+        "TextBlob",
+        "Clustering",
+        "Streamlit"
+      ],
+      "cover": "assets/images/projects/semantic-dna-overview.png",
+      "images": [
+        "assets/images/projects/semantic-dna-overview.png",
+        "assets/images/projects/semantic-dna-vector.png",
+        "assets/images/projects/semantic-dna-learning.png",
+        "assets/images/projects/semantic-dna-clustering.png",
+        "assets/images/projects/semantic-dna-ranking.png",
+        "assets/images/projects/semantic-dna-mutations.png"
+      ],
+      "problem": "Sur le Web, un même contenu peut être copié, résumé, paraphrasé ou enrichi avant d’être republié. Une comparaison uniquement lexicale confond facilement deux articles traitant du même thème et manque les réutilisations fortement reformulées. Le projet devait donc relier les documents issus d’un même corpus, estimer leur source probable et fournir des indices compréhensibles sur la mutation observée.",
+      "solution": "Le pipeline extrait avec spaCy les entités nommées et relations syntaxiques, estime thèmes et intentions par classification zero-shot, calcule la polarité avec TextBlob et encode le contexte avec Sentence-BERT. Ces dimensions forment un Semantic DNA dont les similarités séparées alimentent une régression logistique. Une matrice de similarité permet ensuite un clustering agglomératif avec seuil appris, tandis qu’un ranker LightGBM classe la source probable à l’intérieur de chaque groupe. Sur les jeux de données contrôlés fournis, l’évaluation rapportée atteint 103 vrais négatifs et 97 vrais positifs sur 200 paires, puis 98 sources classées en Top-1 sur 100 groupes. Ces résultats valident la chaîne sur ce protocole synthétique, sans constituer une preuve de généralisation à un corpus Web réel et hétérogène.",
+      "architecture": [
+        {
+          "title": "Extraction NLP multi-signal",
+          "text": "spaCy produit les entités et dépendances ; les modèles Transformers ajoutent thèmes et intentions, TextBlob la polarité et Sentence-BERT un vecteur contextuel de 384 dimensions."
+        },
+        {
+          "title": "Semantic DNA et similarité",
+          "text": "Chaque document conserve des dimensions distinctes — entités, relations, thèmes, intentions, polarité et contexte — afin de calculer une similarité explicable plutôt qu’un score vectoriel opaque unique."
+        },
+        {
+          "title": "Apprentissage et regroupement",
+          "text": "Une régression logistique apprend la combinaison des signaux sur des paires annotées. La matrice prédite est convertie en distances pour un clustering agglomératif dont le seuil est sélectionné par évaluation."
+        },
+        {
+          "title": "Ranking de provenance et mutations",
+          "text": "Dans chaque cluster, LightGBM ordonne les candidats sources à partir de caractéristiques de structure et de similarité. Une couche d’analyse qualifie ensuite les réutilisations : copie, réduction, enrichissement ou reformulation."
+        }
+      ],
+      "challenges": [
+        {
+          "title": "Un seuil de clustering très sensible",
+          "text": "Un seuil trop permissif fusionnait des événements seulement voisins, alors qu’un seuil trop strict séparait plusieurs versions d’un même document.",
+          "resolution": "Nous avons balayé les seuils de 0,05 à 0,95 et comparé l’Adjusted Rand Index ainsi que le nombre de groupes. Un seuil proche de 0,26 a été retenu sur le jeu d’entraînement contrôlé, tout en documentant qu’il devra être recalibré sur d’autres distributions."
+        },
+        {
+          "title": "Un biais de données dominait le ranking",
+          "text": "Un biais de construction rendait la variable relation_count anormalement prédictive parce que les textes sources du premier jeu étaient souvent plus longs et plus structurés que leurs dérivés.",
+          "resolution": "L’analyse des importances LightGBM a révélé ce raccourci. Le dataset a été corrigé et diversifié avec des contre-exemples, notamment des sources plus courtes, afin que le modèle combine plusieurs signaux au lieu d’exploiter un artefact de génération."
+        },
+        {
+          "title": "Éviter que l’embedding décide seul",
+          "text": "Sentence-BERT rapproche efficacement les textes sémantiquement voisins, mais peut aussi fusionner des documents portant sur le même thème sans partager la même provenance.",
+          "resolution": "Nous avons conservé des scores séparés et confronté le contexte aux entités, relations, thèmes et polarité. Cette décomposition améliore l’interprétation d’une décision et limite la dépendance à une seule représentation."
+        },
+        {
+          "title": "Concilier performance et interprétabilité",
+          "text": "Le ranking supervisé améliore la sélection de la source, mais rend la décision moins directement lisible qu’une règle déterministe.",
+          "resolution": "Les caractéristiques d’entrée restent nommées, les importances sont visualisées et les limites du protocole sont explicitées. Le score final est ainsi accompagné d’indices plutôt que présenté comme une vérité absolue."
+        }
+      ],
+      "learnings": [
+        "La qualité et la diversité du corpus influencent davantage la robustesse qu’un score élevé obtenu sur des données trop régulières.",
+        "Distinguer classification de similarité, clustering d’événements et ranking de source permet de choisir une métrique adaptée à chaque sous-problème.",
+        "Évaluer un seuil de clustering exige de surveiller simultanément la qualité des groupes et leur granularité.",
+        "L’importance des variables aide à détecter les fuites d’information et les biais de construction du dataset.",
+        "Documenter les limites et l’incertitude rend un pipeline d’IA plus crédible et plus facile à auditer."
+      ],
+      "next_steps": [
+        "Évaluer le système sur un corpus Web réel, multilingue et temporellement ordonné, avec sources externes conservées pour le test.",
+        "Mettre en place une validation croisée par groupe et des contrôles anti-fuite entre documents d’une même famille.",
+        "Calibrer les probabilités et exposer un niveau d’incertitude lorsque plusieurs sources restent plausibles.",
+        "Indexer et mettre en cache les embeddings pour traiter un volume de documents plus important.",
+        "Construire un graphe de provenance intégrant dates, liens et chaînes successives de transformation."
+      ]
+    },
+    {
+      "slug": "reecriture-oulipo-nlp",
+      "title": "Réécriture créative sous contraintes OULIPO",
+      "category": "ai",
+      "category_label": "IA & NLP",
+      "card_summary": "Application de TAL français combinant spaCy, WordNet et embeddings pour transformer un texte selon des contraintes littéraires tout en préservant sa structure.",
+      "summary": "Un moteur de réécriture créative qui analyse le français, sélectionne les mots modifiables et applique des contraintes OULIPO lexicales, sémantiques ou structurelles depuis une interface Tkinter.",
+      "role": "Projet en équipe de quatre — participation à la conception, à l’implémentation et à l’intégration du pipeline de réécriture",
+      "type": "Application de traitement automatique du langage",
+      "architecture_label": "spaCy → WordNet → embeddings → contraintes",
+      "github": "https://github.com/khaled1809",
+      "source_label": "Voir mon GitHub",
+      "source_short_label": "GitHub",
+      "stack": [
+        "Python",
+        "spaCy",
+        "WordNet",
+        "NLTK",
+        "Embeddings",
+        "Tkinter",
+        "NLP français"
+      ],
+      "cover": "assets/images/projects/oulipo-overview.png",
+      "images": [
+        "assets/images/projects/oulipo-overview.png",
+        "assets/images/projects/oulipo-analysis.png",
+        "assets/images/projects/oulipo-constraints.png",
+        "assets/images/projects/oulipo-drift.png",
+        "assets/images/projects/oulipo-interface.png"
+      ],
+      "problem": "Réécrire automatiquement un texte sous une contrainte littéraire ne consiste pas à remplacer des mots au hasard. Il faut identifier les éléments réellement modifiables, préserver les noms propres et la ponctuation, trouver des candidats français compatibles avec la catégorie grammaticale, puis reconstruire une phrase lisible malgré des ressources lexicales parfois incomplètes.",
+      "solution": "Le texte est d’abord analysé par spaCy avec le modèle français afin de récupérer lemme, catégorie grammaticale, dépendance, entités et mots vides. Le moteur cible principalement noms, verbes et adjectifs, puis interroge WordNet en français pour obtenir hyperonymes, antonymes, synonymes ou cohyponymes. Les embeddings spaCy classent les candidats selon leur proximité sémantique. Une couche de contraintes applique ensuite hyperonymisation, antonymie, voisin sémantique, lipogramme, initiale imposée, inversion syntaxique, érosion, transformation par définition ou dérive progressive. Les espaces d’origine sont conservés, des règles d’élision réparent la surface du texte et l’ensemble est accessible en console comme dans une interface Tkinter.",
+      "architecture": [
+        {
+          "title": "Analyse linguistique",
+          "text": "Le prétraitement spaCy enrichit chaque token avec son lemme, POS, dépendance, tête syntaxique, statut d’entité et possibilité de modification."
+        },
+        {
+          "title": "Génération de candidats",
+          "text": "Une couche WordNet traduit les catégories spaCy vers les POS lexicaux, récupère les relations disponibles en français et fournit des solutions de repli lorsque la ressource est pauvre."
+        },
+        {
+          "title": "Sélection sémantique et contraintes",
+          "text": "Les vecteurs spaCy servent à ordonner les candidats. Chaque contrainte filtre ou transforme ensuite la proposition selon ses propres règles, sans mélanger analyse, sélection et reconstruction."
+        },
+        {
+          "title": "Interface et itérations",
+          "text": "L’interface Tkinter expose l’analyse token par token, les méthodes de réécriture et le journal des résultats. La dérive sémantique réanalyse le texte à chaque tour avant la transformation suivante."
+        }
+      ],
+      "challenges": [
+        {
+          "title": "Aligner spaCy et WordNet en français",
+          "text": "Les deux bibliothèques n’utilisent pas exactement les mêmes catégories grammaticales et certains lemmes français disposent de peu de synsets exploitables.",
+          "resolution": "Nous avons créé un mapping explicite des POS, normalisé les lemmes retournés par NLTK et prévu plusieurs stratégies de repli : relation lexicale proche, voisin vectoriel ou conservation du token lorsque aucun candidat fiable n’existe."
+        },
+        {
+          "title": "Préserver l’élision et les espaces",
+          "text": "Une substitution token par token pouvait produire des formes telles que « le animal », casser une apostrophe ou ajouter un espace avant la ponctuation.",
+          "resolution": "La reconstruction réutilise les espaces enregistrés par spaCy, puis une passe ciblée applique les élisions françaises et nettoie les frontières autour des apostrophes et signes de ponctuation sans réécrire toute la phrase."
+        },
+        {
+          "title": "Contrôler la dérive sans bloquer la génération",
+          "text": "Des seuils sémantiques trop stricts ne produisaient aucun candidat ; trop larges, ils éloignaient rapidement le texte de son sens initial.",
+          "resolution": "Les candidats sont classés, filtrés par intervalle de similarité et accompagnés d’un fallback. Pour la dérive itérative, le nouveau texte est réanalysé à chaque étape afin que les décisions reposent sur son état réel."
+        },
+        {
+          "title": "Protéger les entités et mots fonctionnels",
+          "text": "Modifier un nom propre, une préposition ou un déterminant peut rendre la phrase grammaticalement incohérente ou changer une information essentielle.",
+          "resolution": "Le statut d’entité, le caractère stop-word et la catégorie grammaticale participent à la décision de modification. Les transformations structurelles sont traitées séparément des remplacements lexicaux."
+        }
+      ],
+      "learnings": [
+        "Exploiter les métadonnées linguistiques — POS, dépendances, entités et lemmes — pour limiter une génération au bon périmètre.",
+        "Combiner une ressource lexicale symbolique et des embeddings : WordNet explique la relation, tandis que le vecteur aide à départager les candidats.",
+        "Prévoir des stratégies de repli explicites lorsqu’un mot est hors vocabulaire ou absent des synsets français.",
+        "Réévaluer le texte après chaque transformation itérative plutôt que de réutiliser une analyse devenue obsolète.",
+        "Séparer le moteur de réécriture de l’interface graphique afin de pouvoir tester et réutiliser la logique."
+      ],
+      "next_steps": [
+        "Ajouter un module morphologique pour accorder genre, nombre et conjugaison après chaque remplacement.",
+        "Comparer les embeddings statiques de spaCy à des représentations contextuelles françaises de type CamemBERT.",
+        "Construire un corpus de phrases de test et mesurer grammaticalité, respect de la contrainte et conservation du sens.",
+        "Permettre de composer plusieurs contraintes avec priorités, paramètres et aperçu des candidats refusés.",
+        "Charger les modèles en arrière-plan et mettre en cache les recherches lexicales pour rendre l’interface plus réactive."
+      ]
+    },
+    {
+      "slug": "moteur-deduction-csp",
+      "title": "Moteur de déduction par contraintes",
+      "category": "ai",
+      "category_label": "IA & algorithmique",
+      "card_summary": "Moteur Python qui formalise un jeu de nombres secrets comme un CSP dynamique, propage les contraintes et recommande les questions les plus informatives avec un score de risque.",
+      "summary": "Un moteur d’aide à la décision pour un jeu à dix joueurs : domaines, contraintes binaires, propagation AC-3, simulation de réponses et recherche MRV/backtracking.",
+      "role": "Conception et implémentation individuelle du moteur de contraintes, du scoring et de l’interface console",
+      "type": "Moteur de raisonnement et d’aide à la décision",
+      "architecture_label": "CSP dynamique + AC-3 + score de risque",
+      "github": "https://github.com/khaled1809",
+      "source_label": "Voir mon GitHub",
+      "source_short_label": "GitHub",
+      "stack": [
+        "Python",
+        "CSP",
+        "AC-3",
+        "Backtracking",
+        "MRV",
+        "Heuristiques"
+      ],
+      "cover": "assets/images/projects/csp-overview.png",
+      "images": [
+        "assets/images/projects/csp-overview.png",
+        "assets/images/projects/csp-propagation.png",
+        "assets/images/projects/csp-scoring.png",
+        "assets/images/projects/csp-console.png",
+        "assets/images/projects/csp-search.png"
+      ],
+      "problem": "Dans ce jeu, dix joueurs possèdent chacun un nombre distinct compris entre 1 et 100. Les questions combinent deux nombres par addition, multiplication modulo 10, division entière ou comptage de zéros. Le moteur doit réduire l’incertitude sur le nombre du joueur principal et sur les autres participants, tout en évitant de révéler trop vite une information exploitable par un partenaire. Explorer naïvement les 100¹⁰ configurations est impossible.",
+      "solution": "J’ai représenté chaque joueur par une variable dotée d’un domaine, puis chaque réponse par une contrainte binaire vérifiée sur les couples de valeurs possibles. Après chaque observation, AC-3 supprime les valeurs sans support et la contrainte all-different propage l’unicité des nombres. Pour recommander une question, le moteur copie la base de connaissances, simule chaque réponse possible, relance la propagation et mesure la réduction attendue du domaine personnel, le gain collectif et le risque que le partenaire déduise le nombre du joueur principal. Un score pondéré classe les opérations. MRV et le backtracking n’explorent l’espace résiduel que lorsque la propagation ne suffit plus.",
+      "architecture": [
+        {
+          "title": "Base de connaissances dynamique",
+          "text": "La KB conserve les domaines des dix variables, les contraintes ajoutées pendant la partie et les liens nécessaires pour revisiter les arcs concernés."
+        },
+        {
+          "title": "Propagation AC-3",
+          "text": "La procédure revise un arc en supprimant toute valeur qui ne possède aucun support dans le domaine voisin, puis remet en file les dépendances impactées jusqu’au point fixe."
+        },
+        {
+          "title": "Simulation et scoring",
+          "text": "Chaque question candidate est évaluée sur des copies indépendantes de la KB. Les gains sont moyennés selon les réponses possibles et pénalisés par une estimation du risque de révélation."
+        },
+        {
+          "title": "Recherche et interface console",
+          "text": "MRV choisit la variable restante la plus contrainte avant le backtracking. Une interface interactive permet d’inspecter les domaines, tester une opération et appliquer une réponse réelle."
+        }
+      ],
+      "challenges": [
+        {
+          "title": "Traduire chaque opération en filtre binaire",
+          "text": "Les réponses n’ont pas toutes la même forme : somme exacte ou intervalle, produit modulo 10, division entière et nombre de zéros dans les valeurs manipulées.",
+          "resolution": "J’ai centralisé l’évaluation des couples dans des contraintes spécialisées. AC-3 utilise ensuite la même notion de support, quelle que soit l’opération, ce qui évite de disperser les règles dans le moteur de propagation."
+        },
+        {
+          "title": "Simuler sans corrompre la partie",
+          "text": "Tester toutes les réponses possibles d’une question modifie les domaines ; une simulation faite sur l’état réel aurait rendu les recommandations suivantes incohérentes.",
+          "resolution": "Chaque branche travaille sur une copie isolée de la base de connaissances. Seule la réponse effectivement donnée par un joueur est appliquée à l’état persistant."
+        },
+        {
+          "title": "Équilibrer information et risque de révélation",
+          "text": "La question qui réduit le plus le domaine personnel peut aussi permettre au partenaire d’identifier immédiatement le nombre du joueur principal.",
+          "resolution": "Le score combine gain personnel, réduction globale et probabilité qu’un domaine sensible devienne singleton. Les poids rendent le compromis explicite et permettent de modifier la stratégie sans changer le solveur."
+        },
+        {
+          "title": "Limiter l’explosion de la recherche",
+          "text": "Même après quelques questions, énumérer toutes les affectations compatibles peut devenir très coûteux.",
+          "resolution": "La propagation est toujours exécutée avant la recherche. MRV choisit ensuite le domaine le plus petit et le backtracking s’arrête dès qu’une contradiction est détectée ou que la limite de solutions demandée est atteinte."
+        }
+      ],
+      "learnings": [
+        "Formaliser un problème interactif comme un CSP dynamique avec variables, domaines et contraintes ajoutées au fil des observations.",
+        "Comprendre la notion de support dans AC-3 et l’importance de remettre en file les arcs affectés après chaque réduction.",
+        "Simuler une décision sur un état copié pour comparer des scénarios sans introduire d’effet de bord.",
+        "Utiliser l’espérance de réduction et un coût de risque pour transformer une heuristique intuitive en critère mesurable.",
+        "Privilégier la propagation avant une recherche combinatoire guidée par MRV et le backtracking."
+      ],
+      "next_steps": [
+        "Ajouter des tests unitaires et des tests par propriétés pour chaque opération, la révision des arcs et la contrainte all-different.",
+        "Remplacer la liste utilisée comme file par deque et mesurer le coût de la propagation sur des parties complètes.",
+        "Réorganiser les modules pour supprimer les imports circulaires et définir des interfaces plus nettes entre KB, scoring et console.",
+        "Calibrer les poids du score sur des simulations de tournois plutôt que sur des valeurs choisies manuellement.",
+        "Ajouter une interface graphique montrant les domaines, le graphe de contraintes et l’effet prévisionnel d’une question."
+      ]
+    },
+    {
+      "slug": "application-mobile-taches",
+      "title": "Application mobile de gestion des tâches",
+      "category": "mobile",
+      "category_label": "Mobile",
+      "card_summary": "Application React Native connectée à une API REST sécurisée pour organiser des listes, suivre l’avancement et gérer une session utilisateur.",
+      "summary": "Une application multiplateforme de gestion de tâches avec authentification JWT, catégories personnalisées, filtrage et synchronisation avec une API REST.",
+      "role": "Conception de l’interface, intégration de l’API et gestion de l’état",
+      "type": "Application mobile full-stack",
+      "architecture_label": "Composants + Context API + couche API",
+      "github": "https://github.com/khaled1809/MobileAppli",
+      "stack": [
+        "React Native",
+        "Expo",
+        "API REST",
+        "JWT",
+        "Context API",
+        "React Navigation"
+      ],
+      "cover": "assets/images/projects/mobile10.png",
+      "images": [
+        "assets/images/projects/mobile1.png",
+        "assets/images/projects/mobile3.png",
+        "assets/images/projects/mobile4.png",
+        "assets/images/projects/mobile9.png",
+        "assets/images/projects/mobile10.png",
+        "assets/images/projects/mobile12.png",
+        "assets/images/projects/mobile15.png",
+        "assets/images/projects/mobile16.png"
+      ],
+      "problem": "L’objectif était de proposer une expérience simple pour créer des listes de tâches, organiser les éléments par catégorie et retrouver les données d’un utilisateur après authentification. La difficulté ne se limitait donc pas à l’interface : il fallait aussi conserver une session fiable et synchroniser plusieurs écrans avec un serveur distant.",
+      "solution": "J’ai structuré l’application autour d’une couche dédiée aux requêtes HTTP, d’un contexte global pour l’utilisateur et le jeton JWT, d’écrans responsables de la navigation et de composants réutilisables pour les listes et les tâches. Les actions de création, modification, suppression et filtrage déclenchent une mise à jour cohérente de l’interface après la réponse de l’API.",
+      "architecture": [
+        {
+          "title": "Couche API isolée",
+          "text": "Les appels d’authentification, de listes et de tâches sont regroupés afin d’éviter de disperser les URL, en-têtes et traitements d’erreur dans les composants visuels."
+        },
+        {
+          "title": "État global ciblé",
+          "text": "Context API centralise la session, le jeton et les données partagées sans introduire un gestionnaire d’état plus lourd que nécessaire."
+        },
+        {
+          "title": "Composants réutilisables",
+          "text": "Les listes, tâches, formulaires et états d’avancement sont découpés en composants spécialisés pour faciliter la maintenance."
+        }
+      ],
+      "challenges": [
+        {
+          "title": "Cycle de vie du jeton JWT",
+          "text": "Une session incohérente pouvait provoquer des écrans accessibles sans données ou des requêtes rejetées.",
+          "resolution": "J’ai centralisé la lecture du jeton et l’ajout de l’en-tête d’autorisation, puis prévu un retour contrôlé vers l’authentification lorsqu’une requête n’est plus autorisée."
+        },
+        {
+          "title": "Synchronisation interface / serveur",
+          "text": "Après une mutation, l’interface devait refléter exactement l’état réellement enregistré par l’API.",
+          "resolution": "J’ai privilégié une mise à jour à partir de la réponse serveur et un rechargement ciblé des données plutôt qu’une modification locale difficile à annuler en cas d’échec."
+        },
+        {
+          "title": "État partagé entre plusieurs écrans",
+          "text": "Les listes, les tâches et la progression dépendent des mêmes données, mais ne doivent pas se mettre à jour de façon contradictoire.",
+          "resolution": "J’ai défini une source de vérité commune et limité l’état local aux éléments purement visuels ou temporaires."
+        }
+      ],
+      "learnings": [
+        "Comprendre le cycle complet d’une authentification par jeton : connexion, stockage, envoi et invalidation.",
+        "Séparer les responsabilités entre navigation, logique métier, requêtes réseau et rendu des composants.",
+        "Traiter explicitement les états de chargement, d’erreur et de liste vide pour éviter une interface ambiguë.",
+        "Concevoir des composants suffisamment génériques pour être réutilisés sans masquer la logique métier."
+      ],
+      "next_steps": [
+        "Stocker le jeton dans un espace sécurisé et ajouter un mécanisme de renouvellement de session.",
+        "Mettre en place des mises à jour optimistes avec restauration automatique en cas d’échec.",
+        "Ajouter des tests de composants et des tests d’intégration sur les parcours d’authentification."
+      ]
+    },
+    {
+      "slug": "jeu-strategie-java",
+      "title": "Jeu de stratégie au tour par tour",
+      "category": "software",
+      "category_label": "Logiciel Java",
+      "card_summary": "Jeu Java avec génération procédurale de labyrinthe, comportements d’IA et architecture fondée sur plusieurs design patterns.",
+      "summary": "Un jeu de stratégie Java dans lequel des joueurs humains ou contrôlés par une IA évoluent dans un labyrinthe généré procéduralement et exécutent des actions au tour par tour.",
+      "role": "Conception du domaine, logique de jeu et interface graphique",
+      "type": "Logiciel Java interactif",
+      "architecture_label": "MVC + Strategy + Command + State",
+      "github": "https://github.com/khaled1809/JeuStrategie",
+      "stack": [
+        "Java",
+        "Java Swing",
+        "POO",
+        "MVC",
+        "Backtracking",
+        "Design patterns"
+      ],
+      "cover": "assets/images/projects/strat4.png",
+      "images": [
+        "assets/images/projects/strat1.png",
+        "assets/images/projects/strat3.png",
+        "assets/images/projects/strat4.png",
+        "assets/images/projects/strat5.png",
+        "assets/images/projects/strat6.png",
+        "assets/images/projects/strat7.png",
+        "assets/images/projects/strat8.png"
+      ],
+      "problem": "Le projet devait réunir plusieurs mécaniques — déplacement, combat, ressources, pièges, armes et IA — sans transformer le code en une succession de conditions difficiles à faire évoluer. Il fallait également produire une carte différente à chaque partie tout en garantissant des zones accessibles.",
+      "solution": "J’ai modélisé les actions et les comportements comme des objets spécialisés. Le moteur de jeu orchestre les tours, la grille encapsule l’état des cases et les stratégies d’IA déterminent les décisions des joueurs. La génération du labyrinthe repose sur un parcours avec retour arrière afin de créer un réseau de passages cohérent.",
+      "architecture": [
+        {
+          "title": "Moteur de tours",
+          "text": "Un gestionnaire central contrôle le joueur actif, les actions autorisées et la transition vers le tour suivant afin d’éviter les changements d’état dispersés."
+        },
+        {
+          "title": "Comportements interchangeables",
+          "text": "Strategy isole les profils agressif, défensif ou aléatoire ; Command encapsule les actions ; State fait varier le comportement des cases et des entités."
+        },
+        {
+          "title": "Vue synchronisée",
+          "text": "Observer relie le modèle à l’interface afin que le plateau, le journal et les informations du joueur reflètent les changements du moteur."
+        }
+      ],
+      "challenges": [
+        {
+          "title": "Générer un labyrinthe jouable",
+          "text": "Une génération purement aléatoire pouvait produire des zones isolées ou des chemins incohérents.",
+          "resolution": "J’ai utilisé un algorithme de backtracking qui creuse les passages depuis une cellule de départ et garantit la continuité du parcours."
+        },
+        {
+          "title": "Orchestrer les effets d’une action",
+          "text": "Une attaque peut consommer des munitions, modifier plusieurs entités, déclencher un piège et mettre fin à un tour.",
+          "resolution": "J’ai encapsulé les actions dans des commandes et défini un ordre d’exécution explicite pour limiter les effets de bord."
+        },
+        {
+          "title": "Utiliser les patterns avec mesure",
+          "text": "Multiplier les patterns sans frontière claire aurait augmenté la complexité au lieu de la réduire.",
+          "resolution": "Chaque pattern répond à un axe de variation précis : comportement, action, état, notification ou création d’objets."
+        }
+      ],
+      "learnings": [
+        "Choisir un design pattern à partir d’un problème concret plutôt que pour complexifier artificiellement l’architecture.",
+        "Décomposer un moteur de jeu en règles déterministes afin de faciliter le débogage d’une séquence d’actions.",
+        "Faire évoluer l’IA en remplaçant une stratégie sans modifier la classe du joueur.",
+        "Séparer la logique du jeu de l’interface pour conserver un mode terminal et une vue graphique."
+      ],
+      "next_steps": [
+        "Introduire une graine aléatoire enregistrable afin de rejouer exactement une partie lors du débogage.",
+        "Ajouter une recherche de chemin A* pour créer une IA capable de raisonner sur les distances.",
+        "Couvrir les règles de combat et de tour par des tests unitaires indépendants de Swing."
+      ]
+    },
+    {
+      "slug": "analyse-algorithmes-tri",
+      "title": "Analyse et visualisation d’algorithmes de tri",
+      "category": "data",
+      "category_label": "Data & algorithmique",
+      "card_summary": "Banc d’essai Python comparant cinq tris selon la taille, le désordre, les comparaisons, les accès mémoire et la distribution des données.",
+      "summary": "Une étude expérimentale en Python pour confronter la complexité théorique de plusieurs algorithmes de tri à leurs performances observées sur des jeux de données variés.",
+      "role": "Implémentation des algorithmes, instrumentation et analyse des résultats",
+      "type": "Projet d’analyse algorithmique",
+      "architecture_label": "Génération → mesure → export → visualisation",
+      "github": "https://github.com/khaled1809/AlgoTri",
+      "stack": [
+        "Python",
+        "NumPy",
+        "Pandas",
+        "Matplotlib",
+        "CSV",
+        "Algorithmique"
+      ],
+      "cover": "assets/images/projects/visu2.png",
+      "images": [
+        "assets/images/projects/visu1.png",
+        "assets/images/projects/visu2.png",
+        "assets/images/projects/visu3.png",
+        "assets/images/projects/visu5.png",
+        "assets/images/projects/visu7.png",
+        "assets/images/projects/visu8.png",
+        "assets/images/projects/visu9.png",
+        "assets/images/projects/visu11.png"
+      ],
+      "problem": "Comparer des algorithmes uniquement avec leur notation asymptotique ne suffit pas à comprendre leur comportement réel. Le projet devait produire des jeux de données contrôlés, instrumenter chaque tri et rendre les résultats lisibles sans confondre coût algorithmique et coût de mesure.",
+      "solution": "J’ai séparé la génération des données, les transformations de désordre, les implémentations des tris, la collecte des métriques et la visualisation. Les résultats sont exportés sous forme tabulaire puis exploités avec Pandas et Matplotlib pour comparer le temps, les comparaisons et les accès mémoire.",
+      "architecture": [
+        {
+          "title": "Générateur de scénarios",
+          "text": "Les entrées varient en taille, distribution et niveau de désordre pour éviter de conclure à partir d’un seul cas favorable."
+        },
+        {
+          "title": "Instrumentation uniforme",
+          "text": "Chaque algorithme remonte les mêmes métriques afin que les courbes soient comparables malgré des logiques internes différentes."
+        },
+        {
+          "title": "Pipeline de restitution",
+          "text": "Les mesures sont sauvegardées en CSV, agrégées avec Pandas puis transformées en graphiques explicites."
+        }
+      ],
+      "challenges": [
+        {
+          "title": "Mesurer sans trop perturber",
+          "text": "Compter chaque comparaison et accès mémoire ajoute lui-même du travail à l’algorithme.",
+          "resolution": "J’ai distingué les exécutions destinées au chronométrage de celles destinées au comptage détaillé, puis conservé le même protocole pour tous les tris."
+        },
+        {
+          "title": "Créer des expériences reproductibles",
+          "text": "Deux jeux de données aléatoires différents peuvent donner des résultats difficiles à comparer.",
+          "resolution": "J’ai organisé les scénarios et les exports pour réutiliser les mêmes données d’entrée entre plusieurs algorithmes."
+        },
+        {
+          "title": "Interpréter les courbes",
+          "text": "Une mesure isolée peut être influencée par la machine, le bruit système ou une petite taille d’échantillon.",
+          "resolution": "J’ai analysé les tendances relatives et confronté les résultats à la complexité attendue plutôt que d’afficher un classement absolu."
+        }
+      ],
+      "learnings": [
+        "Différencier complexité théorique, coût constant et comportement observé sur une machine réelle.",
+        "Construire un protocole expérimental avant de produire des graphiques.",
+        "Utiliser Pandas pour nettoyer, agréger et comparer des séries de résultats homogènes.",
+        "Présenter les limites d’une mesure afin d’éviter des conclusions trop affirmatives."
+      ],
+      "next_steps": [
+        "Répéter chaque expérience et afficher médiane, dispersion et intervalle de confiance.",
+        "Ajouter des jeux de données presque triés et fortement dupliqués pour enrichir les scénarios.",
+        "Créer une interface interactive permettant de sélectionner algorithmes, tailles et métriques."
+      ]
+    },
+    {
+      "slug": "entrepot-donnees-apache-hop-olap",
+      "title": "Entrepôt de données et analyse OLAP",
+      "category": "data",
+      "category_label": "Data engineering & BI",
+      "card_summary": "Conception d’un entrepôt en étoile, alimentation avec Apache Hop et requêtes MDX pour analyser les prestations par client, temps, géographie et catégorie.",
+      "summary": "Projet académique de bout en bout : modélisation dimensionnelle d’un entrepôt de prestations, scripts SQL, pipelines ETL avec Apache Hop, contrôles de qualité et exploration OLAP en MDX.",
+      "role": "Co-conception avec Georges Dosseh : modèle dimensionnel, scripts SQL, pipelines ETL et analyses MDX",
+      "type": "Projet académique — Master 1 Informatique, Université de Caen Normandie",
+      "architecture_label": "Schéma en étoile + ETL + OLAP",
+      "github": "https://github.com/khaled1809",
+      "source_label": "Voir mon GitHub",
+      "source_short_label": "GitHub",
+      "stack": [
+        "SQL",
+        "SQLite",
+        "Apache Hop",
+        "ETL",
+        "Modélisation en étoile",
+        "OLAP",
+        "MDX"
+      ],
+      "cover": "assets/images/projects/warehouse-overview.png",
+      "images": [
+        "assets/images/projects/warehouse-overview.png",
+        "assets/images/projects/warehouse-star-schema.png",
+        "assets/images/projects/warehouse-etl-hop.png",
+        "assets/images/projects/warehouse-olap-mdx.png",
+        "assets/images/projects/warehouse-quality.png"
+      ],
+      "problem": "Les données opérationnelles fournies permettaient de retrouver des prestations individuelles, mais elles n’étaient pas organisées pour répondre rapidement à des questions décisionnelles : évolution du chiffre d’affaires, durée des interventions, comparaison des catégories ou analyse par lieu de résidence et lieu d’intervention. Il fallait définir un grain fiable, préserver les axes d’analyse et garantir que les agrégats du cube restent cohérents avec les données sources.",
+      "solution": "Nous avons placé la table de faits VENTE au centre du modèle, avec une ligne par prestation réalisée et deux mesures additives : le prix et la durée en minutes. Les dimensions CLIENT, PRESTATION, DATES et GEOGRAPHY utilisent des clés substituts ; la géographie est réutilisée sous deux rôles métier pour distinguer la résidence du client du lieu d’intervention. Les pipelines Apache Hop chargent d’abord les dimensions, résolvent les clés par lookup, isolent les anomalies puis alimentent les faits. Enfin, des requêtes SQL et MDX servent à réconcilier les comptes et les sommes avant l’analyse multidimensionnelle.",
+      "architecture": [
+        {
+          "title": "Grain et table de faits",
+          "text": "Le grain est fixé à une prestation terminée. VENTE porte les mesures prix et durée, ainsi que les références vers les dimensions nécessaires à chaque axe d’analyse."
+        },
+        {
+          "title": "Dimensions et rôles métier",
+          "text": "Les clés substituts découplent l’entrepôt des identifiants sources. DATES fournit les hiérarchies temporelles et GEOGRAPHY joue deux rôles distincts : intervention et résidence."
+        },
+        {
+          "title": "Chaîne ETL puis couche OLAP",
+          "text": "Apache Hop orchestre typage, nettoyage, dédoublonnage, lookups et chargement. Le cube expose ensuite mesures et hiérarchies afin de construire des requêtes MDX avec drill-down."
+        }
+      ],
+      "challenges": [
+        {
+          "title": "Définir un grain sans doublonner les prestations",
+          "text": "Un grain trop vague aurait produit des doubles comptes, tandis qu’un grain trop fin aurait fragmenté artificiellement le prix et la durée.",
+          "resolution": "Nous avons formalisé « une ligne de fait = une prestation réalisée », puis ajouté des contrôles d’unicité et une réconciliation du nombre de lignes entre la source, le staging et la table VENTE afin de rendre les relances du pipeline vérifiables."
+        },
+        {
+          "title": "Résoudre les clés substituts dans le bon ordre",
+          "text": "La table de faits ne pouvait être chargée qu’après avoir retrouvé les clés techniques des clients, prestations, dates et lieux correspondants.",
+          "resolution": "Les transformations chargent d’abord les dimensions et effectuent des lookups à partir des clés métier. Les lignes non résolues sont dirigées vers un flux de rejet documenté plutôt que d’être insérées avec une référence incorrecte."
+        },
+        {
+          "title": "Distinguer les rôles géographiques et valider le cube",
+          "text": "Une même dimension géographique devait répondre à deux questions différentes, ce qui pouvait rendre les jointures et les agrégations ambiguës dans la couche OLAP.",
+          "resolution": "Nous avons exposé deux rôles logiques — résidence et intervention — avec des hiérarchies claires. Les requêtes MDX utilisant NON EMPTY, slicers et membres de hiérarchie ont ensuite été comparées à des agrégations SQL équivalentes."
+        }
+      ],
+      "learnings": [
+        "Définir explicitement le grain d’une table de faits avant de choisir les mesures et les dimensions.",
+        "Comprendre le rôle des clés substituts et organiser le chargement des dimensions avant celui des faits.",
+        "Construire un pipeline ETL observable avec typage, lookups, flux de rejet et contrôles de réconciliation.",
+        "Modéliser une dimension à rôles multiples, notamment pour les dates de début et de fin ou les deux géographies.",
+        "Raisonner en tuples, ensembles, hiérarchies et contexte de cube lors de l’écriture de requêtes MDX."
+      ],
+      "next_steps": [
+        "Ajouter une stratégie SCD de type 2 pour conserver l’historique des changements de client ou de géographie.",
+        "Mettre en place un chargement incrémental avec table d’audit, identifiant de lot et reprise après échec.",
+        "Automatiser les tests de qualité : clés orphelines, doublons, mesures négatives et écarts entre SQL et OLAP."
+      ]
+    },
+    {
+      "slug": "streamscope-power-bi",
+      "title": "StreamScope — Analyse d’engagement streaming",
+      "category": "data",
+      "category_label": "Business intelligence",
+      "card_summary": "Rapport Power BI interactif pour suivre sessions, utilisateurs actifs, heures visionnées et complétion, avec comparaison 2024–2025 et sécurité RLS par pays.",
+      "summary": "Analyse décisionnelle d’une plateforme de streaming fictive : nettoyage Power Query, modèle en étoile, mesures DAX, navigation interactive, drillthrough, info-bulles et contrôle d’accès RLS.",
+      "role": "Préparation des données, modélisation, mesures DAX, design du rapport et contrôle qualité",
+      "type": "Projet BI sur données synthétiques",
+      "architecture_label": "Power Query + modèle en étoile + DAX",
+      "github": "https://github.com/khaled1809",
+      "source_label": "Voir mon GitHub",
+      "source_short_label": "GitHub",
+      "stack": [
+        "Power BI",
+        "Power Query",
+        "DAX",
+        "Modèle en étoile",
+        "RLS",
+        "Drillthrough",
+        "Performance Analyzer"
+      ],
+      "cover": "assets/images/projects/streamscope-overview.png",
+      "images": [
+        "assets/images/projects/streamscope-overview.png",
+        "assets/images/projects/streamscope-model.png",
+        "assets/images/projects/streamscope-content.png",
+        "assets/images/projects/streamscope-users.png",
+        "assets/images/projects/streamscope-drillthrough.png",
+        "assets/images/projects/streamscope-powerquery.png"
+      ],
+      "problem": "L’équipe produit devait comprendre l’usage de la plateforme, la performance du catalogue et les habitudes des utilisateurs à partir de trois fichiers CSV synthétiques. Les données brutes contenaient des doublons, des durées négatives et des libellés incohérents. Le rapport devait aussi comparer 2024 et 2025, permettre une exploration par pays, abonnement et période, puis restreindre la visibilité des données selon le pays autorisé.",
+      "solution": "J’ai construit une chaîne Power Query reproductible pour typer les colonnes, normaliser les libellés, dédoublonner les clés et isoler les lignes anormales. Le modèle s’appuie sur une table de faits VISIONNAGES reliée aux dimensions UTILISATEURS, CATALOGUE et DATE par des relations 1-à-plusieurs à sens unique. Les indicateurs sont définis par des mesures DAX explicites, puis présentés dans quatre pages complémentaires avec filtres synchronisés, paramètres de champs, drillthrough, info-bulles et signets. Un rôle RLS par pays et une passe avec Performance Analyzer complètent la validation.",
+      "architecture": [
+        {
+          "title": "Préparation Power Query",
+          "text": "Chaque CSV possède une requête de staging. Les étapes de typage, normalisation, dédoublonnage et traitement des anomalies restent lisibles et rejouables lors de chaque actualisation."
+        },
+        {
+          "title": "Modèle sémantique en étoile",
+          "text": "FACT_VISIONNAGES concentre les événements d’usage ; les dimensions utilisateurs, catalogue et calendrier filtrent les mesures sans relations bidirectionnelles ambiguës."
+        },
+        {
+          "title": "Rapport, navigation et sécurité",
+          "text": "Les pages de synthèse, contenus, utilisateurs et détail partagent les mêmes mesures. Le drillthrough transporte le contexte choisi et le rôle RLS limite les données visibles par pays."
+        }
+      ],
+      "challenges": [
+        {
+          "title": "Nettoyer sans masquer les anomalies",
+          "text": "Corriger directement les valeurs négatives ou supprimer toutes les répétitions aurait pu détruire une information utile ou cacher un problème de génération des données.",
+          "resolution": "J’ai séparé les règles de qualité : typage explicite, table de correspondance pour les libellés, dédoublonnage sur clés identifiées et requête de diagnostic pour les durées invalides. Chaque correction reste visible dans les étapes Power Query."
+        },
+        {
+          "title": "Maîtriser le contexte de filtre en DAX",
+          "text": "Les sessions, utilisateurs actifs et comparaisons temporelles ne pouvaient pas être obtenus correctement avec de simples sommes de colonnes.",
+          "resolution": "J’ai créé des mesures explicites avec DISTINCTCOUNT, CALCULATE et DIVIDE, puis utilisé la table calendrier pour les comparaisons 2024–2025. Chaque mesure a été testée dans plusieurs contextes de pays, abonnement, appareil et période afin d’éviter les totaux incohérents."
+        },
+        {
+          "title": "Conserver une navigation riche sans ralentir le rapport",
+          "text": "Les interactions, info-bulles, signets et paramètres de champs peuvent multiplier les requêtes visuelles et rendre le comportement difficile à comprendre.",
+          "resolution": "J’ai limité les interactions inutiles, réutilisé les mêmes mesures, gardé un schéma en étoile à sens unique et contrôlé les visuels avec Performance Analyzer. Le rôle RLS a été vérifié avec « Afficher comme rôle » sur plusieurs sélections de pays."
+        }
+      ],
+      "learnings": [
+        "Transformer des fichiers bruts en tables fiables grâce à des étapes Power Query explicites et rejouables.",
+        "Distinguer contexte de ligne et contexte de filtre pour écrire des mesures DAX stables.",
+        "Utiliser une table calendrier dédiée pour les comparaisons temporelles plutôt que les hiérarchies automatiques.",
+        "Concevoir une navigation analytique avec drillthrough, info-bulles, signets et paramètres de champs sans surcharger les pages.",
+        "Tester la sécurité RLS et analyser le coût des visuels avant de considérer un rapport comme terminé."
+      ],
+      "next_steps": [
+        "Mettre en place un RLS dynamique basé sur une table de correspondance utilisateur–pays.",
+        "Ajouter un tableau de bord de qualité des données et un dictionnaire versionné des mesures DAX.",
+        "Préparer l’actualisation incrémentielle et un processus de déploiement séparant développement, recette et production."
+      ]
+    },
+    {
+      "slug": "pays-du-monde",
+      "title": "Gestion des pays du monde",
+      "category": "web",
+      "category_label": "Web full-stack",
+      "card_summary": "Application PHP/MySQL avec recherche, tri, fiches détaillées et opérations CRUD sur une base de pays.",
+      "summary": "Une application web dynamique permettant de rechercher, trier, consulter et administrer une base de données de pays à travers un CRUD complet.",
+      "role": "Conception full-stack et modélisation des données",
+      "type": "Application web dynamique",
+      "architecture_label": "PHP serveur + MySQL + vues HTML/CSS",
+      "github": "https://github.com/khaled1809/PaysDuMonde",
+      "stack": [
+        "PHP",
+        "MySQL",
+        "SQL",
+        "HTML5",
+        "CSS3",
+        "CRUD"
+      ],
+      "cover": "assets/images/projects/pays1.png",
+      "images": [
+        "assets/images/projects/pays1.png",
+        "assets/images/projects/pays4.png",
+        "assets/images/projects/pays8.png",
+        "assets/images/projects/pays10.png",
+        "assets/images/projects/pays11.png",
+        "assets/images/projects/pays14.png",
+        "assets/images/projects/pays15.png"
+      ],
+      "problem": "Le projet devait centraliser des informations hétérogènes — nom, drapeau, population, surface et description — tout en proposant des opérations de recherche, de tri et d’administration fiables. Une modification incomplète pouvait facilement créer un décalage entre les données et les contenus associés.",
+      "solution": "J’ai organisé l’application autour d’une connexion MySQL centralisée, de pages dédiées aux opérations CRUD et de contrôles côté serveur avant chaque écriture. L’interface fournit des retours explicites après les actions et conserve des parcours distincts pour la consultation et l’administration.",
+      "architecture": [
+        {
+          "title": "Modèle relationnel",
+          "text": "La structure SQL définit les champs nécessaires aux listes, aux recherches et aux fiches détaillées afin d’éviter de dupliquer les informations dans les pages."
+        },
+        {
+          "title": "Flux CRUD contrôlé",
+          "text": "Chaque action valide l’identifiant et les données reçues, exécute une requête ciblée puis redirige vers un état stable après mutation."
+        },
+        {
+          "title": "Interface orientée usage",
+          "text": "La navigation distingue liste, recherche, tri, création, modification, détail et suppression pour garder chaque écran lisible."
+        }
+      ],
+      "challenges": [
+        {
+          "title": "Garantir la cohérence des données",
+          "text": "Les valeurs numériques, champs obligatoires et identifiants devaient rester valides quelle que soit l’origine de la requête.",
+          "resolution": "J’ai appliqué une validation côté serveur, normalisé les valeurs reçues et refusé les opérations portant sur un enregistrement inexistant."
+        },
+        {
+          "title": "Sécuriser les écritures SQL",
+          "text": "Concaténer directement les données de formulaire dans une requête aurait rendu le code fragile et exposé aux injections.",
+          "resolution": "J’ai structuré les requêtes avec des paramètres préparés et séparé la construction de la requête des données utilisateur."
+        },
+        {
+          "title": "Coordonner base et contenus visuels",
+          "text": "Une fiche devait rester exploitable même si un drapeau ou une description était absent.",
+          "resolution": "J’ai défini des chemins et valeurs de repli, puis regroupé les conventions de fichiers pour éviter les références cassées."
+        }
+      ],
+      "learnings": [
+        "Modéliser les données et les contraintes avant de construire les formulaires.",
+        "Ne jamais considérer la validation HTML comme suffisante : le serveur reste la source de confiance.",
+        "Centraliser la connexion et les opérations répétées pour réduire les divergences entre pages.",
+        "Utiliser le pattern Post/Redirect/Get pour éviter la répétition accidentelle d’une action au rafraîchissement."
+      ],
+      "next_steps": [
+        "Ajouter une pagination et une recherche multicritère pour gérer un volume de données plus important.",
+        "Protéger les fonctions d’administration derrière une authentification et des jetons CSRF.",
+        "Automatiser les tests des opérations CRUD et déplacer l’ensemble des contenus dans un stockage unifié."
+      ]
+    },
+    {
+      "slug": "site-animaux-mvc",
+      "title": "Gestion d’animaux avec architecture MVC",
+      "category": "web",
+      "category_label": "Web & architecture",
+      "card_summary": "Application PHP orientée objet qui sépare modèle, vues et contrôleurs pour gérer des fiches d’animaux et leurs images.",
+      "summary": "Une application PHP/MySQL organisée en MVC pour créer, lister et consulter des animaux tout en gardant la logique métier indépendante de l’affichage.",
+      "role": "Conception MVC, développement PHP et intégration MySQL",
+      "type": "Application web orientée objet",
+      "architecture_label": "Model — View — Controller",
+      "github": "https://github.com/khaled1809/Animaux",
+      "stack": [
+        "PHP",
+        "POO",
+        "MVC",
+        "MySQL",
+        "HTML5",
+        "CSS3"
+      ],
+      "cover": "assets/images/projects/animal4.png",
+      "images": [
+        "assets/images/projects/animal1.png",
+        "assets/images/projects/animal2.png",
+        "assets/images/projects/animal3.png",
+        "assets/images/projects/animal4.png",
+        "assets/images/projects/animal5.png"
+      ],
+      "problem": "Une première version procédurale aurait rapidement mélangé requêtes SQL, validation de formulaire, navigation et HTML. L’enjeu principal était donc de construire un CRUD simple tout en préparant une architecture capable d’accueillir de nouvelles actions sans dupliquer le code.",
+      "solution": "J’ai séparé l’accès aux données dans le modèle, l’orchestration des actions dans les contrôleurs et le rendu dans les vues. Les contrôleurs valident les entrées, appellent le modèle puis choisissent la vue ou la redirection adaptée. Les images sont traitées comme une donnée associée à la fiche de l’animal.",
+      "architecture": [
+        {
+          "title": "Modèle",
+          "text": "Il concentre les opérations de lecture et d’écriture et expose des méthodes métier compréhensibles par les contrôleurs."
+        },
+        {
+          "title": "Contrôleurs",
+          "text": "Ils traduisent une intention utilisateur — lister, afficher, créer ou supprimer — en appels au modèle et en navigation."
+        },
+        {
+          "title": "Vues",
+          "text": "Elles se limitent à la présentation des données préparées, ce qui évite de placer des requêtes SQL dans le HTML."
+        }
+      ],
+      "challenges": [
+        {
+          "title": "Définir les frontières MVC",
+          "text": "Certaines validations ou transformations pouvaient être placées aussi bien dans le contrôleur que dans le modèle.",
+          "resolution": "J’ai laissé au contrôleur les règles liées à la requête HTTP et au modèle les contraintes qui protègent les données du domaine."
+        },
+        {
+          "title": "Gérer les images envoyées",
+          "text": "Un fichier peut manquer, porter un nom dangereux ou ne pas correspondre au type attendu.",
+          "resolution": "J’ai prévu une validation du fichier, une convention de nommage et un chemin de repli pour conserver une fiche affichable."
+        },
+        {
+          "title": "Éviter les URL et actions incohérentes",
+          "text": "Une action mal routée pouvait appeler le mauvais contrôleur ou afficher une fiche inexistante.",
+          "resolution": "J’ai explicité les actions supportées et contrôlé systématiquement l’existence de l’identifiant avant le rendu."
+        }
+      ],
+      "learnings": [
+        "Comprendre concrètement la valeur de MVC : chaque couche devient plus courte et plus facile à raisonner.",
+        "Concevoir des méthodes de modèle orientées intention plutôt que d’exposer directement la structure SQL.",
+        "Limiter la logique dans les vues pour faciliter leur évolution visuelle.",
+        "Prévoir les cas d’erreur dès le parcours nominal : identifiant inconnu, données invalides et fichier absent."
+      ],
+      "next_steps": [
+        "Introduire un routeur central et des contrôleurs de base pour réduire le code répétitif.",
+        "Ajouter une protection CSRF et une authentification pour les actions d’administration.",
+        "Écrire des tests unitaires du modèle et des tests d’intégration des contrôleurs."
+      ]
+    },
+    {
+      "slug": "jeu-de-la-vie",
+      "title": "Simulation du Jeu de la Vie",
+      "category": "software",
+      "category_label": "Simulation Java",
+      "card_summary": "Automate cellulaire en Java avec grille configurable, contrôle de la simulation et mise à jour graphique en temps réel.",
+      "summary": "Une implémentation interactive du Jeu de la Vie de Conway permettant d’observer l’évolution d’une population de cellules génération après génération.",
+      "role": "Implémentation de l’algorithme, boucle de simulation et interface",
+      "type": "Simulation graphique",
+      "architecture_label": "MVC + Observer + moteur de générations",
+      "github": "https://github.com/khaled1809/GameOfLife",
+      "stack": [
+        "Java",
+        "Java Swing",
+        "MVC",
+        "Observer",
+        "Simulation",
+        "Algorithmique"
+      ],
+      "cover": "assets/images/projects/life1.png",
+      "images": [
+        "assets/images/projects/life1.png",
+        "assets/images/projects/life2.png",
+        "assets/images/projects/life3.png",
+        "assets/images/projects/life4.png",
+        "assets/images/projects/life5.png",
+        "assets/images/projects/life6.png",
+        "assets/images/projects/life7.png"
+      ],
+      "problem": "Les règles du Jeu de la Vie sont simples, mais leur application naïve produit facilement des résultats incorrects : toutes les cellules d’une génération doivent évoluer à partir du même état initial. Il fallait aussi maintenir une animation fluide sans bloquer les commandes de l’interface.",
+      "solution": "J’ai séparé l’état courant de l’état suivant afin de calculer chaque génération sans modifier la grille en cours de parcours. Le modèle notifie la vue après validation d’une génération, tandis qu’un contrôleur gère le démarrage, la pause, la réinitialisation et la création d’une configuration.",
+      "architecture": [
+        {
+          "title": "Double état de grille",
+          "text": "Une grille source est lue intégralement et une grille destination reçoit les nouveaux états avant l’échange des références."
+        },
+        {
+          "title": "Moteur indépendant",
+          "text": "Le calcul des voisins et des règles reste indépendant de Swing, ce qui permet de le tester ou de l’utiliser dans une autre vue."
+        },
+        {
+          "title": "Notification de la vue",
+          "text": "Observer déclenche un rafraîchissement uniquement lorsqu’une nouvelle génération cohérente est disponible."
+        }
+      ],
+      "challenges": [
+        {
+          "title": "Éviter les mises à jour en place",
+          "text": "Modifier une cellule avant d’avoir calculé ses voisines aurait changé le résultat de la même génération.",
+          "resolution": "J’ai utilisé deux représentations distinctes et appliqué l’échange seulement après le calcul complet."
+        },
+        {
+          "title": "Traiter les bords de la grille",
+          "text": "Les cellules situées sur les limites n’ont pas huit voisins valides.",
+          "resolution": "J’ai isolé le comptage des voisins et appliqué une règle de frontière explicite plutôt que de disperser les contrôles dans l’algorithme."
+        },
+        {
+          "title": "Synchroniser animation et interface",
+          "text": "Une boucle trop rapide ou exécutée au mauvais endroit pouvait bloquer les boutons et produire des rafraîchissements inutiles.",
+          "resolution": "J’ai contrôlé la cadence de génération et limité la vue à l’affichage de l’état validé par le modèle."
+        }
+      ],
+      "learnings": [
+        "Raisonner en états immuables à l’échelle d’une étape de simulation.",
+        "Distinguer le temps du moteur de simulation du temps de rendu de l’interface.",
+        "Isoler les règles dans une partie testable sans dépendance graphique.",
+        "Comprendre comment des règles locales simples produisent un comportement global complexe."
+      ],
+      "next_steps": [
+        "Ajouter des configurations prédéfinies comme les gliders et oscillateurs.",
+        "Proposer plusieurs politiques de bord, notamment une grille torique.",
+        "Optimiser les grandes grilles en suivant uniquement les cellules actives et leur voisinage."
+      ]
+    },
+    {
+      "slug": "puzzle-coulissant-java",
+      "title": "Puzzle coulissant en Java",
+      "category": "software",
+      "category_label": "Jeu Java",
+      "card_summary": "Jeu de taquin avec modèle partagé entre interface Swing et terminal, mélange toujours résoluble et compteur de mouvements.",
+      "summary": "Une version du jeu de taquin en Java, jouable en interface graphique ou dans le terminal, construite autour d’un même modèle de plateau.",
+      "role": "Conception MVC, logique du plateau et interactions utilisateur",
+      "type": "Jeu de logique",
+      "architecture_label": "MVC + vues Swing et terminal",
+      "github": "https://github.com/khaled1809/JeuPuzzle",
+      "stack": [
+        "Java",
+        "Java Swing",
+        "MVC",
+        "Événements",
+        "Algorithmique",
+        "POO"
+      ],
+      "cover": "assets/images/projects/puzle2.png",
+      "images": [
+        "assets/images/projects/puzle1.png",
+        "assets/images/projects/puzle2.png"
+      ],
+      "problem": "Le puzzle devait être mélangé sans générer une configuration impossible, accepter plusieurs modes d’interaction et détecter la victoire sans dupliquer la logique entre la version terminal et l’interface graphique.",
+      "solution": "J’ai placé l’état du plateau, les mouvements valides, le compteur et la condition de victoire dans un modèle unique. Le mélange est obtenu par une suite de mouvements légaux à partir de l’état résolu, ce qui garantit qu’un chemin inverse existe. Les vues traduisent simplement les entrées clavier, souris ou terminal en commandes du contrôleur.",
+      "architecture": [
+        {
+          "title": "Modèle de plateau",
+          "text": "Il conserve la grille, la position de la case vide, les mouvements autorisés et l’état de victoire."
+        },
+        {
+          "title": "Contrôleur commun",
+          "text": "Il reçoit une intention de déplacement, demande au modèle de la valider puis déclenche la mise à jour de la vue."
+        },
+        {
+          "title": "Deux vues, une logique",
+          "text": "Swing et le terminal affichent le même modèle, démontrant que le cœur du jeu n’est pas lié à une technologie d’interface."
+        }
+      ],
+      "challenges": [
+        {
+          "title": "Garantir un puzzle résoluble",
+          "text": "Un simple mélange aléatoire des nombres peut produire une permutation sans solution.",
+          "resolution": "J’ai mélangé le plateau par des déplacements successifs de la case vide depuis la configuration finale."
+        },
+        {
+          "title": "Mapper les interactions vers la grille",
+          "text": "Un clic, une flèche ou une commande texte doit aboutir au même mouvement logique.",
+          "resolution": "J’ai normalisé toutes les entrées en directions ou coordonnées avant d’appeler le modèle."
+        },
+        {
+          "title": "Préserver les invariants",
+          "text": "Le plateau doit toujours contenir une seule case vide et chaque valeur exactement une fois.",
+          "resolution": "J’ai concentré les mutations dans une méthode de déplacement qui échange uniquement deux positions valides."
+        }
+      ],
+      "learnings": [
+        "Identifier et protéger les invariants d’un modèle de données avant de gérer l’affichage.",
+        "Réutiliser un cœur métier avec plusieurs interfaces en définissant un contrat clair.",
+        "Garantir une propriété algorithmique par construction plutôt que la vérifier après coup.",
+        "Découpler les événements techniques de l’intention métier qu’ils représentent."
+      ],
+      "next_steps": [
+        "Ajouter un historique des mouvements avec annulation et rétablissement.",
+        "Implémenter un solveur A* ou IDA* pour proposer un indice ou une solution.",
+        "Permettre de découper une image et de choisir plusieurs tailles de grille."
+      ]
+    }
+  ]
+}
