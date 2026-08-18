@@ -5,10 +5,10 @@
     "role": "Développeur logiciel, web, data & IA",
     "subtitle": "Étudiant en Master 1 Architecte de Systèmes d’Information à l’ETNA",
     "headline": "Je transforme des besoins concrets en applications claires, robustes et explicables.",
-    "intro": "Développeur orienté logiciel, web, données et intelligence artificielle, je construis des projets complets allant de la modélisation et des pipelines de traitement jusqu’aux API, visualisations interactives, modèles d’apprentissage et interfaces utilisateurs.",
+    "intro": "Développeur orienté logiciel, web, données et intelligence artificielle, je construis des projets complets allant de la modélisation et des pipelines de traitement jusqu’aux API sécurisées, plateformes full-stack transactionnelles, visualisations interactives, modèles d’apprentissage et interfaces utilisateurs.",
     "about": [
       "Actuellement en Master 1 Architecte de Systèmes d’Information, spécialisation développement, à l’ETNA, je consolide mes compétences en conception logicielle, développement full-stack, data et qualité de code.",
-      "Mon parcours m’a amené à développer des applications web en PHP/MySQL, des logiciels Java structurés autour de MVC et de design patterns — notamment un jeu Java2D piloté par State, Observer et Strategy —, une application React Native connectée à une API REST sécurisée, des projets décisionnels avec Apache Hop et Power BI, ainsi qu’une chaîne Docker MongoDB–GraphQL–D3.js. J’ai également travaillé sur la vision par ordinateur, l’apprentissage profond avec PyTorch, l’apprentissage par renforcement, l’explicabilité de modèles et l’analyse statistique avancée.",
+      "Mon parcours m’a amené à développer des applications web en PHP/MySQL, des logiciels Java structurés autour de MVC et de design patterns — notamment un jeu Java2D piloté par State, Observer et Strategy —, une application React Native connectée à une API REST sécurisée, ainsi qu’EventFlow, une plateforme React/Express transactionnelle avec authentification JWT, réservation atomique, paiement Stripe et billets QR signés. J’ai aussi réalisé des projets décisionnels avec Apache Hop et Power BI, une chaîne Docker MongoDB–GraphQL–D3.js, des travaux en vision par ordinateur, apprentissage profond avec PyTorch, apprentissage par renforcement, explicabilité de modèles et analyse statistique avancée.",
       "Je recherche une alternance où je pourrai contribuer à des produits utiles, progresser au contact d’une équipe expérimentée et prendre progressivement davantage de responsabilités techniques."
     ],
     "availability": "Recherche d’une alternance en développement",
@@ -24,7 +24,7 @@
   },
   "metrics": [
     {
-      "value": "18",
+      "value": "19",
       "label": "projets documentés"
     },
     {
@@ -32,7 +32,7 @@
       "label": "univers techniques"
     },
     {
-      "value": "40+",
+      "value": "45+",
       "label": "technologies pratiquées"
     }
   ],
@@ -78,23 +78,32 @@
     },
     {
       "title": "Développement web & visualisation",
-      "description": "Interfaces responsive, API typées, applications dynamiques et visualisations interactives pilotées par les données.",
+      "description": "Applications full-stack et SPA responsives, API REST sécurisées, parcours transactionnels et visualisations interactives pilotées par les données.",
       "primary": [
         "HTML5",
         "CSS3",
         "JavaScript",
         "PHP",
-        "React",
+        "React 19",
+        "Vite",
+        "React Router",
         "Node.js",
+        "Express 5",
         "GraphQL",
         "D3.js"
       ],
       "secondary": [
+        "API REST",
+        "JWT",
+        "Zod",
+        "Stripe Checkout",
+        "Webhooks",
+        "QR Code",
+        "HMAC SHA-256",
+        "RBAC",
         "Apollo Server",
         "TopoJSON",
         "Vue.js",
-        "API REST",
-        "Apache",
         "Responsive design"
       ]
     },
@@ -113,6 +122,7 @@
       ],
       "secondary": [
         "SQLite",
+        "Mongoose",
         "OLAP / MDX",
         "ETL",
         "Modèle en étoile",
@@ -185,17 +195,19 @@
     },
     {
       "title": "Outils & environnement",
-      "description": "Travail sous Linux, versionnement, conteneurisation multi-services et validation d’API.",
+      "description": "Travail sous Linux, versionnement, reverse proxy, conteneurisation multi-services et validation automatisée d’API.",
       "primary": [
         "Git",
         "GitHub",
         "Docker",
         "Docker Compose",
+        "Nginx",
         "Linux",
         "Bash",
         "Postman"
       ],
       "secondary": [
+        "Tests Node",
         "Mongo Express",
         "Expo",
         "Java Swing",
@@ -237,6 +249,148 @@
     }
   ],
   "projects": [
+    {
+      "slug": "eventflow-fullstack",
+      "title": "EventFlow — Plateforme événementielle full-stack sécurisée",
+      "category": "web",
+      "category_label": "Application full-stack & billetterie",
+      "card_summary": "Plateforme React et Express avec authentification JWT, rôles, MySQL, MongoDB, réservation atomique, paiement Stripe et billets QR signés, orchestrée avec Docker et Nginx.",
+      "summary": "Une plateforme événementielle transactionnelle couvrant le catalogue public, l’administration, la réservation concurrente des places, le paiement, la génération de billets QR vérifiables et le contrôle d’accès.",
+      "role": "Conception et développement de l’architecture full-stack, de l’API REST, des mécanismes de sécurité, de la billetterie et de l’environnement Docker",
+      "type": "Projet full-stack — application transactionnelle et sécurité applicative",
+      "architecture_label": "React → Express → MySQL / MongoDB / Stripe",
+      "github": "https://github.com/khaled1809",
+      "source_label": "Voir mon GitHub",
+      "source_short_label": "GitHub",
+      "source_aria_label": "Voir le profil GitHub de Khaled Djellali pour le projet EventFlow — Plateforme événementielle full-stack sécurisée",
+      "stack": [
+        "React 19",
+        "Vite",
+        "React Router",
+        "Node.js",
+        "Express 5",
+        "API REST",
+        "MySQL",
+        "MongoDB",
+        "Mongoose",
+        "JWT",
+        "bcryptjs",
+        "Zod",
+        "Helmet",
+        "Stripe Checkout",
+        "Webhooks",
+        "QR Code",
+        "HMAC SHA-256",
+        "RBAC",
+        "Nginx",
+        "Docker Compose",
+        "Postman",
+        "Tests Node"
+      ],
+      "cover": "assets/images/projects/eventflow-overview.png",
+      "images": [
+        "assets/images/projects/eventflow-overview.png",
+        "assets/images/projects/eventflow-architecture.png",
+        "assets/images/projects/eventflow-user-journeys.png",
+        "assets/images/projects/eventflow-payment-flow.png",
+        "assets/images/projects/eventflow-ticket-security.png",
+        "assets/images/projects/eventflow-polyglot-storage.png"
+      ],
+      "problem": "Le projet devait dépasser un simple CRUD événementiel et couvrir un parcours transactionnel cohérent : un visiteur consulte le catalogue, un utilisateur réserve puis paie des places, reçoit des billets vérifiables, et un administrateur gère les événements, les sites, les comptes, les rôles et le contrôle d’entrée. Les principales contraintes concernaient la concurrence sur la capacité, les webhooks envoyés plusieurs fois, la cohérence entre MySQL et MongoDB, la protection des routes, la sécurité des QR codes et le démarrage fiable de quatre services Docker dépendants.",
+      "solution": "J’ai structuré EventFlow en SPA React 19 construite avec Vite et React Router, servie par Nginx, puis en API REST Express 5 organisée en routes, contrôleurs, services, repositories, modèles, validateurs et middlewares. MySQL porte le CRUD relationnel des sites avec des requêtes paramétrées ; MongoDB et Mongoose gèrent les utilisateurs, événements, commandes et billets. L’authentification combine mot de passe haché avec bcryptjs, JWT temporaire, cookie HTTP-only ou Bearer token, RBAC, validation Zod, Helmet, CORS et rate limiting. Le paiement fonctionne avec Stripe Checkout ou un mode mock : les places sont réservées atomiquement, puis converties en ventes seulement après confirmation. Chaque billet reçoit un UUID et une signature HMAC SHA-256 encodés dans un QR versionné, consommable une seule fois. L’archive fournit 8 tests Node natifs et un contrôle de syntaxe sur 39 fichiers serveur. Le build Vite, le démarrage des quatre conteneurs, les intégrations MySQL/MongoDB, la collection Postman contre une pile active et le véritable parcours Stripe sont restés non exécutés dans l’environnement de génération, faute de dépendances npm installées, de moteur Docker et de secrets de test.",
+      "architecture": [
+        {
+          "title": "SPA React et routage selon les rôles",
+          "text": "Le client React 19 est construit avec Vite et React Router. AuthContext recharge la session via /auth/me, tandis que ProtectedRoute distingue les pages publiques, authentifiées et administrateur afin d’éviter de disperser la logique d’accès dans chaque écran."
+        },
+        {
+          "title": "Nginx comme point d’entrée unique",
+          "text": "Le conteneur client sert le bundle statique, applique le fallback nécessaire au routage d’une SPA et reverse-proxy les requêtes /api vers Express. Le navigateur utilise ainsi une origine cohérente pour l’interface et l’API."
+        },
+        {
+          "title": "API REST Express organisée en couches",
+          "text": "Express 5 sépare routes, contrôleurs, services, repositories, modèles Mongoose, schémas Zod, middlewares et gestion centralisée des erreurs. Chaque couche possède une responsabilité claire et reste testable sans dépendre de l’interface."
+        },
+        {
+          "title": "Persistance polyglotte encapsulée",
+          "text": "MySQL stocke les sites via siteRepository.js et des requêtes paramétrées. MongoDB stocke users, events, orders et tickets au travers de modèles Mongoose, d’index et de services métier. Le choix de stockage reste caché derrière des interfaces applicatives dédiées."
+        },
+        {
+          "title": "Inventaire et cycle de vie des commandes",
+          "text": "Les événements distinguent ticketsReserved et ticketsSold. Les commandes mémorisent notamment inventoryCommitted, reservationReleased, paymentFinalizing et ticketsIssued afin de représenter explicitement les transitions entre réservation temporaire, paiement confirmé, émission des billets et libération éventuelle des places."
+        },
+        {
+          "title": "Paiement Stripe ou mode simulé",
+          "text": "Le service crée une Checkout Session lorsque Stripe est configuré et propose un mode mock pour tester le parcours sans service externe. La confirmation ou le webhook déclenche une finalisation idempotente ; un paiement échoué ou expiré restitue les places réservées."
+        },
+        {
+          "title": "Billets QR signés et consommables une fois",
+          "text": "Chaque billet reçoit un UUID et un payload JSON versionné signé par HMAC SHA-256. La vérification utilise timingSafeEqual, puis une mise à jour conditionnelle fait passer le billet de valid à used afin que deux contrôleurs ne puissent pas valider le même QR simultanément."
+        },
+        {
+          "title": "Orchestration et validation de la pile",
+          "text": "Docker Compose décrit les services client, server, mysql et mongo, deux volumes persistants et des healthchecks utilisés dans les dépendances de démarrage. Une collection Postman documente les parcours d’authentification, CRUD, paiement, billetterie et administration."
+        }
+      ],
+      "challenges": [
+        {
+          "title": "Réserver des places sans survente",
+          "text": "Une lecture de la capacité suivie d’une écriture séparée laisserait deux requêtes concurrentes réserver les mêmes dernières places.",
+          "resolution": "Le service utilise Event.findOneAndUpdate avec une condition $expr qui vérifie atomiquement ticketsSold + ticketsReserved + quantité ≤ capacité, puis applique $inc sur ticketsReserved. La réservation n’existe que si la condition est encore vraie au moment de l’écriture MongoDB."
+        },
+        {
+          "title": "Rendre la finalisation du paiement idempotente",
+          "text": "Stripe peut renvoyer un webhook, le client peut relancer la confirmation et une interruption peut survenir entre la mise à jour de la commande et la création des billets.",
+          "resolution": "Le champ paymentFinalizing sert de verrou métier, les étapes sont protégées par les états de commande et les billets sont créés avec upsert. L’index unique (order, sequence) empêche matériellement la création de doublons, tandis que inventoryCommitted indique que le transfert de ticketsReserved vers ticketsSold a déjà eu lieu."
+        },
+        {
+          "title": "Préserver le corps brut du webhook Stripe",
+          "text": "La vérification cryptographique de Stripe échoue si express.json() transforme le corps avant le calcul de signature.",
+          "resolution": "La route du webhook est enregistrée avec express.raw avant le middleware JSON général. Elle reçoit ainsi le corps brut exact transmis par Stripe, puis le reste de l’API continue de bénéficier du parsing JSON classique."
+        },
+        {
+          "title": "Faire cohabiter MySQL et MongoDB sans couplage",
+          "text": "Une API utilisant deux bases peut rapidement propager SQL, documents Mongoose et détails de connexion dans tous les contrôleurs.",
+          "resolution": "Les opérations relationnelles passent par siteRepository.js et ses placeholders MySQL ; les opérations documentaires sont prises en charge par les modèles et services Mongoose. Les contrôleurs orchestrent des cas d’usage sans connaître la syntaxe de stockage."
+        },
+        {
+          "title": "Sécuriser l’authentification et les autorisations",
+          "text": "Le système doit servir une SPA, rester testable avec Postman et empêcher un utilisateur authentifié d’accéder aux opérations administrateur.",
+          "resolution": "Les mots de passe sont hachés avec bcryptjs, le JWT est accepté depuis un cookie HTTP-only ou un Bearer token, puis les middlewares vérifient identité et RBAC. Zod valide les entrées ; Helmet, CORS et le rate limiting réduisent la surface d’attaque. Une règle empêche aussi de rétrograder le dernier administrateur."
+        },
+        {
+          "title": "Empêcher la falsification et la réutilisation d’un QR",
+          "text": "Un simple identifiant dans un QR pourrait être modifié ou présenté plusieurs fois à différents contrôleurs.",
+          "resolution": "Le payload contient un UUID et une version, puis ticketSignature.js calcule une signature HMAC SHA-256. La vérification compare les signatures avec timingSafeEqual et ticketService.js utilise findOneAndUpdate avec le statut valid pour effectuer atomiquement la transition vers used."
+        },
+        {
+          "title": "Coordonner quatre services et plusieurs validations",
+          "text": "Le client ne doit démarrer son routage qu’avec une API joignable, et l’API dépend elle-même de MySQL et MongoDB initialisés.",
+          "resolution": "Docker Compose utilise des healthchecks et des conditions service_healthy, avec volumes persistants et configuration Nginx. L’archive fournit 8 tests Node réussis et un contrôle syntaxique de 39 fichiers serveur. Le build Vite, le démarrage Docker, les tests d’intégration et le parcours Stripe réel restent explicitement non exécutés dans cet environnement et doivent être rejoués sur une machine équipée."
+        }
+      ],
+      "learnings": [
+        "Structurer une SPA React avec contexte de session, routage public/protégé et pages conditionnées par le rôle.",
+        "Découper une API Express en routes, contrôleurs, services, repositories, modèles, validateurs et middlewares spécialisés.",
+        "Combiner MySQL et MongoDB dans un même produit sans mélanger leurs détails de persistance dans la logique HTTP.",
+        "Modéliser un inventaire transactionnel avec réservation temporaire, vente confirmée, libération et états de commande explicites.",
+        "Concevoir une finalisation de paiement idempotente face aux webhooks répétés et aux reprises après interruption.",
+        "Protéger des billets avec UUID, HMAC SHA-256, timingSafeEqual et consommation atomique à usage unique.",
+        "Mettre en œuvre JWT, cookies HTTP-only, Bearer tokens, RBAC, Zod, Helmet, CORS et limitation de débit de façon cohérente.",
+        "Orchestrer une pile multi-services avec Docker Compose, Nginx, healthchecks, dépendances et volumes persistants.",
+        "Documenter et vérifier une API avec tests Node natifs, contrôle syntaxique et collection Postman automatisée."
+      ],
+      "next_steps": [
+        "Ajouter une CI qui installe les dépendances, construit le client Vite, démarre MySQL et MongoDB, puis exécute les tests serveur et la collection Postman.",
+        "Créer des tests de concurrence lançant plusieurs réservations simultanées sur les dernières places afin de vérifier l’absence de survente.",
+        "Valider le parcours Stripe en environnement de test avec Stripe CLI, webhooks rejoués, expirations et scénarios d’échec.",
+        "Externaliser les secrets dans un gestionnaire dédié et renforcer les attributs des cookies selon le domaine de production.",
+        "Ajouter un worker planifié qui expire les commandes pending abandonnées et libère automatiquement les réservations correspondantes.",
+        "Introduire des logs structurés, un identifiant de corrélation, des métriques métier et des alertes sur les paiements ou billets rejetés.",
+        "Couvrir les parcours visiteur, utilisateur et administrateur avec des tests end-to-end Playwright et un audit d’accessibilité.",
+        "Publier le dépôt EventFlow avec une démonstration dédiée, des captures réelles et l’URL exacte à la place du lien temporaire vers le profil GitHub."
+      ]
+    },
     {
       "slug": "jeu-2d-occupation-maximale",
       "title": "Jeu 2D d’occupation maximale — Java Swing & Design Patterns",

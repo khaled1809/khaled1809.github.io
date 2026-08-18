@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Une plateforme événementielle transactionnelle couvrant le catalogue public, l’administration, la réservation concurrente des places, le paiement, la génération de billets QR vérifiables et le contrôle d’accès.">
+  <meta name="theme-color" content="#07111f">
+  <meta name="color-scheme" content="dark light">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="EventFlow — Plateforme événementielle full-stack sécurisée — Étude de cas | Khaled DJELLALI">
+  <meta property="og:description" content="Une plateforme événementielle transactionnelle couvrant le catalogue public, l’administration, la réservation concurrente des places, le paiement, la génération de billets QR vérifiables et le contrôle d’accès.">
+  <meta property="og:image" content="../assets/images/projects/eventflow-overview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>EventFlow — Plateforme événementielle full-stack sécurisée — Étude de cas | Khaled DJELLALI</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <script>
+    (() => {
+      document.documentElement.classList.add('js');
+      try {
+        const stored = localStorage.getItem('portfolio-theme');
+        document.documentElement.dataset.theme = stored || 'dark';
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark';
+      }
+    })();
+  </script>
+  <script src="../assets/js/site.js" defer></script>
+</head>
+<body class="project-page" id="top">
+
+<a class="skip-link" href="#main-content">Aller au contenu</a>
+<header class="site-header" data-site-header>
+  <div class="container header-inner">
+    <a class="brand" href="../index.html" aria-label="Retour à l’accueil de Khaled Djellali">
+      <span class="brand-mark" aria-hidden="true">KD</span>
+      <span class="brand-copy"><strong>Khaled Djellali</strong><small>Développeur</small></span>
+    </a>
+    <nav class="primary-nav" id="primary-navigation" aria-label="Navigation principale" data-mobile-nav>
+      <a href="../index.html#about" class="nav-link">Profil</a>
+<a href="../index.html#skills" class="nav-link">Compétences</a>
+<a href="../index.html#journey" class="nav-link">Parcours</a>
+<a href="../index.html#projects" class="nav-link is-active">Projets</a>
+      <a class="button button-small button-primary nav-contact" href="../index.html#contact">Me contacter <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button theme-toggle" type="button" data-theme-toggle aria-label="Activer le thème clair" title="Changer de thème">
+        <span class="theme-icon theme-icon-sun"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></svg></span>
+        <span class="theme-icon theme-icon-moon"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>
+      </button>
+      <button class="icon-button menu-toggle" type="button" data-menu-toggle aria-controls="primary-navigation" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="menu-icon-open"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></span>
+        <span class="menu-icon-close"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 6 12 12M18 6 6 18"/></svg></span>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main-content">
+  <section class="project-hero">
+    <div class="project-hero-grid" aria-hidden="true"></div>
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Fil d’Ariane">
+        <a href="../index.html">Accueil</a><span aria-hidden="true">/</span><a href="../index.html#projects">Projets</a><span aria-hidden="true">/</span><span aria-current="page">EventFlow — Plateforme événementielle full-stack sécurisée</span>
+      </nav>
+      <div class="project-hero-layout">
+        <div class="project-hero-copy" data-reveal>
+          <p class="project-category">Application full-stack &amp; billetterie</p>
+          <h1>EventFlow — Plateforme événementielle full-stack sécurisée</h1>
+          <p class="project-summary">Une plateforme événementielle transactionnelle couvrant le catalogue public, l’administration, la réservation concurrente des places, le paiement, la génération de billets QR vérifiables et le contrôle d’accès.</p>
+          <div class="tag-group tag-group-large"><span class="tech-tag">React 19</span><span class="tech-tag">Vite</span><span class="tech-tag">React Router</span><span class="tech-tag">Node.js</span><span class="tech-tag">Express 5</span><span class="tech-tag">API REST</span><span class="tech-tag">MySQL</span><span class="tech-tag">MongoDB</span><span class="tech-tag">Mongoose</span><span class="tech-tag">JWT</span><span class="tech-tag">bcryptjs</span><span class="tech-tag">Zod</span><span class="tech-tag">Helmet</span><span class="tech-tag">Stripe Checkout</span><span class="tech-tag">Webhooks</span><span class="tech-tag">QR Code</span><span class="tech-tag">HMAC SHA-256</span><span class="tech-tag">RBAC</span><span class="tech-tag">Nginx</span><span class="tech-tag">Docker Compose</span><span class="tech-tag">Postman</span><span class="tech-tag">Tests Node</span></div>
+          <div class="project-hero-actions">
+            <a class="button button-primary" href="https://github.com/khaled1809" target="_blank" rel="noopener noreferrer">Voir mon GitHub <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5h5v5"/><path d="M10 14 19 5"/><path d="M19 13v6H5V5h6"/></svg></a>
+            <a class="button button-secondary" href="../index.html#projects">Retour aux projets <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></a>
+          </div>
+        </div>
+        <figure class="project-cover" data-reveal>
+          <img src="../assets/images/projects/eventflow-overview.png" alt="Aperçu principal du projet EventFlow — Plateforme événementielle full-stack sécurisée" width="1400" height="850">
+        </figure>
+      </div>
+      <dl class="project-facts" data-reveal><div class="project-fact"><dt>Rôle</dt><dd>Conception et développement de l’architecture full-stack, de l’API REST, des mécanismes de sécurité, de la billetterie et de l’environnement Docker</dd></div><div class="project-fact"><dt>Type</dt><dd>Projet full-stack — application transactionnelle et sécurité applicative</dd></div><div class="project-fact"><dt>Architecture</dt><dd>React → Express → MySQL / MongoDB / Stripe</dd></div><div class="project-fact"><dt>Technologies</dt><dd>React 19 · Vite · React Router · Node.js · Express 5 · API REST · MySQL · MongoDB · Mongoose · JWT · bcryptjs · Zod · Helmet · Stripe Checkout · Webhooks · QR Code · HMAC SHA-256 · RBAC · Nginx · Docker Compose · Postman · Tests Node</dd></div></dl>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container case-layout">
+      <article class="case-main">
+        <div class="case-block" data-reveal>
+          <p class="case-kicker">Contexte</p>
+          <h2>Le besoin à résoudre</h2>
+          <p>Le projet devait dépasser un simple CRUD événementiel et couvrir un parcours transactionnel cohérent : un visiteur consulte le catalogue, un utilisateur réserve puis paie des places, reçoit des billets vérifiables, et un administrateur gère les événements, les sites, les comptes, les rôles et le contrôle d’entrée. Les principales contraintes concernaient la concurrence sur la capacité, les webhooks envoyés plusieurs fois, la cohérence entre MySQL et MongoDB, la protection des routes, la sécurité des QR codes et le démarrage fiable de quatre services Docker dépendants.</p>
+        </div>
+        <div class="case-block" data-reveal>
+          <p class="case-kicker">Approche</p>
+          <h2>La solution mise en place</h2>
+          <p>J’ai structuré EventFlow en SPA React 19 construite avec Vite et React Router, servie par Nginx, puis en API REST Express 5 organisée en routes, contrôleurs, services, repositories, modèles, validateurs et middlewares. MySQL porte le CRUD relationnel des sites avec des requêtes paramétrées ; MongoDB et Mongoose gèrent les utilisateurs, événements, commandes et billets. L’authentification combine mot de passe haché avec bcryptjs, JWT temporaire, cookie HTTP-only ou Bearer token, RBAC, validation Zod, Helmet, CORS et rate limiting. Le paiement fonctionne avec Stripe Checkout ou un mode mock : les places sont réservées atomiquement, puis converties en ventes seulement après confirmation. Chaque billet reçoit un UUID et une signature HMAC SHA-256 encodés dans un QR versionné, consommable une seule fois. L’archive fournit 8 tests Node natifs et un contrôle de syntaxe sur 39 fichiers serveur. Le build Vite, le démarrage des quatre conteneurs, les intégrations MySQL/MongoDB, la collection Postman contre une pile active et le véritable parcours Stripe sont restés non exécutés dans l’environnement de génération, faute de dépendances npm installées, de moteur Docker et de secrets de test.</p>
+        </div>
+      </article>
+      <aside class="case-sidebar" data-reveal>
+        <div class="sidebar-card">
+          <span class="sidebar-icon"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V4h8v3M3 12h18M10 12v2h4v-2"/></svg></span>
+          <h2>Ce que ce projet démontre</h2>
+          <p>Ma capacité à analyser un problème, organiser les responsabilités et expliquer les compromis techniques au-delà du simple résultat visuel.</p>
+          <a class="text-link" href="mailto:khaleddjellali189@gmail.com?subject=Échange à propos du projet EventFlow — Plateforme événementielle full-stack sécurisée">Échanger sur ce projet <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="case-section section-soft">
+    <div class="container">
+      <div class="case-heading" data-reveal><p class="case-kicker">Architecture</p><h2>Comment le projet est structuré</h2></div>
+      <div class="architecture-grid"><article class="architecture-item" data-reveal>
+          <span class="architecture-number">01</span>
+          <h3>SPA React et routage selon les rôles</h3>
+          <p>Le client React 19 est construit avec Vite et React Router. AuthContext recharge la session via /auth/me, tandis que ProtectedRoute distingue les pages publiques, authentifiées et administrateur afin d’éviter de disperser la logique d’accès dans chaque écran.</p>
+        </article><article class="architecture-item" data-reveal>
+          <span class="architecture-number">02</span>
+          <h3>Nginx comme point d’entrée unique</h3>
+          <p>Le conteneur client sert le bundle statique, applique le fallback nécessaire au routage d’une SPA et reverse-proxy les requêtes /api vers Express. Le navigateur utilise ainsi une origine cohérente pour l’interface et l’API.</p>
+        </article><article class="architecture-item" data-reveal>
+          <span class="architecture-number">03</span>
+          <h3>API REST Express organisée en couches</h3>
+          <p>Express 5 sépare routes, contrôleurs, services, repositories, modèles Mongoose, schémas Zod, middlewares et gestion centralisée des erreurs. Chaque couche possède une responsabilité claire et reste testable sans dépendre de l’interface.</p>
+        </article><article class="architecture-item" data-reveal>
+          <span class="architecture-number">04</span>
+          <h3>Persistance polyglotte encapsulée</h3>
+          <p>MySQL stocke les sites via siteRepository.js et des requêtes paramétrées. MongoDB stocke users, events, orders et tickets au travers de modèles Mongoose, d’index et de services métier. Le choix de stockage reste caché derrière des interfaces applicatives dédiées.</p>
+        </article><article class="architecture-item" data-reveal>
+          <span class="architecture-number">05</span>
+          <h3>Inventaire et cycle de vie des commandes</h3>
+          <p>Les événements distinguent ticketsReserved et ticketsSold. Les commandes mémorisent notamment inventoryCommitted, reservationReleased, paymentFinalizing et ticketsIssued afin de représenter explicitement les transitions entre réservation temporaire, paiement confirmé, émission des billets et libération éventuelle des places.</p>
+        </article><article class="architecture-item" data-reveal>
+          <span class="architecture-number">06</span>
+          <h3>Paiement Stripe ou mode simulé</h3>
+          <p>Le service crée une Checkout Session lorsque Stripe est configuré et propose un mode mock pour tester le parcours sans service externe. La confirmation ou le webhook déclenche une finalisation idempotente ; un paiement échoué ou expiré restitue les places réservées.</p>
+        </article><article class="architecture-item" data-reveal>
+          <span class="architecture-number">07</span>
+          <h3>Billets QR signés et consommables une fois</h3>
+          <p>Chaque billet reçoit un UUID et un payload JSON versionné signé par HMAC SHA-256. La vérification utilise timingSafeEqual, puis une mise à jour conditionnelle fait passer le billet de valid à used afin que deux contrôleurs ne puissent pas valider le même QR simultanément.</p>
+        </article><article class="architecture-item" data-reveal>
+          <span class="architecture-number">08</span>
+          <h3>Orchestration et validation de la pile</h3>
+          <p>Docker Compose décrit les services client, server, mysql et mongo, deux volumes persistants et des healthchecks utilisés dans les dépendances de démarrage. Une collection Postman documente les parcours d’authentification, CRUD, paiement, billetterie et administration.</p>
+        </article></div>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container">
+      <div class="case-heading" data-reveal><p class="case-kicker">Résolution de problèmes</p><h2>Difficultés rencontrées et décisions prises</h2><p>Les points ci-dessous donnent de la visibilité sur le raisonnement technique, pas seulement sur les fonctionnalités finales.</p></div>
+      <div class="challenges-grid"><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 1</span>
+          <h3>Réserver des places sans survente</h3>
+          <p>Une lecture de la capacité suivie d’une écriture séparée laisserait deux requêtes concurrentes réserver les mêmes dernières places.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>Le service utilise Event.findOneAndUpdate avec une condition $expr qui vérifie atomiquement ticketsSold + ticketsReserved + quantité ≤ capacité, puis applique $inc sur ticketsReserved. La réservation n’existe que si la condition est encore vraie au moment de l’écriture MongoDB.</p></div>
+        </article><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 2</span>
+          <h3>Rendre la finalisation du paiement idempotente</h3>
+          <p>Stripe peut renvoyer un webhook, le client peut relancer la confirmation et une interruption peut survenir entre la mise à jour de la commande et la création des billets.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>Le champ paymentFinalizing sert de verrou métier, les étapes sont protégées par les états de commande et les billets sont créés avec upsert. L’index unique (order, sequence) empêche matériellement la création de doublons, tandis que inventoryCommitted indique que le transfert de ticketsReserved vers ticketsSold a déjà eu lieu.</p></div>
+        </article><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 3</span>
+          <h3>Préserver le corps brut du webhook Stripe</h3>
+          <p>La vérification cryptographique de Stripe échoue si express.json() transforme le corps avant le calcul de signature.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>La route du webhook est enregistrée avec express.raw avant le middleware JSON général. Elle reçoit ainsi le corps brut exact transmis par Stripe, puis le reste de l’API continue de bénéficier du parsing JSON classique.</p></div>
+        </article><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 4</span>
+          <h3>Faire cohabiter MySQL et MongoDB sans couplage</h3>
+          <p>Une API utilisant deux bases peut rapidement propager SQL, documents Mongoose et détails de connexion dans tous les contrôleurs.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>Les opérations relationnelles passent par siteRepository.js et ses placeholders MySQL ; les opérations documentaires sont prises en charge par les modèles et services Mongoose. Les contrôleurs orchestrent des cas d’usage sans connaître la syntaxe de stockage.</p></div>
+        </article><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 5</span>
+          <h3>Sécuriser l’authentification et les autorisations</h3>
+          <p>Le système doit servir une SPA, rester testable avec Postman et empêcher un utilisateur authentifié d’accéder aux opérations administrateur.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>Les mots de passe sont hachés avec bcryptjs, le JWT est accepté depuis un cookie HTTP-only ou un Bearer token, puis les middlewares vérifient identité et RBAC. Zod valide les entrées ; Helmet, CORS et le rate limiting réduisent la surface d’attaque. Une règle empêche aussi de rétrograder le dernier administrateur.</p></div>
+        </article><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 6</span>
+          <h3>Empêcher la falsification et la réutilisation d’un QR</h3>
+          <p>Un simple identifiant dans un QR pourrait être modifié ou présenté plusieurs fois à différents contrôleurs.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>Le payload contient un UUID et une version, puis ticketSignature.js calcule une signature HMAC SHA-256. La vérification compare les signatures avec timingSafeEqual et ticketService.js utilise findOneAndUpdate avec le statut valid pour effectuer atomiquement la transition vers used.</p></div>
+        </article><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 7</span>
+          <h3>Coordonner quatre services et plusieurs validations</h3>
+          <p>Le client ne doit démarrer son routage qu’avec une API joignable, et l’API dépend elle-même de MySQL et MongoDB initialisés.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>Docker Compose utilise des healthchecks et des conditions service_healthy, avec volumes persistants et configuration Nginx. L’archive fournit 8 tests Node réussis et un contrôle syntaxique de 39 fichiers serveur. Le build Vite, le démarrage Docker, les tests d’intégration et le parcours Stripe réel restent explicitement non exécutés dans cet environnement et doivent être rejoués sur une machine équipée.</p></div>
+        </article></div>
+    </div>
+  </section>
+
+  <section class="case-section learnings-section">
+    <div class="container learnings-layout">
+      <div class="case-heading" data-reveal><p class="case-kicker">Progression</p><h2>Ce que j’ai appris</h2><p>Des acquis réutilisables dans d’autres projets et dans un contexte professionnel.</p></div>
+      <ul class="learnings-list"><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Structurer une SPA React avec contexte de session, routage public/protégé et pages conditionnées par le rôle.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Découper une API Express en routes, contrôleurs, services, repositories, modèles, validateurs et middlewares spécialisés.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Combiner MySQL et MongoDB dans un même produit sans mélanger leurs détails de persistance dans la logique HTTP.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Modéliser un inventaire transactionnel avec réservation temporaire, vente confirmée, libération et états de commande explicites.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Concevoir une finalisation de paiement idempotente face aux webhooks répétés et aux reprises après interruption.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Protéger des billets avec UUID, HMAC SHA-256, timingSafeEqual et consommation atomique à usage unique.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Mettre en œuvre JWT, cookies HTTP-only, Bearer tokens, RBAC, Zod, Helmet, CORS et limitation de débit de façon cohérente.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Orchestrer une pile multi-services avec Docker Compose, Nginx, healthchecks, dépendances et volumes persistants.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Documenter et vérifier une API avec tests Node natifs, contrôle syntaxique et collection Postman automatisée.</p></li></ul>
+    </div>
+  </section>
+
+  <section class="case-section section-soft">
+    <div class="container">
+      <div class="case-heading" data-reveal><p class="case-kicker">Galerie</p><h2>Le projet en images</h2><p>Cliquez sur un visuel pour l’agrandir.</p></div>
+      <div class="project-gallery"><button class="gallery-item gallery-item-1" type="button" data-gallery-item data-src="../assets/images/projects/eventflow-overview.png" data-alt="Visuel 1 du projet EventFlow — Plateforme événementielle full-stack sécurisée">
+          <img src="../assets/images/projects/eventflow-overview.png" alt="Visuel 1 du projet EventFlow — Plateforme événementielle full-stack sécurisée" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-2" type="button" data-gallery-item data-src="../assets/images/projects/eventflow-architecture.png" data-alt="Visuel 2 du projet EventFlow — Plateforme événementielle full-stack sécurisée">
+          <img src="../assets/images/projects/eventflow-architecture.png" alt="Visuel 2 du projet EventFlow — Plateforme événementielle full-stack sécurisée" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-3" type="button" data-gallery-item data-src="../assets/images/projects/eventflow-user-journeys.png" data-alt="Visuel 3 du projet EventFlow — Plateforme événementielle full-stack sécurisée">
+          <img src="../assets/images/projects/eventflow-user-journeys.png" alt="Visuel 3 du projet EventFlow — Plateforme événementielle full-stack sécurisée" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-4" type="button" data-gallery-item data-src="../assets/images/projects/eventflow-payment-flow.png" data-alt="Visuel 4 du projet EventFlow — Plateforme événementielle full-stack sécurisée">
+          <img src="../assets/images/projects/eventflow-payment-flow.png" alt="Visuel 4 du projet EventFlow — Plateforme événementielle full-stack sécurisée" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-5" type="button" data-gallery-item data-src="../assets/images/projects/eventflow-ticket-security.png" data-alt="Visuel 5 du projet EventFlow — Plateforme événementielle full-stack sécurisée">
+          <img src="../assets/images/projects/eventflow-ticket-security.png" alt="Visuel 5 du projet EventFlow — Plateforme événementielle full-stack sécurisée" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-6" type="button" data-gallery-item data-src="../assets/images/projects/eventflow-polyglot-storage.png" data-alt="Visuel 6 du projet EventFlow — Plateforme événementielle full-stack sécurisée">
+          <img src="../assets/images/projects/eventflow-polyglot-storage.png" alt="Visuel 6 du projet EventFlow — Plateforme événementielle full-stack sécurisée" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button></div>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container improvement-panel" data-reveal>
+      <div><p class="case-kicker">Prise de recul</p><h2>Ce que j’améliorerais dans une prochaine version</h2></div>
+      <ol><li>Ajouter une CI qui installe les dépendances, construit le client Vite, démarre MySQL et MongoDB, puis exécute les tests serveur et la collection Postman.</li><li>Créer des tests de concurrence lançant plusieurs réservations simultanées sur les dernières places afin de vérifier l’absence de survente.</li><li>Valider le parcours Stripe en environnement de test avec Stripe CLI, webhooks rejoués, expirations et scénarios d’échec.</li><li>Externaliser les secrets dans un gestionnaire dédié et renforcer les attributs des cookies selon le domaine de production.</li><li>Ajouter un worker planifié qui expire les commandes pending abandonnées et libère automatiquement les réservations correspondantes.</li><li>Introduire des logs structurés, un identifiant de corrélation, des métriques métier et des alertes sur les paiements ou billets rejetés.</li><li>Couvrir les parcours visiteur, utilisateur et administrateur avec des tests end-to-end Playwright et un audit d’accessibilité.</li><li>Publier le dépôt EventFlow avec une démonstration dédiée, des captures réelles et l’URL exacte à la place du lien temporaire vers le profil GitHub.</li></ol>
+    </div>
+  </section>
+
+  <nav class="project-pagination container" aria-label="Navigation entre les projets">
+    <a href="puzzle-coulissant-java.html" class="pagination-link pagination-previous">
+      <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg><span><small>Projet précédent</small><strong>Puzzle coulissant en Java</strong></span>
+    </a>
+    <a href="jeu-2d-occupation-maximale.html" class="pagination-link pagination-next">
+      <span><small>Projet suivant</small><strong>Jeu 2D d’occupation maximale — Java Swing &amp; Design Patterns</strong></span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+    </a>
+  </nav>
+</main>
+
+<dialog class="lightbox" data-lightbox aria-label="Aperçu agrandi du visuel">
+  <button class="icon-button lightbox-close" type="button" data-lightbox-close aria-label="Fermer l’aperçu"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+  <figure><img src="" alt="" data-lightbox-image><figcaption data-lightbox-caption></figcaption></figure>
+</dialog>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand footer-brand" href="../index.html">
+        <span class="brand-mark" aria-hidden="true">KD</span>
+        <span class="brand-copy"><strong>Khaled DJELLALI</strong><small>Développeur logiciel, web, data &amp; IA</small></span>
+      </a>
+      <p class="footer-note">Portfolio statique conçu pour être rapide, accessible et directement publiable sur GitHub Pages.</p>
+    </div>
+    <div class="footer-links" aria-label="Liens de pied de page">
+      <a href="https://github.com/khaled1809" target="_blank" rel="noopener noreferrer">GitHub <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5h5v5"/><path d="M10 14 19 5"/><path d="M19 13v6H5V5h6"/></svg></a>
+      <a href="https://www.linkedin.com/in/khaled-djellali-4a16282a8/" target="_blank" rel="noopener noreferrer">LinkedIn <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5h5v5"/><path d="M10 14 19 5"/><path d="M19 13v6H5V5h6"/></svg></a>
+      <a href="mailto:khaleddjellali189@gmail.com">E-mail</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span data-current-year></span> Khaled DJELLALI. Tous droits réservés.</p>
+    <a href="#top">Retour en haut <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a>
+  </div>
+</footer>
+</body>
+</html>

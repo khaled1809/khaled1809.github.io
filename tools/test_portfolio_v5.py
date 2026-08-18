@@ -23,14 +23,14 @@ class PortfolioV5Tests(unittest.TestCase):
         cls.data = json.loads((ROOT / "content" / "portfolio.json").read_text(encoding="utf-8"))
         cls.projects = {project["slug"]: project for project in cls.data["projects"]}
 
-    def test_portfolio_contains_eighteen_projects_and_new_project_is_featured_first(self) -> None:
-        self.assertEqual(18, len(self.data["projects"]))
-        self.assertEqual("18", self.data["metrics"][0]["value"])
-        self.assertEqual(SLUG, self.data["projects"][0]["slug"])
+    def test_portfolio_retains_the_java_game_and_metric_matches_content(self) -> None:
+        self.assertGreaterEqual(len(self.data["projects"]), 18)
+        self.assertEqual(str(len(self.data["projects"])), self.data["metrics"][0]["value"])
+        self.assertIn(SLUG, self.projects)
 
     def test_home_links_to_the_java_game_and_updates_the_dynamic_count(self) -> None:
         home = build_site.render_home(self.data)
-        self.assertIn("18 projets affichés", home)
+        self.assertIn(f"{len(self.data["projects"])} projets affichés", home)
         self.assertIn(f'href="projects/{SLUG}.html"', home)
         self.assertIn("Jeu 2D d’occupation maximale", home)
 

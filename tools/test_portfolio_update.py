@@ -22,9 +22,9 @@ class PortfolioUpdateTests(unittest.TestCase):
         cls.data = json.loads((ROOT / "content" / "portfolio.json").read_text(encoding="utf-8"))
         cls.projects = {project["slug"]: project for project in cls.data["projects"]}
 
-    def test_portfolio_contains_eighteen_projects_and_updated_metric(self) -> None:
-        self.assertEqual(18, len(self.data["projects"]))
-        self.assertEqual("18", self.data["metrics"][0]["value"])
+    def test_portfolio_retains_the_added_projects_and_metric_matches_content(self) -> None:
+        self.assertGreaterEqual(len(self.data["projects"]), 18)
+        self.assertEqual(str(len(self.data["projects"])), self.data["metrics"][0]["value"])
         self.assertEqual("projets documentés", self.data["metrics"][0]["label"])
 
     def test_advanced_database_case_study_is_complete(self) -> None:
@@ -59,7 +59,7 @@ class PortfolioUpdateTests(unittest.TestCase):
 
     def test_home_project_count_is_generated_from_content(self) -> None:
         home = build_site.render_home(self.data)
-        self.assertIn("18 projets affichés", home)
+        self.assertIn(f"{len(self.data["projects"])} projets affichés", home)
         self.assertIn("projects/entrepot-donnees-apache-hop-olap.html", home)
         self.assertIn("projects/streamscope-power-bi.html", home)
 
