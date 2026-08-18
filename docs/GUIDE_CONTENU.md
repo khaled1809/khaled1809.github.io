@@ -36,7 +36,7 @@ Après toute modification :
 ```bash
 python tools/build_site.py
 python tools/check_site.py
-python -m unittest tools.test_portfolio_update tools.test_portfolio_v3 tools.test_portfolio_v4 -v
+python -m unittest tools.test_portfolio_update tools.test_portfolio_v3 tools.test_portfolio_v4 tools.test_portfolio_v5 -v
 ```
 
 ## Ajouter un projet

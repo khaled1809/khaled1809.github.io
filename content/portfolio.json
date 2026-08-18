@@ -8,7 +8,7 @@
     "intro": "Développeur orienté logiciel, web, données et intelligence artificielle, je construis des projets complets allant de la modélisation et des pipelines de traitement jusqu’aux API, visualisations interactives, modèles d’apprentissage et interfaces utilisateurs.",
     "about": [
       "Actuellement en Master 1 Architecte de Systèmes d’Information, spécialisation développement, à l’ETNA, je consolide mes compétences en conception logicielle, développement full-stack, data et qualité de code.",
-      "Mon parcours m’a amené à développer des applications web en PHP/MySQL, des logiciels Java structurés autour de MVC et de design patterns, une application React Native connectée à une API REST sécurisée, des projets décisionnels avec Apache Hop et Power BI, ainsi qu’une chaîne Docker MongoDB–GraphQL–D3.js. J’ai également travaillé sur la vision par ordinateur, l’apprentissage profond avec PyTorch, l’apprentissage par renforcement, l’explicabilité de modèles et l’analyse statistique avancée.",
+      "Mon parcours m’a amené à développer des applications web en PHP/MySQL, des logiciels Java structurés autour de MVC et de design patterns — notamment un jeu Java2D piloté par State, Observer et Strategy —, une application React Native connectée à une API REST sécurisée, des projets décisionnels avec Apache Hop et Power BI, ainsi qu’une chaîne Docker MongoDB–GraphQL–D3.js. J’ai également travaillé sur la vision par ordinateur, l’apprentissage profond avec PyTorch, l’apprentissage par renforcement, l’explicabilité de modèles et l’analyse statistique avancée.",
       "Je recherche une alternance où je pourrai contribuer à des produits utiles, progresser au contact d’une équipe expérimentée et prendre progressivement davantage de responsabilités techniques."
     ],
     "availability": "Recherche d’une alternance en développement",
@@ -19,12 +19,12 @@
     "phone_href": "+33744404629",
     "github": "https://github.com/khaled1809",
     "linkedin": "https://www.linkedin.com/in/khaled-djellali-4a16282a8/",
-    "photo": "assets/images/khaled.jpg",
+    "photo": "assets/images/khaled1809.jpg",
     "cv": "assets/cv/CvP_Khaled.pdf"
   },
   "metrics": [
     {
-      "value": "17",
+      "value": "18",
       "label": "projets documentés"
     },
     {
@@ -53,9 +53,11 @@
   "skills": [
     {
       "title": "Logiciel & programmation orientée objet",
-      "description": "Conception de logiciels modulaires, simulations, moteurs algorithmiques et jeux avec séparation des responsabilités.",
+      "description": "Conception de logiciels modulaires, interfaces Java2D, simulations, moteurs algorithmiques et jeux avec responsabilités clairement séparées.",
       "primary": [
         "Java",
+        "Java Swing",
+        "Java2D",
         "Python",
         "C",
         "C++",
@@ -63,6 +65,9 @@
         "Design patterns"
       ],
       "secondary": [
+        "State",
+        "Observer",
+        "Strategy",
         "Haskell",
         "Pascal",
         "Scala",
@@ -232,6 +237,123 @@
     }
   ],
   "projects": [
+    {
+      "slug": "jeu-2d-occupation-maximale",
+      "title": "Jeu 2D d’occupation maximale — Java Swing & Design Patterns",
+      "category": "software",
+      "category_label": "Jeu Java 2D",
+      "card_summary": "Jeu desktop Java Swing fondé sur MVC et les patterns State, Observer et Strategy, avec interactions souris, géométrie de collision et score calculé par surface.",
+      "summary": "Une application desktop en Java dans laquelle le joueur dispose de quatre formes pour maximiser la surface occupée au milieu d’obstacles générés aléatoirement, avec création interactive, déplacement, suppression et suivi du score.",
+      "role": "Conception du modèle géométrique, des interactions souris, de la génération des obstacles et du rendu Java2D",
+      "type": "Projet Java desktop — conception objet et interaction 2D",
+      "architecture_label": "MVC + State + Observer + Strategy",
+      "github": "https://github.com/khaled1809",
+      "source_label": "Voir mon GitHub",
+      "source_short_label": "GitHub",
+      "source_aria_label": "Voir le profil GitHub de Khaled Djellali pour le projet Jeu 2D d’occupation maximale — Java Swing & Design Patterns",
+      "stack": [
+        "Java 17",
+        "Java Swing",
+        "Java2D",
+        "MVC",
+        "State",
+        "Observer",
+        "Strategy",
+        "POO",
+        "Géométrie 2D",
+        "Événements souris",
+        "NetBeans",
+        "Apache Ant"
+      ],
+      "cover": "assets/images/projects/java-occupation-overview.png",
+      "images": [
+        "assets/images/projects/java-occupation-overview.png",
+        "assets/images/projects/java-occupation-application.png",
+        "assets/images/projects/java-occupation-architecture.png",
+        "assets/images/projects/java-occupation-states.png",
+        "assets/images/projects/java-occupation-collisions.png",
+        "assets/images/projects/java-occupation-score.png"
+      ],
+      "problem": "Le jeu devait proposer une interaction graphique simple tout en reposant sur une architecture capable d’évoluer. Le joueur peut placer au maximum quatre formes afin de maximiser leur surface totale, tandis que le plateau vise cinq obstacles générés aléatoirement. Il fallait modéliser cercles et rectangles avec un contrat commun, éviter le chevauchement entre les obstacles, gérer plusieurs comportements de souris sans accumuler de conditions dans un contrôleur unique, afficher une prévisualisation avant validation et maintenir automatiquement le score et le nombre de formes restantes.",
+      "solution": "J’ai organisé le cœur du jeu autour de GameModel, qui sépare les obstacles des formes du joueur avec deux ShapeGroup, impose la limite de quatre formes et calcule le score comme la surface totale des formes bleues. La classe abstraite Shape définit area() et intersects(Shape), puis Circle et Rectangle spécialisent les calculs d’aire et les collisions cercle–cercle, rectangle–rectangle et cercle–rectangle. RandomShapeStrategy vise cinq obstacles dans un plateau de 800 × 600 et rejette les candidats qui intersectent ceux déjà retenus, avec un plafond de 300 tentatives. MouseController applique le pattern State pour déléguer les événements à CreateCircleState, CreateRectangleState, MoveState ou DeleteState. GamePanel observe le modèle et utilise Java2D pour afficher obstacles rouges, formes bleues, prévisualisation semi-transparente, anti-aliasing et HUD. Les primitives de collision existent et sécurisent la génération des obstacles ; elles ne sont pas encore branchées sur la validation des formes du joueur, ce qui explique que des superpositions restent actuellement possibles lors du placement ou du déplacement.",
+      "architecture": [
+        {
+          "title": "Modèle géométrique polymorphe",
+          "text": "Shape définit les opérations communes area() et intersects(Shape). Circle stocke un centre et un rayon ; Rectangle un coin supérieur gauche, une largeur et une hauteur ; Point centralise distance euclidienne, translation, copie et accès aux coordonnées."
+        },
+        {
+          "title": "État de partie dans GameModel",
+          "text": "Le modèle possède un groupe d’obstacles et un groupe de formes joueur. Il contrôle la limite maxPlayerShapes = 4, expose les formes restantes, ajoute ou supprime une forme et recalcule le score depuis ShapeGroup.computeTotalArea()."
+        },
+        {
+          "title": "Collections observables avec ShapeGroup",
+          "text": "ShapeGroup encapsule une liste de formes, renvoie une copie défensive, calcule leur surface totale et peut tester une intersection avec l’ensemble. Le groupe s’abonne aussi aux changements de chaque forme pour propager les notifications."
+        },
+        {
+          "title": "Génération interchangeable avec Strategy",
+          "text": "ShapeGenerationStrategy définit le contrat de création des obstacles. RandomShapeStrategy choisit cercle ou rectangle, calcule des dimensions bornées et refuse tout candidat qui intersecte la liste existante. Une future FixedShapeStrategy pourra produire des niveaux déterministes."
+        },
+        {
+          "title": "Contrôleur de souris fondé sur State",
+          "text": "MouseController étend MouseAdapter et transmet mousePressed, mouseReleased, mouseDragged et mouseMoved à l’état actif. Les boutons remplacent dynamiquement cet état sans modifier le contrôleur central."
+        },
+        {
+          "title": "Vue Java2D synchronisée par Observer",
+          "text": "GamePanel implémente ModelListener, déclenche repaint() lorsque GameModel change et dessine les formes dans paintComponent. Graphics2D active l’anti-aliasing, applique une couleur selon le rôle et utilise un alpha pour la forme de prévisualisation."
+        }
+      ],
+      "challenges": [
+        {
+          "title": "Unifier trois types de collision",
+          "text": "Le moteur doit traiter cercle–cercle, rectangle–rectangle et cercle–rectangle sans dupliquer toute la logique dans le modèle ou le contrôleur.",
+          "resolution": "J’ai placé intersects(Shape) dans la classe abstraite Shape. Le cercle compare la distance des centres à la somme des rayons ; le rectangle utilise un test AABB pour un autre rectangle et la technique du point le plus proche avec clamp pour un cercle. Le double dispatch reste simple : Circle délègue le cas mixte à Rectangle."
+        },
+        {
+          "title": "Générer des obstacles aléatoires mais valides",
+          "text": "Un tirage aléatoire naïf pouvait placer des obstacles hors du plateau ou les faire se chevaucher, rendant la partie illisible dès son initialisation.",
+          "resolution": "RandomShapeStrategy adapte les intervalles de position aux dimensions de chaque forme, puis appelle intersectsAny avant insertion. La boucle vise cinq obstacles et s’arrête après 300 tentatives pour éviter une recherche infinie lorsque l’espace disponible devient trop contraint."
+        },
+        {
+          "title": "Créer une forme en deux temps avec aperçu",
+          "text": "Pour un cercle comme pour un rectangle, l’utilisateur doit comprendre la taille choisie avant de confirmer, sans créer une forme définitive à chaque mouvement de souris.",
+          "resolution": "Le premier clic mémorise le centre ou le point initial. mouseMoved construit une forme temporaire, la transmet à GamePanel et déclenche un repaint. Le second clic ajoute le preview au modèle, réinitialise l’état local puis efface la prévisualisation."
+        },
+        {
+          "title": "Déplacer une forme sans saut visuel",
+          "text": "Recentrer immédiatement une forme sous le pointeur au début du drag aurait produit un saut et une interaction peu naturelle.",
+          "resolution": "MoveState calcule l’offset entre le clic et le centre du cercle ou le coin du rectangle. Chaque mouvement retranche cet offset avant de modifier les coordonnées, puis notifie le modèle pour rafraîchir l’interface."
+        },
+        {
+          "title": "Changer de comportement sans contrôleur monolithique",
+          "text": "Création, déplacement et suppression réagissent différemment aux mêmes événements souris. Une suite de if/else dans une seule classe aurait rapidement mélangé états temporaires et règles métier.",
+          "resolution": "Le pattern State isole chaque mode dans une classe dédiée derrière MouseState. MouseController ne connaît que l’interface commune, et les boutons remplacent currentState au moment voulu."
+        },
+        {
+          "title": "Transformer les collisions en règle de gameplay complète",
+          "text": "Les fonctions géométriques sont bien implémentées, mais elles ne bloquent pas encore la superposition des formes du joueur avec les obstacles, les autres formes ou les limites du plateau.",
+          "resolution": "J’ai identifié le point d’intégration : valider le preview juste avant addPlayerShape et simuler un déplacement avant de le confirmer. Une prochaine version conservera la dernière position valide, refusera la mutation en cas d’intersection et affichera un retour visuel plutôt que de compter une zone invalide dans le score."
+        }
+      ],
+      "learnings": [
+        "Appliquer State à un vrai axe de variation : les mêmes événements souris produisent des comportements totalement différents selon le mode actif.",
+        "Utiliser Observer pour garder l’affichage Swing et le score synchronisés sans faire dépendre le modèle de composants graphiques.",
+        "Concevoir une hiérarchie polymorphe dans laquelle chaque forme maîtrise son aire, son déplacement et ses règles de collision.",
+        "Implémenter des tests géométriques robustes : distance entre centres, recouvrement AABB et point le plus proche par clamp.",
+        "Construire une interaction de dessin avec état temporaire, prévisualisation alpha et validation au second clic.",
+        "Améliorer le rendu Java2D avec Graphics2D, anti-aliasing, couleurs de rôle et HUD superposé.",
+        "Encadrer une génération aléatoire par des bornes, un nombre maximal de tentatives et des invariants vérifiables.",
+        "Repérer la différence entre disposer d’une primitive technique et l’intégrer réellement à une règle métier complète."
+      ],
+      "next_steps": [
+        "Brancher les collisions sur la création et le déplacement : refuser toute superposition avec un obstacle ou une forme joueur et respecter strictement les limites du plateau.",
+        "Définir une condition de victoire et un score plus fidèle à l’occupation réelle, par exemple en calculant l’aire de l’union afin de ne pas compter deux fois les zones superposées.",
+        "Implémenter FixedShapeStrategy pour charger des configurations reproductibles, créer plusieurs niveaux et tester les mêmes situations avec une graine déterministe.",
+        "Ajouter des tests JUnit sur les aires, les contacts aux frontières, les trois familles de collision, la limite de quatre formes et les notifications Observer.",
+        "Lancer l’interface sur l’Event Dispatch Thread avec SwingUtilities.invokeLater et séparer davantage la création de la fenêtre, des contrôles et du plateau.",
+        "Ajouter une action Nouvelle partie qui régénère les obstacles, réinitialise le score et sélectionne un mode souris par défaut.",
+        "Afficher une couleur de preview valide ou invalide et expliquer au joueur pourquoi un placement est refusé."
+      ]
+    },
     {
       "slug": "visualisation-ventes-docker-graphql",
       "title": "Visualisation de ventes — Docker, GraphQL & D3.js",

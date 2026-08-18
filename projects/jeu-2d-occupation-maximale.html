@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Une application desktop en Java dans laquelle le joueur dispose de quatre formes pour maximiser la surface occupée au milieu d’obstacles générés aléatoirement, avec création interactive, déplacement, suppression et suivi du score.">
+  <meta name="theme-color" content="#07111f">
+  <meta name="color-scheme" content="dark light">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Jeu 2D d’occupation maximale — Java Swing &amp; Design Patterns — Étude de cas | Khaled DJELLALI">
+  <meta property="og:description" content="Une application desktop en Java dans laquelle le joueur dispose de quatre formes pour maximiser la surface occupée au milieu d’obstacles générés aléatoirement, avec création interactive, déplacement, suppression et suivi du score.">
+  <meta property="og:image" content="../assets/images/projects/java-occupation-overview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Jeu 2D d’occupation maximale — Java Swing &amp; Design Patterns — Étude de cas | Khaled DJELLALI</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <script>
+    (() => {
+      document.documentElement.classList.add('js');
+      try {
+        const stored = localStorage.getItem('portfolio-theme');
+        document.documentElement.dataset.theme = stored || 'dark';
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark';
+      }
+    })();
+  </script>
+  <script src="../assets/js/site.js" defer></script>
+</head>
+<body class="project-page" id="top">
+
+<a class="skip-link" href="#main-content">Aller au contenu</a>
+<header class="site-header" data-site-header>
+  <div class="container header-inner">
+    <a class="brand" href="../index.html" aria-label="Retour à l’accueil de Khaled Djellali">
+      <span class="brand-mark" aria-hidden="true">KD</span>
+      <span class="brand-copy"><strong>Khaled Djellali</strong><small>Développeur</small></span>
+    </a>
+    <nav class="primary-nav" id="primary-navigation" aria-label="Navigation principale" data-mobile-nav>
+      <a href="../index.html#about" class="nav-link">Profil</a>
+<a href="../index.html#skills" class="nav-link">Compétences</a>
+<a href="../index.html#journey" class="nav-link">Parcours</a>
+<a href="../index.html#projects" class="nav-link is-active">Projets</a>
+      <a class="button button-small button-primary nav-contact" href="../index.html#contact">Me contacter <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button theme-toggle" type="button" data-theme-toggle aria-label="Activer le thème clair" title="Changer de thème">
+        <span class="theme-icon theme-icon-sun"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></svg></span>
+        <span class="theme-icon theme-icon-moon"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>
+      </button>
+      <button class="icon-button menu-toggle" type="button" data-menu-toggle aria-controls="primary-navigation" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="menu-icon-open"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></span>
+        <span class="menu-icon-close"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 6 12 12M18 6 6 18"/></svg></span>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main-content">
+  <section class="project-hero">
+    <div class="project-hero-grid" aria-hidden="true"></div>
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Fil d’Ariane">
+        <a href="../index.html">Accueil</a><span aria-hidden="true">/</span><a href="../index.html#projects">Projets</a><span aria-hidden="true">/</span><span aria-current="page">Jeu 2D d’occupation maximale — Java Swing &amp; Design Patterns</span>
+      </nav>
+      <div class="project-hero-layout">
+        <div class="project-hero-copy" data-reveal>
+          <p class="project-category">Jeu Java 2D</p>
+          <h1>Jeu 2D d’occupation maximale — Java Swing &amp; Design Patterns</h1>
+          <p class="project-summary">Une application desktop en Java dans laquelle le joueur dispose de quatre formes pour maximiser la surface occupée au milieu d’obstacles générés aléatoirement, avec création interactive, déplacement, suppression et suivi du score.</p>
+          <div class="tag-group tag-group-large"><span class="tech-tag">Java 17</span><span class="tech-tag">Java Swing</span><span class="tech-tag">Java2D</span><span class="tech-tag">MVC</span><span class="tech-tag">State</span><span class="tech-tag">Observer</span><span class="tech-tag">Strategy</span><span class="tech-tag">POO</span><span class="tech-tag">Géométrie 2D</span><span class="tech-tag">Événements souris</span><span class="tech-tag">NetBeans</span><span class="tech-tag">Apache Ant</span></div>
+          <div class="project-hero-actions">
+            <a class="button button-primary" href="https://github.com/khaled1809" target="_blank" rel="noopener noreferrer">Voir mon GitHub <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5h5v5"/><path d="M10 14 19 5"/><path d="M19 13v6H5V5h6"/></svg></a>
+            <a class="button button-secondary" href="../index.html#projects">Retour aux projets <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></a>
+          </div>
+        </div>
+        <figure class="project-cover" data-reveal>
+          <img src="../assets/images/projects/java-occupation-overview.png" alt="Aperçu principal du projet Jeu 2D d’occupation maximale — Java Swing &amp; Design Patterns" width="1400" height="850">
+        </figure>
+      </div>
+      <dl class="project-facts" data-reveal><div class="project-fact"><dt>Rôle</dt><dd>Conception du modèle géométrique, des interactions souris, de la génération des obstacles et du rendu Java2D</dd></div><div class="project-fact"><dt>Type</dt><dd>Projet Java desktop — conception objet et interaction 2D</dd></div><div class="project-fact"><dt>Architecture</dt><dd>MVC + State + Observer + Strategy</dd></div><div class="project-fact"><dt>Technologies</dt><dd>Java 17 · Java Swing · Java2D · MVC · State · Observer · Strategy · POO · Géométrie 2D · Événements souris · NetBeans · Apache Ant</dd></div></dl>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container case-layout">
+      <article class="case-main">
+        <div class="case-block" data-reveal>
+          <p class="case-kicker">Contexte</p>
+          <h2>Le besoin à résoudre</h2>
+          <p>Le jeu devait proposer une interaction graphique simple tout en reposant sur une architecture capable d’évoluer. Le joueur peut placer au maximum quatre formes afin de maximiser leur surface totale, tandis que le plateau vise cinq obstacles générés aléatoirement. Il fallait modéliser cercles et rectangles avec un contrat commun, éviter le chevauchement entre les obstacles, gérer plusieurs comportements de souris sans accumuler de conditions dans un contrôleur unique, afficher une prévisualisation avant validation et maintenir automatiquement le score et le nombre de formes restantes.</p>
+        </div>
+        <div class="case-block" data-reveal>
+          <p class="case-kicker">Approche</p>
+          <h2>La solution mise en place</h2>
+          <p>J’ai organisé le cœur du jeu autour de GameModel, qui sépare les obstacles des formes du joueur avec deux ShapeGroup, impose la limite de quatre formes et calcule le score comme la surface totale des formes bleues. La classe abstraite Shape définit area() et intersects(Shape), puis Circle et Rectangle spécialisent les calculs d’aire et les collisions cercle–cercle, rectangle–rectangle et cercle–rectangle. RandomShapeStrategy vise cinq obstacles dans un plateau de 800 × 600 et rejette les candidats qui intersectent ceux déjà retenus, avec un plafond de 300 tentatives. MouseController applique le pattern State pour déléguer les événements à CreateCircleState, CreateRectangleState, MoveState ou DeleteState. GamePanel observe le modèle et utilise Java2D pour afficher obstacles rouges, formes bleues, prévisualisation semi-transparente, anti-aliasing et HUD. Les primitives de collision existent et sécurisent la génération des obstacles ; elles ne sont pas encore branchées sur la validation des formes du joueur, ce qui explique que des superpositions restent actuellement possibles lors du placement ou du déplacement.</p>
+        </div>
+      </article>
+      <aside class="case-sidebar" data-reveal>
+        <div class="sidebar-card">
+          <span class="sidebar-icon"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V4h8v3M3 12h18M10 12v2h4v-2"/></svg></span>
+          <h2>Ce que ce projet démontre</h2>
+          <p>Ma capacité à analyser un problème, organiser les responsabilités et expliquer les compromis techniques au-delà du simple résultat visuel.</p>
+          <a class="text-link" href="mailto:khaleddjellali189@gmail.com?subject=Échange à propos du projet Jeu 2D d’occupation maximale — Java Swing &amp; Design Patterns">Échanger sur ce projet <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="case-section section-soft">
+    <div class="container">
+      <div class="case-heading" data-reveal><p class="case-kicker">Architecture</p><h2>Comment le projet est structuré</h2></div>
+      <div class="architecture-grid"><article class="architecture-item" data-reveal>
+          <span class="architecture-number">01</span>
+          <h3>Modèle géométrique polymorphe</h3>
+          <p>Shape définit les opérations communes area() et intersects(Shape). Circle stocke un centre et un rayon ; Rectangle un coin supérieur gauche, une largeur et une hauteur ; Point centralise distance euclidienne, translation, copie et accès aux coordonnées.</p>
+        </article><article class="architecture-item" data-reveal>
+          <span class="architecture-number">02</span>
+          <h3>État de partie dans GameModel</h3>
+          <p>Le modèle possède un groupe d’obstacles et un groupe de formes joueur. Il contrôle la limite maxPlayerShapes = 4, expose les formes restantes, ajoute ou supprime une forme et recalcule le score depuis ShapeGroup.computeTotalArea().</p>
+        </article><article class="architecture-item" data-reveal>
+          <span class="architecture-number">03</span>
+          <h3>Collections observables avec ShapeGroup</h3>
+          <p>ShapeGroup encapsule une liste de formes, renvoie une copie défensive, calcule leur surface totale et peut tester une intersection avec l’ensemble. Le groupe s’abonne aussi aux changements de chaque forme pour propager les notifications.</p>
+        </article><article class="architecture-item" data-reveal>
+          <span class="architecture-number">04</span>
+          <h3>Génération interchangeable avec Strategy</h3>
+          <p>ShapeGenerationStrategy définit le contrat de création des obstacles. RandomShapeStrategy choisit cercle ou rectangle, calcule des dimensions bornées et refuse tout candidat qui intersecte la liste existante. Une future FixedShapeStrategy pourra produire des niveaux déterministes.</p>
+        </article><article class="architecture-item" data-reveal>
+          <span class="architecture-number">05</span>
+          <h3>Contrôleur de souris fondé sur State</h3>
+          <p>MouseController étend MouseAdapter et transmet mousePressed, mouseReleased, mouseDragged et mouseMoved à l’état actif. Les boutons remplacent dynamiquement cet état sans modifier le contrôleur central.</p>
+        </article><article class="architecture-item" data-reveal>
+          <span class="architecture-number">06</span>
+          <h3>Vue Java2D synchronisée par Observer</h3>
+          <p>GamePanel implémente ModelListener, déclenche repaint() lorsque GameModel change et dessine les formes dans paintComponent. Graphics2D active l’anti-aliasing, applique une couleur selon le rôle et utilise un alpha pour la forme de prévisualisation.</p>
+        </article></div>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container">
+      <div class="case-heading" data-reveal><p class="case-kicker">Résolution de problèmes</p><h2>Difficultés rencontrées et décisions prises</h2><p>Les points ci-dessous donnent de la visibilité sur le raisonnement technique, pas seulement sur les fonctionnalités finales.</p></div>
+      <div class="challenges-grid"><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 1</span>
+          <h3>Unifier trois types de collision</h3>
+          <p>Le moteur doit traiter cercle–cercle, rectangle–rectangle et cercle–rectangle sans dupliquer toute la logique dans le modèle ou le contrôleur.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>J’ai placé intersects(Shape) dans la classe abstraite Shape. Le cercle compare la distance des centres à la somme des rayons ; le rectangle utilise un test AABB pour un autre rectangle et la technique du point le plus proche avec clamp pour un cercle. Le double dispatch reste simple : Circle délègue le cas mixte à Rectangle.</p></div>
+        </article><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 2</span>
+          <h3>Générer des obstacles aléatoires mais valides</h3>
+          <p>Un tirage aléatoire naïf pouvait placer des obstacles hors du plateau ou les faire se chevaucher, rendant la partie illisible dès son initialisation.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>RandomShapeStrategy adapte les intervalles de position aux dimensions de chaque forme, puis appelle intersectsAny avant insertion. La boucle vise cinq obstacles et s’arrête après 300 tentatives pour éviter une recherche infinie lorsque l’espace disponible devient trop contraint.</p></div>
+        </article><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 3</span>
+          <h3>Créer une forme en deux temps avec aperçu</h3>
+          <p>Pour un cercle comme pour un rectangle, l’utilisateur doit comprendre la taille choisie avant de confirmer, sans créer une forme définitive à chaque mouvement de souris.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>Le premier clic mémorise le centre ou le point initial. mouseMoved construit une forme temporaire, la transmet à GamePanel et déclenche un repaint. Le second clic ajoute le preview au modèle, réinitialise l’état local puis efface la prévisualisation.</p></div>
+        </article><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 4</span>
+          <h3>Déplacer une forme sans saut visuel</h3>
+          <p>Recentrer immédiatement une forme sous le pointeur au début du drag aurait produit un saut et une interaction peu naturelle.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>MoveState calcule l’offset entre le clic et le centre du cercle ou le coin du rectangle. Chaque mouvement retranche cet offset avant de modifier les coordonnées, puis notifie le modèle pour rafraîchir l’interface.</p></div>
+        </article><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 5</span>
+          <h3>Changer de comportement sans contrôleur monolithique</h3>
+          <p>Création, déplacement et suppression réagissent différemment aux mêmes événements souris. Une suite de if/else dans une seule classe aurait rapidement mélangé états temporaires et règles métier.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>Le pattern State isole chaque mode dans une classe dédiée derrière MouseState. MouseController ne connaît que l’interface commune, et les boutons remplacent currentState au moment voulu.</p></div>
+        </article><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 6</span>
+          <h3>Transformer les collisions en règle de gameplay complète</h3>
+          <p>Les fonctions géométriques sont bien implémentées, mais elles ne bloquent pas encore la superposition des formes du joueur avec les obstacles, les autres formes ou les limites du plateau.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>J’ai identifié le point d’intégration : valider le preview juste avant addPlayerShape et simuler un déplacement avant de le confirmer. Une prochaine version conservera la dernière position valide, refusera la mutation en cas d’intersection et affichera un retour visuel plutôt que de compter une zone invalide dans le score.</p></div>
+        </article></div>
+    </div>
+  </section>
+
+  <section class="case-section learnings-section">
+    <div class="container learnings-layout">
+      <div class="case-heading" data-reveal><p class="case-kicker">Progression</p><h2>Ce que j’ai appris</h2><p>Des acquis réutilisables dans d’autres projets et dans un contexte professionnel.</p></div>
+      <ul class="learnings-list"><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Appliquer State à un vrai axe de variation : les mêmes événements souris produisent des comportements totalement différents selon le mode actif.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Utiliser Observer pour garder l’affichage Swing et le score synchronisés sans faire dépendre le modèle de composants graphiques.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Concevoir une hiérarchie polymorphe dans laquelle chaque forme maîtrise son aire, son déplacement et ses règles de collision.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Implémenter des tests géométriques robustes : distance entre centres, recouvrement AABB et point le plus proche par clamp.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Construire une interaction de dessin avec état temporaire, prévisualisation alpha et validation au second clic.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Améliorer le rendu Java2D avec Graphics2D, anti-aliasing, couleurs de rôle et HUD superposé.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Encadrer une génération aléatoire par des bornes, un nombre maximal de tentatives et des invariants vérifiables.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Repérer la différence entre disposer d’une primitive technique et l’intégrer réellement à une règle métier complète.</p></li></ul>
+    </div>
+  </section>
+
+  <section class="case-section section-soft">
+    <div class="container">
+      <div class="case-heading" data-reveal><p class="case-kicker">Galerie</p><h2>Le projet en images</h2><p>Cliquez sur un visuel pour l’agrandir.</p></div>
+      <div class="project-gallery"><button class="gallery-item gallery-item-1" type="button" data-gallery-item data-src="../assets/images/projects/java-occupation-overview.png" data-alt="Visuel 1 du projet Jeu 2D d’occupation maximale — Java Swing &amp; Design Patterns">
+          <img src="../assets/images/projects/java-occupation-overview.png" alt="Visuel 1 du projet Jeu 2D d’occupation maximale — Java Swing &amp; Design Patterns" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-2" type="button" data-gallery-item data-src="../assets/images/projects/java-occupation-application.png" data-alt="Visuel 2 du projet Jeu 2D d’occupation maximale — Java Swing &amp; Design Patterns">
+          <img src="../assets/images/projects/java-occupation-application.png" alt="Visuel 2 du projet Jeu 2D d’occupation maximale — Java Swing &amp; Design Patterns" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-3" type="button" data-gallery-item data-src="../assets/images/projects/java-occupation-architecture.png" data-alt="Visuel 3 du projet Jeu 2D d’occupation maximale — Java Swing &amp; Design Patterns">
+          <img src="../assets/images/projects/java-occupation-architecture.png" alt="Visuel 3 du projet Jeu 2D d’occupation maximale — Java Swing &amp; Design Patterns" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-4" type="button" data-gallery-item data-src="../assets/images/projects/java-occupation-states.png" data-alt="Visuel 4 du projet Jeu 2D d’occupation maximale — Java Swing &amp; Design Patterns">
+          <img src="../assets/images/projects/java-occupation-states.png" alt="Visuel 4 du projet Jeu 2D d’occupation maximale — Java Swing &amp; Design Patterns" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-5" type="button" data-gallery-item data-src="../assets/images/projects/java-occupation-collisions.png" data-alt="Visuel 5 du projet Jeu 2D d’occupation maximale — Java Swing &amp; Design Patterns">
+          <img src="../assets/images/projects/java-occupation-collisions.png" alt="Visuel 5 du projet Jeu 2D d’occupation maximale — Java Swing &amp; Design Patterns" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-6" type="button" data-gallery-item data-src="../assets/images/projects/java-occupation-score.png" data-alt="Visuel 6 du projet Jeu 2D d’occupation maximale — Java Swing &amp; Design Patterns">
+          <img src="../assets/images/projects/java-occupation-score.png" alt="Visuel 6 du projet Jeu 2D d’occupation maximale — Java Swing &amp; Design Patterns" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button></div>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container improvement-panel" data-reveal>
+      <div><p class="case-kicker">Prise de recul</p><h2>Ce que j’améliorerais dans une prochaine version</h2></div>
+      <ol><li>Brancher les collisions sur la création et le déplacement : refuser toute superposition avec un obstacle ou une forme joueur et respecter strictement les limites du plateau.</li><li>Définir une condition de victoire et un score plus fidèle à l’occupation réelle, par exemple en calculant l’aire de l’union afin de ne pas compter deux fois les zones superposées.</li><li>Implémenter FixedShapeStrategy pour charger des configurations reproductibles, créer plusieurs niveaux et tester les mêmes situations avec une graine déterministe.</li><li>Ajouter des tests JUnit sur les aires, les contacts aux frontières, les trois familles de collision, la limite de quatre formes et les notifications Observer.</li><li>Lancer l’interface sur l’Event Dispatch Thread avec SwingUtilities.invokeLater et séparer davantage la création de la fenêtre, des contrôles et du plateau.</li><li>Ajouter une action Nouvelle partie qui régénère les obstacles, réinitialise le score et sélectionne un mode souris par défaut.</li><li>Afficher une couleur de preview valide ou invalide et expliquer au joueur pourquoi un placement est refusé.</li></ol>
+    </div>
+  </section>
+
+  <nav class="project-pagination container" aria-label="Navigation entre les projets">
+    <a href="puzzle-coulissant-java.html" class="pagination-link pagination-previous">
+      <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg><span><small>Projet précédent</small><strong>Puzzle coulissant en Java</strong></span>
+    </a>
+    <a href="visualisation-ventes-docker-graphql.html" class="pagination-link pagination-next">
+      <span><small>Projet suivant</small><strong>Visualisation de ventes — Docker, GraphQL &amp; D3.js</strong></span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+    </a>
+  </nav>
+</main>
+
+<dialog class="lightbox" data-lightbox aria-label="Aperçu agrandi du visuel">
+  <button class="icon-button lightbox-close" type="button" data-lightbox-close aria-label="Fermer l’aperçu"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+  <figure><img src="" alt="" data-lightbox-image><figcaption data-lightbox-caption></figcaption></figure>
+</dialog>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand footer-brand" href="../index.html">
+        <span class="brand-mark" aria-hidden="true">KD</span>
+        <span class="brand-copy"><strong>Khaled DJELLALI</strong><small>Développeur logiciel, web, data &amp; IA</small></span>
+      </a>
+      <p class="footer-note">Portfolio statique conçu pour être rapide, accessible et directement publiable sur GitHub Pages.</p>
+    </div>
+    <div class="footer-links" aria-label="Liens de pied de page">
+      <a href="https://github.com/khaled1809" target="_blank" rel="noopener noreferrer">GitHub <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5h5v5"/><path d="M10 14 19 5"/><path d="M19 13v6H5V5h6"/></svg></a>
+      <a href="https://www.linkedin.com/in/khaled-djellali-4a16282a8/" target="_blank" rel="noopener noreferrer">LinkedIn <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5h5v5"/><path d="M10 14 19 5"/><path d="M19 13v6H5V5h6"/></svg></a>
+      <a href="mailto:khaleddjellali189@gmail.com">E-mail</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span data-current-year></span> Khaled DJELLALI. Tous droits réservés.</p>
+    <a href="#top">Retour en haut <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a>
+  </div>
+</footer>
+</body>
+</html>

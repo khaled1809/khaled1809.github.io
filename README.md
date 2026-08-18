@@ -6,13 +6,13 @@ Portfolio statique en français, conçu pour présenter mon profil, mes compéte
 
 - direction visuelle responsive, sobre et professionnelle ;
 - compétences regroupées par usage, sans pourcentages arbitraires ;
-- dix-sept pages projet partageables individuellement ;
+- dix-huit pages projet partageables individuellement ;
 - sections « difficultés », « décisions techniques », « apprentissages » et « améliorations » ;
 - galerie d’images avec agrandissement ;
 - navigation mobile, mode clair/sombre, métadonnées SEO et page 404 ;
 - structure 100 % statique compatible avec GitHub Pages.
 
-La version actuelle ajoute une application de visualisation de ventes Docker/MongoDB/GraphQL/D3.js ainsi que quatre études de cas construites à partir de travaux pratiques en vision par ordinateur, apprentissage profond, apprentissage avancé et analyse de données.
+La version actuelle ajoute également un jeu 2D Java Swing centré sur la conception objet, Java2D, les interactions souris, la géométrie et les patterns State, Observer et Strategy. Il complète l’application de visualisation Docker/MongoDB/GraphQL/D3.js et les quatre études de cas issues des travaux pratiques en vision, apprentissage et analyse de données.
 
 ## Publier sur GitHub Pages
 
@@ -46,7 +46,7 @@ Puis vérifie les liens, les images, la structure HTML et les régressions du po
 
 ```bash
 python tools/check_site.py
-python -m unittest tools.test_portfolio_update tools.test_portfolio_v3 tools.test_portfolio_v4 -v
+python -m unittest tools.test_portfolio_update tools.test_portfolio_v3 tools.test_portfolio_v4 tools.test_portfolio_v5 -v
 ```
 
 Le script de génération utilise uniquement la bibliothèque standard de Python. Les pages générées sont directement publiables et ne nécessitent pas Python sur GitHub Pages.
@@ -65,8 +65,11 @@ tools/build_site.py              Générateur statique
 tools/check_site.py              Contrôles avant publication
 tools/test_portfolio_update.py   Tests des premiers projets Data
 tools/test_portfolio_v3.py       Tests du portrait et des projets IA/NLP
-tools/test_portfolio_v4.py       Tests des cinq nouvelles études de cas
-docs/SOURCES_PROJETS_V4.md       Traçabilité des fichiers analysés
+tools/test_portfolio_v4.py       Tests des cinq études de cas Data/IA V4
+tools/test_portfolio_v5.py       Tests du jeu Java 2D
+tools/generate_java_occupation_visuals.py  Générateur des six visuels Java V5
+docs/SOURCES_PROJETS_V4.md       Traçabilité des fichiers analysés pour la V4
+docs/SOURCES_PROJETS_V5.md       Traçabilité du projet Java V5
 ```
 
 ## Avant la publication

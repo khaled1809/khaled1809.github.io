@@ -29,18 +29,18 @@ class PortfolioV4Tests(unittest.TestCase):
         cls.data = json.loads((ROOT / "content" / "portfolio.json").read_text(encoding="utf-8"))
         cls.projects = {project["slug"]: project for project in cls.data["projects"]}
 
-    def test_portfolio_contains_seventeen_projects_and_updated_metrics(self) -> None:
-        self.assertEqual(17, len(self.data["projects"]))
-        self.assertEqual("17", self.data["metrics"][0]["value"])
+    def test_portfolio_contains_eighteen_projects_and_updated_metrics(self) -> None:
+        self.assertEqual(18, len(self.data["projects"]))
+        self.assertEqual("18", self.data["metrics"][0]["value"])
         self.assertEqual("7", self.data["metrics"][1]["value"])
         self.assertEqual("40+", self.data["metrics"][2]["value"])
-        self.assertEqual(list(NEW_SLUGS), [project["slug"] for project in self.data["projects"][:5]])
+        self.assertEqual(list(NEW_SLUGS), [project["slug"] for project in self.data["projects"][1:6]])
 
     def test_home_exposes_the_extended_ai_filter_and_all_new_pages(self) -> None:
         home = build_site.render_home(self.data)
         self.assertIn('data-project-filter="ai"', home)
         self.assertIn(">IA &amp; ML</button>", home)
-        self.assertIn("17 projets affichés", home)
+        self.assertIn("18 projets affichés", home)
         for slug in NEW_SLUGS:
             self.assertIn(f'href="projects/{slug}.html"', home)
 
