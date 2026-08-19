@@ -6,13 +6,14 @@ Portfolio statique en français, conçu pour présenter mon profil, mes compéte
 
 - direction visuelle responsive, sobre et professionnelle ;
 - compétences regroupées par usage, sans pourcentages arbitraires ;
-- dix-neuf pages projet partageables individuellement ;
+- vingt pages projet partageables individuellement ;
+- parcours de formation corrigé : Master 1 Informatique — Intelligence artificielle et sciences des données à l’Université de Caen Normandie en 2025–2026, puis formation ETNA prévue à partir d’octobre 2026 ;
 - sections « difficultés », « décisions techniques », « apprentissages » et « améliorations » ;
 - galerie d’images avec agrandissement ;
 - navigation mobile, mode clair/sombre, métadonnées SEO et page 404 ;
 - structure 100 % statique compatible avec GitHub Pages.
 
-La version actuelle met en avant EventFlow, une plateforme événementielle full-stack développée avec React 19, Express 5, MySQL, MongoDB, Stripe, JWT, QR codes signés, Docker Compose et Nginx. Elle conserve également le jeu 2D Java Swing centré sur Java2D et les patterns State, Observer et Strategy, l’application de visualisation Docker/MongoDB/GraphQL/D3.js et les études de cas issues des travaux pratiques en vision, apprentissage et analyse de données.
+La version actuelle met en avant NexaBoard, une plateforme collaborative de gestion de projets développée avec Vue.js 3, TypeScript, Pinia, Django REST Framework, PostgreSQL, JWT, Kanban transactionnel, Docker Compose et Nginx. Elle conserve EventFlow, le jeu 2D Java Swing centré sur Java2D et les patterns State, Observer et Strategy, l’application de visualisation Docker/MongoDB/GraphQL/D3.js et les études de cas issues des travaux pratiques en vision, apprentissage et analyse de données.
 
 ## Publier sur GitHub Pages
 
@@ -68,11 +69,15 @@ tools/test_portfolio_v3.py       Tests du portrait et des projets IA/NLP
 tools/test_portfolio_v4.py       Tests des cinq études de cas Data/IA V4
 tools/test_portfolio_v5.py       Tests du jeu Java 2D
 tools/test_portfolio_v6.py       Tests de l’étude de cas EventFlow
+tools/test_portfolio_v7.py       Tests de l’étude de cas NexaBoard
+tools/test_portfolio_v8.py       Tests de la chronologie des formations
 tools/generate_java_occupation_visuals.py  Générateur des six visuels Java V5
 tools/generate_eventflow_visuals.py        Générateur des six schémas EventFlow
+tools/generate_nexaboard_visuals.py        Générateur des six schémas NexaBoard
 docs/SOURCES_PROJETS_V4.md       Traçabilité des fichiers analysés pour la V4
 docs/SOURCES_PROJETS_V5.md       Traçabilité du projet Java V5
 docs/SOURCES_PROJETS_V6.md       Traçabilité du projet full-stack EventFlow
+docs/SOURCES_PROJETS_V7.md       Traçabilité du projet full-stack NexaBoard
 ```
 
 ## Avant la publication
@@ -81,4 +86,4 @@ Les études de cas ont été rédigées à partir du portfolio initial, des sour
 
 ## Visuels de documentation
 
-Les couvertures et schémas d’architecture sont des visuels de documentation créés pour expliquer les flux et responsabilités. Les six visuels EventFlow décrivent l’architecture, les parcours, la réservation, la billetterie et la persistance ; ils ne sont pas présentés comme des captures d’un déploiement réel. Pour les quatre domaines de travaux pratiques, plusieurs galeries intègrent aussi des résultats d’exécution réellement présents dans les notebooks fournis, encadrés sans modifier leurs données. Ils ne doivent pas être présentés comme des résultats généralisables au-delà des jeux et protocoles concernés.
+Les couvertures et schémas d’architecture sont des visuels de documentation créés pour expliquer les flux et responsabilités. Les six visuels NexaBoard décrivent le produit, l’architecture, le déplacement Kanban transactionnel, l’authentification, le modèle de données et le déploiement ; les six visuels EventFlow décrivent l’architecture, les parcours, la réservation, la billetterie et la persistance. Ces schémas ne sont pas présentés comme des captures d’un déploiement réel. Pour les quatre domaines de travaux pratiques, plusieurs galeries intègrent aussi des résultats d’exécution réellement présents dans les notebooks fournis, encadrés sans modifier leurs données. Ils ne doivent pas être présentés comme des résultats généralisables au-delà des jeux et protocoles concernés.

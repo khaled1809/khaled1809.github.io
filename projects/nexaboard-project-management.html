@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Une plateforme de travail d’équipe permettant d’administrer des projets, organiser les tâches dans un Kanban, collaborer par commentaires et piloter l’avancement à partir d’indicateurs adaptés aux droits de chaque utilisateur.">
+  <meta name="theme-color" content="#07111f">
+  <meta name="color-scheme" content="dark light">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="NexaBoard — Gestion de projets et tâches collaborative — Étude de cas | Khaled DJELLALI">
+  <meta property="og:description" content="Une plateforme de travail d’équipe permettant d’administrer des projets, organiser les tâches dans un Kanban, collaborer par commentaires et piloter l’avancement à partir d’indicateurs adaptés aux droits de chaque utilisateur.">
+  <meta property="og:image" content="../assets/images/projects/nexaboard-overview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>NexaBoard — Gestion de projets et tâches collaborative — Étude de cas | Khaled DJELLALI</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <script>
+    (() => {
+      document.documentElement.classList.add('js');
+      try {
+        const stored = localStorage.getItem('portfolio-theme');
+        document.documentElement.dataset.theme = stored || 'dark';
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark';
+      }
+    })();
+  </script>
+  <script src="../assets/js/site.js" defer></script>
+</head>
+<body class="project-page" id="top">
+
+<a class="skip-link" href="#main-content">Aller au contenu</a>
+<header class="site-header" data-site-header>
+  <div class="container header-inner">
+    <a class="brand" href="../index.html" aria-label="Retour à l’accueil de Khaled Djellali">
+      <span class="brand-mark" aria-hidden="true">KD</span>
+      <span class="brand-copy"><strong>Khaled Djellali</strong><small>Développeur</small></span>
+    </a>
+    <nav class="primary-nav" id="primary-navigation" aria-label="Navigation principale" data-mobile-nav>
+      <a href="../index.html#about" class="nav-link">Profil</a>
+<a href="../index.html#skills" class="nav-link">Compétences</a>
+<a href="../index.html#journey" class="nav-link">Parcours</a>
+<a href="../index.html#projects" class="nav-link is-active">Projets</a>
+      <a class="button button-small button-primary nav-contact" href="../index.html#contact">Me contacter <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button theme-toggle" type="button" data-theme-toggle aria-label="Activer le thème clair" title="Changer de thème">
+        <span class="theme-icon theme-icon-sun"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></svg></span>
+        <span class="theme-icon theme-icon-moon"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>
+      </button>
+      <button class="icon-button menu-toggle" type="button" data-menu-toggle aria-controls="primary-navigation" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="menu-icon-open"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></span>
+        <span class="menu-icon-close"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 6 12 12M18 6 6 18"/></svg></span>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main-content">
+  <section class="project-hero">
+    <div class="project-hero-grid" aria-hidden="true"></div>
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Fil d’Ariane">
+        <a href="../index.html">Accueil</a><span aria-hidden="true">/</span><a href="../index.html#projects">Projets</a><span aria-hidden="true">/</span><span aria-current="page">NexaBoard — Gestion de projets et tâches collaborative</span>
+      </nav>
+      <div class="project-hero-layout">
+        <div class="project-hero-copy" data-reveal>
+          <p class="project-category">Application full-stack &amp; collaboration</p>
+          <h1>NexaBoard — Gestion de projets et tâches collaborative</h1>
+          <p class="project-summary">Une plateforme de travail d’équipe permettant d’administrer des projets, organiser les tâches dans un Kanban, collaborer par commentaires et piloter l’avancement à partir d’indicateurs adaptés aux droits de chaque utilisateur.</p>
+          <div class="tag-group tag-group-large"><span class="tech-tag">Vue.js 3</span><span class="tech-tag">TypeScript</span><span class="tech-tag">Pinia</span><span class="tech-tag">Vue Router</span><span class="tech-tag">Tailwind CSS 4</span><span class="tech-tag">Chart.js</span><span class="tech-tag">vue-chartjs</span><span class="tech-tag">vuedraggable</span><span class="tech-tag">Axios</span><span class="tech-tag">Python</span><span class="tech-tag">Django 5.2</span><span class="tech-tag">Django REST Framework</span><span class="tech-tag">SimpleJWT</span><span class="tech-tag">PostgreSQL 17</span><span class="tech-tag">Django ORM</span><span class="tech-tag">drf-spectacular</span><span class="tech-tag">Swagger / OpenAPI</span><span class="tech-tag">Docker Compose</span><span class="tech-tag">Nginx</span><span class="tech-tag">Gunicorn</span><span class="tech-tag">GitHub Actions</span><span class="tech-tag">Vitest</span><span class="tech-tag">Postman</span><span class="tech-tag">API REST</span></div>
+          <div class="project-hero-actions">
+            <a class="button button-primary" href="https://github.com/khaled1809" target="_blank" rel="noopener noreferrer">Voir mon GitHub <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5h5v5"/><path d="M10 14 19 5"/><path d="M19 13v6H5V5h6"/></svg></a>
+            <a class="button button-secondary" href="../index.html#projects">Retour aux projets <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></a>
+          </div>
+        </div>
+        <figure class="project-cover" data-reveal>
+          <img src="../assets/images/projects/nexaboard-overview.png" alt="Aperçu principal du projet NexaBoard — Gestion de projets et tâches collaborative" width="1400" height="850">
+        </figure>
+      </div>
+      <dl class="project-facts" data-reveal><div class="project-fact"><dt>Rôle</dt><dd>Conception et développement du monorepo full-stack, du modèle métier, de l’API REST, des permissions, du Kanban, du dashboard et de l’environnement de livraison</dd></div><div class="project-fact"><dt>Type</dt><dd>Projet full-stack — gestion collaborative et architecture REST</dd></div><div class="project-fact"><dt>Architecture</dt><dd>Vue.js 3 → Django REST Framework → PostgreSQL</dd></div><div class="project-fact"><dt>Technologies</dt><dd>Vue.js 3 · TypeScript · Pinia · Vue Router · Tailwind CSS 4 · Chart.js · vue-chartjs · vuedraggable · Axios · Python · Django 5.2 · Django REST Framework · SimpleJWT · PostgreSQL 17 · Django ORM · drf-spectacular · Swagger / OpenAPI · Docker Compose · Nginx · Gunicorn · GitHub Actions · Vitest · Postman · API REST</dd></div></dl>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container case-layout">
+      <article class="case-main">
+        <div class="case-block" data-reveal>
+          <p class="case-kicker">Contexte</p>
+          <h2>Le besoin à résoudre</h2>
+          <p>Le projet devait ressembler à un véritable outil interne d’entreprise, et non à une simple liste de tâches. Une équipe doit pouvoir créer des projets privés, attribuer un manager, ajouter des membres, déplacer des tâches entre trois colonnes, commenter le travail et suivre les retards sans exposer les données d’autres équipes. Les difficultés principales concernaient le cycle de vie sécurisé des JWT dans une SPA, les permissions à la fois globales et propres à chaque projet, la cohérence de l’ordre du Kanban lors de déplacements concurrents, la synchronisation entre manager et membres, le calcul d’indicateurs limités au périmètre accessible et la reproductibilité du déploiement.</p>
+        </div>
+        <div class="case-block" data-reveal>
+          <p class="case-kicker">Approche</p>
+          <h2>La solution mise en place</h2>
+          <p>J’ai organisé NexaBoard en monorepo avec une SPA Vue.js 3 écrite en TypeScript, des stores Pinia, Vue Router, Tailwind CSS 4, Chart.js et vuedraggable, puis une API Python fondée sur Django 5.2 et Django REST Framework. Le modèle utilisateur étend AbstractUser, utilise l’e-mail comme identifiant et distingue les rôles ADMIN, MANAGER et MEMBER. L’access token reste en mémoire dans le navigateur ; le refresh token est placé dans un cookie HttpOnly, renouvelé par rotation et ajouté à la liste noire après usage avec SimpleJWT. Axios centralise le Bearer token et rejoue une requête après un 401 grâce à une promesse de refresh partagée. Côté métier, Project, ProjectMembership, Task, Comment et Activity sont persistés avec le Django ORM dans PostgreSQL 17. Le déplacement Kanban appelle une action REST qui utilise transaction.atomic, select_for_update et bulk_update pour verrouiller puis renuméroter les colonnes source et cible. L’interface applique une mise à jour optimiste et effectue un rollback si l’API échoue. Le dashboard agrège les projets visibles, les tâches terminées, en cours ou en retard, les priorités, les prochaines échéances et l’activité récente, puis affiche la répartition avec Chart.js. drf-spectacular produit Swagger / OpenAPI ; Docker Compose orchestre PostgreSQL, Gunicorn et Nginx ; GitHub Actions décrit les contrôles backend et frontend. L’archive contient 8 tests Django et 3 tests Vitest. Dans l’environnement de génération, les 43 fichiers Python et les 43 fichiers TypeScript/Vue ont été soumis à des contrôles statiques, mais les tests d’exécution, l’installation des dépendances, le build Vite et le démarrage Docker sont restés non exécutés faute d’accès aux registres et de moteur Docker.</p>
+        </div>
+      </article>
+      <aside class="case-sidebar" data-reveal>
+        <div class="sidebar-card">
+          <span class="sidebar-icon"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V4h8v3M3 12h18M10 12v2h4v-2"/></svg></span>
+          <h2>Ce que ce projet démontre</h2>
+          <p>Ma capacité à analyser un problème, organiser les responsabilités et expliquer les compromis techniques au-delà du simple résultat visuel.</p>
+          <a class="text-link" href="mailto:khaleddjellali189@gmail.com?subject=Échange à propos du projet NexaBoard — Gestion de projets et tâches collaborative">Échanger sur ce projet <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="case-section section-soft">
+    <div class="container">
+      <div class="case-heading" data-reveal><p class="case-kicker">Architecture</p><h2>Comment le projet est structuré</h2></div>
+      <div class="architecture-grid"><article class="architecture-item" data-reveal>
+          <span class="architecture-number">01</span>
+          <h3>SPA Vue 3 typée et composants réutilisables</h3>
+          <p>L’interface utilise la Composition API avec &lt;script setup&gt;, TypeScript, Vue Router et Tailwind CSS 4. Les écrans d’authentification, de dashboard, de projets, de profil et d’équipe s’appuient sur des composants communs pour les boutons, modales, badges, avatars, barres de progression et états vides.</p>
+        </article><article class="architecture-item" data-reveal>
+          <span class="architecture-number">02</span>
+          <h3>État applicatif Pinia et couche HTTP centralisée</h3>
+          <p>Les stores auth, projects, tasks, dashboard et ui séparent les responsabilités. Axios ajoute l’access token conservé en mémoire, intercepte les réponses 401 et partage une unique refreshPromise afin d’éviter plusieurs rotations simultanées quand plusieurs requêtes expirent au même moment.</p>
+        </article><article class="architecture-item" data-reveal>
+          <span class="architecture-number">03</span>
+          <h3>Authentification Django et cycle JWT</h3>
+          <p>Le modèle User étend AbstractUser, impose un e-mail unique et ajoute le rôle métier. Les endpoints d’inscription, connexion, refresh, déconnexion, profil et mot de passe oublié utilisent SimpleJWT, les validateurs Django et un refresh token en cookie HttpOnly avec rotation et liste noire.</p>
+        </article><article class="architecture-item" data-reveal>
+          <span class="architecture-number">04</span>
+          <h3>Domaine collaboratif modélisé explicitement</h3>
+          <p>Project porte le calendrier, le statut, la couleur, le créateur et le manager. ProjectMembership matérialise l’appartenance et son rôle. Task stocke priorité, statut, position, échéance et assignation ; Comment conserve les échanges ; Activity forme un journal fonctionnel des créations, modifications et déplacements.</p>
+        </article><article class="architecture-item" data-reveal>
+          <span class="architecture-number">05</span>
+          <h3>Permissions objet et querysets cloisonnés</h3>
+          <p>Les querysets ne renvoient que les projets gérés ou rejoints par l’utilisateur, sauf pour l’administrateur. ProjectPermission, TaskPermission et CommentPermission distinguent consultation, gestion du projet, travail sur les tâches, suppression par le créateur ou le manager et édition d’un commentaire par son auteur.</p>
+        </article><article class="architecture-item" data-reveal>
+          <span class="architecture-number">06</span>
+          <h3>Kanban transactionnel et interface optimiste</h3>
+          <p>vuedraggable manipule localement les colonnes TODO, IN_PROGRESS et DONE, puis appelle /tasks/{id}/move/. L’API exécute transaction.atomic, verrouille les lignes avec select_for_update, insère la tâche à la position demandée, normalise les deux colonnes et enregistre l’activité. Le store restaure son état précédent par rollback en cas d’erreur.</p>
+        </article><article class="architecture-item" data-reveal>
+          <span class="architecture-number">07</span>
+          <h3>Dashboard consolidé selon le rôle</h3>
+          <p>L’API calcule uniquement sur les projets accessibles : volume de projets, tâches terminées, en cours et en retard, taux de réalisation, répartition par statut et priorité, progression des projets, échéances proches et activité récente. Vue affiche ces données avec des cartes, une liste de progression et un doughnut Chart.js.</p>
+        </article><article class="architecture-item" data-reveal>
+          <span class="architecture-number">08</span>
+          <h3>Documentation, conteneurs et intégration continue</h3>
+          <p>drf-spectacular expose le schéma OpenAPI et Swagger, tandis qu’une collection Postman documente les parcours. Docker Compose relie PostgreSQL 17, le backend Gunicorn et le frontend Nginx avec healthchecks. GitHub Actions prévoit check Django, contrôle des migrations, tests, Vitest et build Vite.</p>
+        </article></div>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container">
+      <div class="case-heading" data-reveal><p class="case-kicker">Résolution de problèmes</p><h2>Difficultés rencontrées et décisions prises</h2><p>Les points ci-dessous donnent de la visibilité sur le raisonnement technique, pas seulement sur les fonctionnalités finales.</p></div>
+      <div class="challenges-grid"><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 1</span>
+          <h3>Sécuriser une session JWT sans localStorage</h3>
+          <p>Conserver les deux jetons dans le stockage JavaScript faciliterait leur exfiltration en cas de faille XSS, alors qu’un cookie seul ne suffit pas pour renseigner l’en-tête Authorization de l’API.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>L’access token court reste uniquement en mémoire et Axios l’ajoute au Bearer token. Le refresh token est inaccessible à JavaScript dans un cookie HttpOnly limité au chemin /api/auth/. SimpleJWT active la rotation et la liste noire ; la déconnexion révoque le refresh. Une refreshPromise partagée évite les courses entre plusieurs réponses 401.</p></div>
+        </article><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 2</span>
+          <h3>Appliquer les rôles sans faire confiance au frontend</h3>
+          <p>Masquer un bouton dans Vue ne protège pas l’API. Il fallait combiner les rôles ADMIN, MANAGER et MEMBER avec l’appartenance réelle à chaque projet.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>Les querysets sont filtrés avant même la permission objet, ce qui transforme un projet étranger en ressource introuvable. Les classes ProjectPermission, TaskPermission et CommentPermission réévaluent ensuite chaque opération. Le frontend adapte l’interface, mais Django REST Framework reste l’unique source de vérité.</p></div>
+        </article><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 3</span>
+          <h3>Préserver un ordre Kanban cohérent</h3>
+          <p>Deux déplacements rapprochés peuvent créer des positions dupliquées, des trous ou une tâche présente dans le mauvais ordre si les colonnes sont mises à jour par écritures indépendantes.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>L’action move s’exécute dans transaction.atomic, verrouille avec select_for_update les tâches de la colonne cible puis, si nécessaire, de l’ancienne colonne. Elle insère la tâche, renumérote toutes les positions et utilise bulk_update. Le client reste fluide grâce à une mise à jour optimiste et déclenche un rollback vers la copie précédente lorsque l’appel échoue.</p></div>
+        </article><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 4</span>
+          <h3>Synchroniser manager et membres du projet</h3>
+          <p>Le manager doit toujours appartenir au projet, ne doit pas pouvoir être retiré et un changement de manager doit rétrograder proprement l’ancien responsable sans créer de doublon d’appartenance.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>ProjectMembership possède une contrainte d’unicité sur project et user. Le serializer centralise la synchronisation dans _sync_members, ajoute systématiquement le manager et met à jour les rôles. Les actions d’administration refusent explicitement le retrait du manager courant.</p></div>
+        </article><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 5</span>
+          <h3>Empêcher l’assignation d’une tâche à un tiers</h3>
+          <p>Un identifiant utilisateur valide ne signifie pas que cette personne appartient à l’équipe du projet, et une API permissive pourrait divulguer ou attribuer du travail en dehors du périmètre autorisé.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>TaskSerializer valide le projet accessible et vérifie que l’utilisateur assigné est le manager ou un membre. Les tests fournis couvrent le rejet d’un outsider, tandis que les filtres de tâches restent limités aux projets visibles par la session.</p></div>
+        </article><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 6</span>
+          <h3>Calculer des indicateurs sans fuite inter-équipe</h3>
+          <p>Un dashboard global construit directement sur toutes les tâches révélerait des volumes, échéances ou activités appartenant à d’autres projets.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>DashboardView commence par le queryset projects_for(user), puis dérive toutes les agrégations depuis ce périmètre. Les retards excluent les tâches DONE, le taux de réalisation gère le cas sans tâche et les graphiques Chart.js reçoivent une structure déjà normalisée par l’API.</p></div>
+        </article><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 7</span>
+          <h3>Réinitialiser un mot de passe sans révéler les comptes</h3>
+          <p>Une réponse différente selon l’existence d’une adresse permettrait l’énumération des utilisateurs, et un token artisanal serait difficile à invalider correctement.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>L’endpoint renvoie une réponse générique, utilise default_token_generator lié à l’état du mot de passe et encode l’identifiant avec urlsafe_base64. En développement, le lien passe par le backend e-mail console ; en production, la documentation impose SMTP et RETURN_RESET_TOKEN=false.</p></div>
+        </article><article class="challenge-card" data-reveal>
+          <span class="challenge-label">Difficulté 8</span>
+          <h3>Rendre la livraison reproductible et vérifiable</h3>
+          <p>Le frontend, l’API et PostgreSQL nécessitent des versions, des dépendances et un ordre de démarrage cohérents, tandis que le dépôt doit rester contrôlable à chaque modification.</p>
+          <div class="challenge-resolution"><strong>Approche retenue</strong><p>Docker Compose définit le volume PostgreSQL, les healthchecks et les dépendances ; Nginx sert la SPA et reverse-proxy /api ; Gunicorn exécute Django. La CI GitHub Actions prévoit 8 tests Django, 3 tests Vitest, le contrôle des migrations et le build. Ces tests sont présents dans l’archive mais sont restés non exécutés ici, car l’installation des dépendances et Docker étaient indisponibles ; seuls les contrôles statiques ont été rejoués.</p></div>
+        </article></div>
+    </div>
+  </section>
+
+  <section class="case-section learnings-section">
+    <div class="container learnings-layout">
+      <div class="case-heading" data-reveal><p class="case-kicker">Progression</p><h2>Ce que j’ai appris</h2><p>Des acquis réutilisables dans d’autres projets et dans un contexte professionnel.</p></div>
+      <ul class="learnings-list"><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Construire une SPA Vue.js 3 avec Composition API, TypeScript, routage protégé et composants d’interface réutilisables.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Organiser l’état client avec Pinia et une couche de services REST typée plutôt que de disperser les appels HTTP dans les vues.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Concevoir un renouvellement JWT automatique avec access token en mémoire, refresh cookie HttpOnly, rotation, liste noire et reprise contrôlée après 401.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Modéliser les responsabilités métier avec Project, ProjectMembership, Task, Comment et Activity, ainsi que des contraintes et index adaptés.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Mettre en œuvre des permissions DRF globales et objet, puis limiter les querysets pour éviter toute fuite de données entre équipes.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Garantir la cohérence d’un drag &amp; drop Kanban avec transaction.atomic, select_for_update, bulk_update et normalisation des positions.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Combiner mise à jour optimiste côté client et rollback pour conserver une interface réactive sans masquer les échecs serveur.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Produire des indicateurs opérationnels avec le Django ORM et les présenter dans Chart.js sans déplacer la logique d’autorisation dans le navigateur.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Documenter une API avec drf-spectacular, Swagger / OpenAPI et Postman afin de rendre les contrats testables par une autre équipe.</p></li><li data-reveal><span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><p>Préparer une livraison multi-conteneurs avec PostgreSQL, Gunicorn, Nginx, healthchecks et une CI GitHub Actions séparant backend et frontend.</p></li></ul>
+    </div>
+  </section>
+
+  <section class="case-section section-soft">
+    <div class="container">
+      <div class="case-heading" data-reveal><p class="case-kicker">Galerie</p><h2>Le projet en images</h2><p>Cliquez sur un visuel pour l’agrandir.</p></div>
+      <div class="project-gallery"><button class="gallery-item gallery-item-1" type="button" data-gallery-item data-src="../assets/images/projects/nexaboard-overview.png" data-alt="Visuel 1 du projet NexaBoard — Gestion de projets et tâches collaborative">
+          <img src="../assets/images/projects/nexaboard-overview.png" alt="Visuel 1 du projet NexaBoard — Gestion de projets et tâches collaborative" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-2" type="button" data-gallery-item data-src="../assets/images/projects/nexaboard-architecture.png" data-alt="Visuel 2 du projet NexaBoard — Gestion de projets et tâches collaborative">
+          <img src="../assets/images/projects/nexaboard-architecture.png" alt="Visuel 2 du projet NexaBoard — Gestion de projets et tâches collaborative" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-3" type="button" data-gallery-item data-src="../assets/images/projects/nexaboard-kanban-transaction.png" data-alt="Visuel 3 du projet NexaBoard — Gestion de projets et tâches collaborative">
+          <img src="../assets/images/projects/nexaboard-kanban-transaction.png" alt="Visuel 3 du projet NexaBoard — Gestion de projets et tâches collaborative" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-4" type="button" data-gallery-item data-src="../assets/images/projects/nexaboard-auth-security.png" data-alt="Visuel 4 du projet NexaBoard — Gestion de projets et tâches collaborative">
+          <img src="../assets/images/projects/nexaboard-auth-security.png" alt="Visuel 4 du projet NexaBoard — Gestion de projets et tâches collaborative" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-5" type="button" data-gallery-item data-src="../assets/images/projects/nexaboard-data-model.png" data-alt="Visuel 5 du projet NexaBoard — Gestion de projets et tâches collaborative">
+          <img src="../assets/images/projects/nexaboard-data-model.png" alt="Visuel 5 du projet NexaBoard — Gestion de projets et tâches collaborative" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button><button class="gallery-item gallery-item-6" type="button" data-gallery-item data-src="../assets/images/projects/nexaboard-ci-deployment.png" data-alt="Visuel 6 du projet NexaBoard — Gestion de projets et tâches collaborative">
+          <img src="../assets/images/projects/nexaboard-ci-deployment.png" alt="Visuel 6 du projet NexaBoard — Gestion de projets et tâches collaborative" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></svg></span>
+        </button></div>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container improvement-panel" data-reveal>
+      <div><p class="case-kicker">Prise de recul</p><h2>Ce que j’améliorerais dans une prochaine version</h2></div>
+      <ol><li>Exécuter la pile complète sur une machine connectée, figer les lockfiles puis publier les sorties réelles des 8 tests Django, 3 tests Vitest, du build Vite et du contrôle OpenAPI.</li><li>Ajouter des tests end-to-end Playwright couvrant inscription, refresh de session, permissions, création de projet, drag &amp; drop, commentaires et dashboard.</li><li>Tester les déplacements concurrents sur PostgreSQL et renforcer la stratégie de verrouillage pour les scénarios de forte activité sur une même colonne.</li><li>Ajouter des notifications temps réel avec WebSocket ou Server-Sent Events pour les commentaires, assignations et changements de statut.</li><li>Introduire Celery et Redis pour les rappels d’échéance, les e-mails et les traitements asynchrones, avec suivi des erreurs et reprises.</li><li>Étendre le modèle vers des espaces de travail multi-organisations avec invitations, rôles d’organisation et isolation tenant par tenant.</li><li>Ajouter les pièces jointes sur un stockage objet, une recherche PostgreSQL, des exports CSV et un calendrier de charge.</li><li>Déployer une démonstration HTTPS, ajouter des captures réelles et remplacer le lien temporaire vers le profil GitHub par l’URL exacte du dépôt NexaBoard.</li></ol>
+    </div>
+  </section>
+
+  <nav class="project-pagination container" aria-label="Navigation entre les projets">
+    <a href="puzzle-coulissant-java.html" class="pagination-link pagination-previous">
+      <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg><span><small>Projet précédent</small><strong>Puzzle coulissant en Java</strong></span>
+    </a>
+    <a href="eventflow-fullstack.html" class="pagination-link pagination-next">
+      <span><small>Projet suivant</small><strong>EventFlow — Plateforme événementielle full-stack sécurisée</strong></span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+    </a>
+  </nav>
+</main>
+
+<dialog class="lightbox" data-lightbox aria-label="Aperçu agrandi du visuel">
+  <button class="icon-button lightbox-close" type="button" data-lightbox-close aria-label="Fermer l’aperçu"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+  <figure><img src="" alt="" data-lightbox-image><figcaption data-lightbox-caption></figcaption></figure>
+</dialog>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand footer-brand" href="../index.html">
+        <span class="brand-mark" aria-hidden="true">KD</span>
+        <span class="brand-copy"><strong>Khaled DJELLALI</strong><small>Développeur logiciel, web, data &amp; IA</small></span>
+      </a>
+      <p class="footer-note">Portfolio statique conçu pour être rapide, accessible et directement publiable sur GitHub Pages.</p>
+    </div>
+    <div class="footer-links" aria-label="Liens de pied de page">
+      <a href="https://github.com/khaled1809" target="_blank" rel="noopener noreferrer">GitHub <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5h5v5"/><path d="M10 14 19 5"/><path d="M19 13v6H5V5h6"/></svg></a>
+      <a href="https://www.linkedin.com/in/khaled-djellali-4a16282a8/" target="_blank" rel="noopener noreferrer">LinkedIn <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5h5v5"/><path d="M10 14 19 5"/><path d="M19 13v6H5V5h6"/></svg></a>
+      <a href="mailto:khaleddjellali189@gmail.com">E-mail</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span data-current-year></span> Khaled DJELLALI. Tous droits réservés.</p>
+    <a href="#top">Retour en haut <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a>
+  </div>
+</footer>
+</body>
+</html>

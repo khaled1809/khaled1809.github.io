@@ -18,15 +18,15 @@ class PortfolioV6Tests(unittest.TestCase):
         cls.data = json.loads((ROOT / "content" / "portfolio.json").read_text(encoding="utf-8"))
         cls.projects = {project["slug"]: project for project in cls.data["projects"]}
 
-    def test_portfolio_contains_nineteen_projects_and_eventflow_is_featured_first(self):
-        self.assertEqual(19, len(self.data["projects"]))
-        self.assertEqual("19", self.data["metrics"][0]["value"])
-        self.assertEqual("45+", self.data["metrics"][2]["value"])
-        self.assertEqual(SLUG, self.data["projects"][0]["slug"])
+    def test_portfolio_retains_eventflow_and_metrics_can_grow(self):
+        self.assertGreaterEqual(len(self.data["projects"]), 19)
+        self.assertGreaterEqual(int(self.data["metrics"][0]["value"]), 19)
+        self.assertIn(SLUG, self.projects)
+        self.assertLessEqual(next(i for i, project in enumerate(self.data["projects"]) if project["slug"] == SLUG), 1)
 
-    def test_home_links_to_eventflow_and_updates_the_dynamic_count(self):
+    def test_home_links_to_eventflow_and_uses_the_current_dynamic_count(self):
         home = build_site.render_home(self.data)
-        self.assertIn("19 projets affichés", home)
+        self.assertIn(f'{len(self.data["projects"])} projets affichés', home)
         self.assertIn(f'href="projects/{SLUG}.html"', home)
         self.assertIn("EventFlow — Plateforme événementielle full-stack sécurisée", home)
 

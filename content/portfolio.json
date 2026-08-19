@@ -3,12 +3,12 @@
     "name": "Khaled DJELLALI",
     "short_name": "Khaled",
     "role": "Développeur logiciel, web, data & IA",
-    "subtitle": "Étudiant en Master 1 Architecte de Systèmes d’Information à l’ETNA",
+    "subtitle": "Master 1 Informatique — Intelligence artificielle et sciences des données",
     "headline": "Je transforme des besoins concrets en applications claires, robustes et explicables.",
-    "intro": "Développeur orienté logiciel, web, données et intelligence artificielle, je construis des projets complets allant de la modélisation et des pipelines de traitement jusqu’aux API sécurisées, plateformes full-stack transactionnelles, visualisations interactives, modèles d’apprentissage et interfaces utilisateurs.",
+    "intro": "Développeur orienté logiciel, web, données et intelligence artificielle, je construis des projets complets allant de la modélisation et des pipelines de traitement jusqu’aux API sécurisées, plateformes full-stack transactionnelles ou collaboratives, visualisations interactives, modèles d’apprentissage et interfaces utilisateurs.",
     "about": [
-      "Actuellement en Master 1 Architecte de Systèmes d’Information, spécialisation développement, à l’ETNA, je consolide mes compétences en conception logicielle, développement full-stack, data et qualité de code.",
-      "Mon parcours m’a amené à développer des applications web en PHP/MySQL, des logiciels Java structurés autour de MVC et de design patterns — notamment un jeu Java2D piloté par State, Observer et Strategy —, une application React Native connectée à une API REST sécurisée, ainsi qu’EventFlow, une plateforme React/Express transactionnelle avec authentification JWT, réservation atomique, paiement Stripe et billets QR signés. J’ai aussi réalisé des projets décisionnels avec Apache Hop et Power BI, une chaîne Docker MongoDB–GraphQL–D3.js, des travaux en vision par ordinateur, apprentissage profond avec PyTorch, apprentissage par renforcement, explicabilité de modèles et analyse statistique avancée.",
+      "En 2025–2026, j’ai suivi un Master 1 Informatique, parcours Intelligence artificielle et sciences des données, à l’Université de Caen Normandie. À partir d’octobre 2026, je poursuivrai ma formation à l’ETNA en Master Architecte de Systèmes d’Information, spécialisation développement applicatif.",
+      "Mon parcours m’a amené à développer des applications web en PHP/MySQL, des logiciels Java structurés autour de MVC et de design patterns — notamment un jeu Java2D piloté par State, Observer et Strategy —, une application React Native connectée à une API REST sécurisée, EventFlow, une plateforme React/Express transactionnelle avec réservation atomique, paiement Stripe et billets QR signés, ainsi que NexaBoard, une application collaborative en Vue.js 3 et TypeScript reliée à Django REST Framework et PostgreSQL, avec rôles, Kanban transactionnel, commentaires et dashboard. J’ai aussi réalisé des projets décisionnels avec Apache Hop et Power BI, une chaîne Docker MongoDB–GraphQL–D3.js, des travaux en vision par ordinateur, apprentissage profond avec PyTorch, apprentissage par renforcement, explicabilité de modèles et analyse statistique avancée.",
       "Je recherche une alternance où je pourrai contribuer à des produits utiles, progresser au contact d’une équipe expérimentée et prendre progressivement davantage de responsabilités techniques."
     ],
     "availability": "Recherche d’une alternance en développement",
@@ -24,7 +24,7 @@
   },
   "metrics": [
     {
-      "value": "19",
+      "value": "20",
       "label": "projets documentés"
     },
     {
@@ -32,7 +32,7 @@
       "label": "univers techniques"
     },
     {
-      "value": "45+",
+      "value": "50+",
       "label": "technologies pratiquées"
     }
   ],
@@ -78,24 +78,36 @@
     },
     {
       "title": "Développement web & visualisation",
-      "description": "Applications full-stack et SPA responsives, API REST sécurisées, parcours transactionnels et visualisations interactives pilotées par les données.",
+      "description": "Applications full-stack et SPA responsives, API REST sécurisées, collaboration en temps réel différé, parcours transactionnels et visualisations interactives pilotées par les données.",
       "primary": [
         "HTML5",
         "CSS3",
         "JavaScript",
+        "TypeScript",
         "PHP",
+        "Vue.js 3",
         "React 19",
         "Vite",
-        "React Router",
+        "Django 5.2",
+        "Django REST Framework",
         "Node.js",
         "Express 5",
         "GraphQL",
         "D3.js"
       ],
       "secondary": [
+        "Pinia",
+        "Vue Router",
+        "React Router",
+        "Tailwind CSS 4",
+        "Chart.js",
+        "vuedraggable",
+        "Axios",
         "API REST",
         "JWT",
+        "SimpleJWT",
         "Zod",
+        "Swagger / OpenAPI",
         "Stripe Checkout",
         "Webhooks",
         "QR Code",
@@ -103,7 +115,6 @@
         "RBAC",
         "Apollo Server",
         "TopoJSON",
-        "Vue.js",
         "Responsive design"
       ]
     },
@@ -121,6 +132,8 @@
         "Apache Hop"
       ],
       "secondary": [
+        "PostgreSQL 17",
+        "Django ORM",
         "SQLite",
         "Mongoose",
         "OLAP / MDX",
@@ -195,19 +208,24 @@
     },
     {
       "title": "Outils & environnement",
-      "description": "Travail sous Linux, versionnement, reverse proxy, conteneurisation multi-services et validation automatisée d’API.",
+      "description": "Travail sous Linux, versionnement, intégration continue, reverse proxy, serveurs applicatifs, conteneurisation multi-services et validation automatisée des interfaces et API.",
       "primary": [
         "Git",
         "GitHub",
+        "GitHub Actions",
         "Docker",
         "Docker Compose",
         "Nginx",
+        "Gunicorn",
         "Linux",
         "Bash",
         "Postman"
       ],
       "secondary": [
+        "Vitest",
+        "Tests Django",
         "Tests Node",
+        "Swagger / OpenAPI",
         "Mongo Express",
         "Expo",
         "Java Swing",
@@ -218,13 +236,23 @@
   ],
   "education": [
     {
-      "date": "Depuis octobre 2025",
+      "date": "À partir d’octobre 2026",
       "title": "Master Architecte de Systèmes d’Information — Développement applicatif",
       "place": "ETNA — École des Technologies Numériques Avancées",
       "details": [
+        "Formation prévue à partir d’octobre 2026",
         "Architecture logicielle et développement d’applications",
-        "Formation en alternance",
-        "Approfondissement des pratiques de conception et de qualité"
+        "Parcours en alternance orienté conception, qualité et professionnalisation"
+      ]
+    },
+    {
+      "date": "2025 — 2026",
+      "title": "Master 1 Informatique — Intelligence artificielle et sciences des données",
+      "place": "Université de Caen Normandie",
+      "details": [
+        "Intelligence artificielle, machine learning et apprentissage profond",
+        "Vision par ordinateur, statistiques et analyse de données",
+        "Data engineering, bases de données avancées et projets appliqués"
       ]
     },
     {
@@ -249,6 +277,156 @@
     }
   ],
   "projects": [
+    {
+      "slug": "nexaboard-project-management",
+      "title": "NexaBoard — Gestion de projets et tâches collaborative",
+      "category": "web",
+      "category_label": "Application full-stack & collaboration",
+      "card_summary": "Application Vue 3 et Django REST avec rôles, Kanban drag & drop, commentaires, dashboard Chart.js, JWT sécurisé, PostgreSQL, Docker et CI GitHub Actions.",
+      "summary": "Une plateforme de travail d’équipe permettant d’administrer des projets, organiser les tâches dans un Kanban, collaborer par commentaires et piloter l’avancement à partir d’indicateurs adaptés aux droits de chaque utilisateur.",
+      "role": "Conception et développement du monorepo full-stack, du modèle métier, de l’API REST, des permissions, du Kanban, du dashboard et de l’environnement de livraison",
+      "type": "Projet full-stack — gestion collaborative et architecture REST",
+      "architecture_label": "Vue.js 3 → Django REST Framework → PostgreSQL",
+      "github": "https://github.com/khaled1809",
+      "source_label": "Voir mon GitHub",
+      "source_short_label": "GitHub",
+      "source_aria_label": "Voir le profil GitHub de Khaled Djellali pour le projet NexaBoard — Gestion de projets et tâches collaborative",
+      "stack": [
+        "Vue.js 3",
+        "TypeScript",
+        "Pinia",
+        "Vue Router",
+        "Tailwind CSS 4",
+        "Chart.js",
+        "vue-chartjs",
+        "vuedraggable",
+        "Axios",
+        "Python",
+        "Django 5.2",
+        "Django REST Framework",
+        "SimpleJWT",
+        "PostgreSQL 17",
+        "Django ORM",
+        "drf-spectacular",
+        "Swagger / OpenAPI",
+        "Docker Compose",
+        "Nginx",
+        "Gunicorn",
+        "GitHub Actions",
+        "Vitest",
+        "Postman",
+        "API REST"
+      ],
+      "cover": "assets/images/projects/nexaboard-overview.png",
+      "images": [
+        "assets/images/projects/nexaboard-overview.png",
+        "assets/images/projects/nexaboard-architecture.png",
+        "assets/images/projects/nexaboard-kanban-transaction.png",
+        "assets/images/projects/nexaboard-auth-security.png",
+        "assets/images/projects/nexaboard-data-model.png",
+        "assets/images/projects/nexaboard-ci-deployment.png"
+      ],
+      "problem": "Le projet devait ressembler à un véritable outil interne d’entreprise, et non à une simple liste de tâches. Une équipe doit pouvoir créer des projets privés, attribuer un manager, ajouter des membres, déplacer des tâches entre trois colonnes, commenter le travail et suivre les retards sans exposer les données d’autres équipes. Les difficultés principales concernaient le cycle de vie sécurisé des JWT dans une SPA, les permissions à la fois globales et propres à chaque projet, la cohérence de l’ordre du Kanban lors de déplacements concurrents, la synchronisation entre manager et membres, le calcul d’indicateurs limités au périmètre accessible et la reproductibilité du déploiement.",
+      "solution": "J’ai organisé NexaBoard en monorepo avec une SPA Vue.js 3 écrite en TypeScript, des stores Pinia, Vue Router, Tailwind CSS 4, Chart.js et vuedraggable, puis une API Python fondée sur Django 5.2 et Django REST Framework. Le modèle utilisateur étend AbstractUser, utilise l’e-mail comme identifiant et distingue les rôles ADMIN, MANAGER et MEMBER. L’access token reste en mémoire dans le navigateur ; le refresh token est placé dans un cookie HttpOnly, renouvelé par rotation et ajouté à la liste noire après usage avec SimpleJWT. Axios centralise le Bearer token et rejoue une requête après un 401 grâce à une promesse de refresh partagée. Côté métier, Project, ProjectMembership, Task, Comment et Activity sont persistés avec le Django ORM dans PostgreSQL 17. Le déplacement Kanban appelle une action REST qui utilise transaction.atomic, select_for_update et bulk_update pour verrouiller puis renuméroter les colonnes source et cible. L’interface applique une mise à jour optimiste et effectue un rollback si l’API échoue. Le dashboard agrège les projets visibles, les tâches terminées, en cours ou en retard, les priorités, les prochaines échéances et l’activité récente, puis affiche la répartition avec Chart.js. drf-spectacular produit Swagger / OpenAPI ; Docker Compose orchestre PostgreSQL, Gunicorn et Nginx ; GitHub Actions décrit les contrôles backend et frontend. L’archive contient 8 tests Django et 3 tests Vitest. Dans l’environnement de génération, les 43 fichiers Python et les 43 fichiers TypeScript/Vue ont été soumis à des contrôles statiques, mais les tests d’exécution, l’installation des dépendances, le build Vite et le démarrage Docker sont restés non exécutés faute d’accès aux registres et de moteur Docker.",
+      "architecture": [
+        {
+          "title": "SPA Vue 3 typée et composants réutilisables",
+          "text": "L’interface utilise la Composition API avec <script setup>, TypeScript, Vue Router et Tailwind CSS 4. Les écrans d’authentification, de dashboard, de projets, de profil et d’équipe s’appuient sur des composants communs pour les boutons, modales, badges, avatars, barres de progression et états vides."
+        },
+        {
+          "title": "État applicatif Pinia et couche HTTP centralisée",
+          "text": "Les stores auth, projects, tasks, dashboard et ui séparent les responsabilités. Axios ajoute l’access token conservé en mémoire, intercepte les réponses 401 et partage une unique refreshPromise afin d’éviter plusieurs rotations simultanées quand plusieurs requêtes expirent au même moment."
+        },
+        {
+          "title": "Authentification Django et cycle JWT",
+          "text": "Le modèle User étend AbstractUser, impose un e-mail unique et ajoute le rôle métier. Les endpoints d’inscription, connexion, refresh, déconnexion, profil et mot de passe oublié utilisent SimpleJWT, les validateurs Django et un refresh token en cookie HttpOnly avec rotation et liste noire."
+        },
+        {
+          "title": "Domaine collaboratif modélisé explicitement",
+          "text": "Project porte le calendrier, le statut, la couleur, le créateur et le manager. ProjectMembership matérialise l’appartenance et son rôle. Task stocke priorité, statut, position, échéance et assignation ; Comment conserve les échanges ; Activity forme un journal fonctionnel des créations, modifications et déplacements."
+        },
+        {
+          "title": "Permissions objet et querysets cloisonnés",
+          "text": "Les querysets ne renvoient que les projets gérés ou rejoints par l’utilisateur, sauf pour l’administrateur. ProjectPermission, TaskPermission et CommentPermission distinguent consultation, gestion du projet, travail sur les tâches, suppression par le créateur ou le manager et édition d’un commentaire par son auteur."
+        },
+        {
+          "title": "Kanban transactionnel et interface optimiste",
+          "text": "vuedraggable manipule localement les colonnes TODO, IN_PROGRESS et DONE, puis appelle /tasks/{id}/move/. L’API exécute transaction.atomic, verrouille les lignes avec select_for_update, insère la tâche à la position demandée, normalise les deux colonnes et enregistre l’activité. Le store restaure son état précédent par rollback en cas d’erreur."
+        },
+        {
+          "title": "Dashboard consolidé selon le rôle",
+          "text": "L’API calcule uniquement sur les projets accessibles : volume de projets, tâches terminées, en cours et en retard, taux de réalisation, répartition par statut et priorité, progression des projets, échéances proches et activité récente. Vue affiche ces données avec des cartes, une liste de progression et un doughnut Chart.js."
+        },
+        {
+          "title": "Documentation, conteneurs et intégration continue",
+          "text": "drf-spectacular expose le schéma OpenAPI et Swagger, tandis qu’une collection Postman documente les parcours. Docker Compose relie PostgreSQL 17, le backend Gunicorn et le frontend Nginx avec healthchecks. GitHub Actions prévoit check Django, contrôle des migrations, tests, Vitest et build Vite."
+        }
+      ],
+      "challenges": [
+        {
+          "title": "Sécuriser une session JWT sans localStorage",
+          "text": "Conserver les deux jetons dans le stockage JavaScript faciliterait leur exfiltration en cas de faille XSS, alors qu’un cookie seul ne suffit pas pour renseigner l’en-tête Authorization de l’API.",
+          "resolution": "L’access token court reste uniquement en mémoire et Axios l’ajoute au Bearer token. Le refresh token est inaccessible à JavaScript dans un cookie HttpOnly limité au chemin /api/auth/. SimpleJWT active la rotation et la liste noire ; la déconnexion révoque le refresh. Une refreshPromise partagée évite les courses entre plusieurs réponses 401."
+        },
+        {
+          "title": "Appliquer les rôles sans faire confiance au frontend",
+          "text": "Masquer un bouton dans Vue ne protège pas l’API. Il fallait combiner les rôles ADMIN, MANAGER et MEMBER avec l’appartenance réelle à chaque projet.",
+          "resolution": "Les querysets sont filtrés avant même la permission objet, ce qui transforme un projet étranger en ressource introuvable. Les classes ProjectPermission, TaskPermission et CommentPermission réévaluent ensuite chaque opération. Le frontend adapte l’interface, mais Django REST Framework reste l’unique source de vérité."
+        },
+        {
+          "title": "Préserver un ordre Kanban cohérent",
+          "text": "Deux déplacements rapprochés peuvent créer des positions dupliquées, des trous ou une tâche présente dans le mauvais ordre si les colonnes sont mises à jour par écritures indépendantes.",
+          "resolution": "L’action move s’exécute dans transaction.atomic, verrouille avec select_for_update les tâches de la colonne cible puis, si nécessaire, de l’ancienne colonne. Elle insère la tâche, renumérote toutes les positions et utilise bulk_update. Le client reste fluide grâce à une mise à jour optimiste et déclenche un rollback vers la copie précédente lorsque l’appel échoue."
+        },
+        {
+          "title": "Synchroniser manager et membres du projet",
+          "text": "Le manager doit toujours appartenir au projet, ne doit pas pouvoir être retiré et un changement de manager doit rétrograder proprement l’ancien responsable sans créer de doublon d’appartenance.",
+          "resolution": "ProjectMembership possède une contrainte d’unicité sur project et user. Le serializer centralise la synchronisation dans _sync_members, ajoute systématiquement le manager et met à jour les rôles. Les actions d’administration refusent explicitement le retrait du manager courant."
+        },
+        {
+          "title": "Empêcher l’assignation d’une tâche à un tiers",
+          "text": "Un identifiant utilisateur valide ne signifie pas que cette personne appartient à l’équipe du projet, et une API permissive pourrait divulguer ou attribuer du travail en dehors du périmètre autorisé.",
+          "resolution": "TaskSerializer valide le projet accessible et vérifie que l’utilisateur assigné est le manager ou un membre. Les tests fournis couvrent le rejet d’un outsider, tandis que les filtres de tâches restent limités aux projets visibles par la session."
+        },
+        {
+          "title": "Calculer des indicateurs sans fuite inter-équipe",
+          "text": "Un dashboard global construit directement sur toutes les tâches révélerait des volumes, échéances ou activités appartenant à d’autres projets.",
+          "resolution": "DashboardView commence par le queryset projects_for(user), puis dérive toutes les agrégations depuis ce périmètre. Les retards excluent les tâches DONE, le taux de réalisation gère le cas sans tâche et les graphiques Chart.js reçoivent une structure déjà normalisée par l’API."
+        },
+        {
+          "title": "Réinitialiser un mot de passe sans révéler les comptes",
+          "text": "Une réponse différente selon l’existence d’une adresse permettrait l’énumération des utilisateurs, et un token artisanal serait difficile à invalider correctement.",
+          "resolution": "L’endpoint renvoie une réponse générique, utilise default_token_generator lié à l’état du mot de passe et encode l’identifiant avec urlsafe_base64. En développement, le lien passe par le backend e-mail console ; en production, la documentation impose SMTP et RETURN_RESET_TOKEN=false."
+        },
+        {
+          "title": "Rendre la livraison reproductible et vérifiable",
+          "text": "Le frontend, l’API et PostgreSQL nécessitent des versions, des dépendances et un ordre de démarrage cohérents, tandis que le dépôt doit rester contrôlable à chaque modification.",
+          "resolution": "Docker Compose définit le volume PostgreSQL, les healthchecks et les dépendances ; Nginx sert la SPA et reverse-proxy /api ; Gunicorn exécute Django. La CI GitHub Actions prévoit 8 tests Django, 3 tests Vitest, le contrôle des migrations et le build. Ces tests sont présents dans l’archive mais sont restés non exécutés ici, car l’installation des dépendances et Docker étaient indisponibles ; seuls les contrôles statiques ont été rejoués."
+        }
+      ],
+      "learnings": [
+        "Construire une SPA Vue.js 3 avec Composition API, TypeScript, routage protégé et composants d’interface réutilisables.",
+        "Organiser l’état client avec Pinia et une couche de services REST typée plutôt que de disperser les appels HTTP dans les vues.",
+        "Concevoir un renouvellement JWT automatique avec access token en mémoire, refresh cookie HttpOnly, rotation, liste noire et reprise contrôlée après 401.",
+        "Modéliser les responsabilités métier avec Project, ProjectMembership, Task, Comment et Activity, ainsi que des contraintes et index adaptés.",
+        "Mettre en œuvre des permissions DRF globales et objet, puis limiter les querysets pour éviter toute fuite de données entre équipes.",
+        "Garantir la cohérence d’un drag & drop Kanban avec transaction.atomic, select_for_update, bulk_update et normalisation des positions.",
+        "Combiner mise à jour optimiste côté client et rollback pour conserver une interface réactive sans masquer les échecs serveur.",
+        "Produire des indicateurs opérationnels avec le Django ORM et les présenter dans Chart.js sans déplacer la logique d’autorisation dans le navigateur.",
+        "Documenter une API avec drf-spectacular, Swagger / OpenAPI et Postman afin de rendre les contrats testables par une autre équipe.",
+        "Préparer une livraison multi-conteneurs avec PostgreSQL, Gunicorn, Nginx, healthchecks et une CI GitHub Actions séparant backend et frontend."
+      ],
+      "next_steps": [
+        "Exécuter la pile complète sur une machine connectée, figer les lockfiles puis publier les sorties réelles des 8 tests Django, 3 tests Vitest, du build Vite et du contrôle OpenAPI.",
+        "Ajouter des tests end-to-end Playwright couvrant inscription, refresh de session, permissions, création de projet, drag & drop, commentaires et dashboard.",
+        "Tester les déplacements concurrents sur PostgreSQL et renforcer la stratégie de verrouillage pour les scénarios de forte activité sur une même colonne.",
+        "Ajouter des notifications temps réel avec WebSocket ou Server-Sent Events pour les commentaires, assignations et changements de statut.",
+        "Introduire Celery et Redis pour les rappels d’échéance, les e-mails et les traitements asynchrones, avec suivi des erreurs et reprises.",
+        "Étendre le modèle vers des espaces de travail multi-organisations avec invitations, rôles d’organisation et isolation tenant par tenant.",
+        "Ajouter les pièces jointes sur un stockage objet, une recherche PostgreSQL, des exports CSV et un calendrier de charge.",
+        "Déployer une démonstration HTTPS, ajouter des captures réelles et remplacer le lien temporaire vers le profil GitHub par l’URL exacte du dépôt NexaBoard."
+      ]
+    },
     {
       "slug": "eventflow-fullstack",
       "title": "EventFlow — Plateforme événementielle full-stack sécurisée",
